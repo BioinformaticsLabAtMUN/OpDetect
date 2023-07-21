@@ -1,0 +1,1270 @@
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Traceback (most recent call last):
+  File "/lustre06/project/6003138/rezvank/6_test/6_os.py", line 709, in <module>
+    main()
+  File "/lustre06/project/6003138/rezvank/6_test/6_os.py", line 649, in main
+    OperonSEQer(str(args.path)+str(args.out)+'_Data_Formatted.txt',
+  File "/lustre06/project/6003138/rezvank/6_test/6_os.py", line 473, in OperonSEQer
+    predictions = model2.predict(X_test3)
+  File "/home/rezvank/.local/lib/python3.9/site-packages/sklearn/neural_network/_multilayer_perceptron.py", line 1167, in predict
+    y_pred = self._forward_pass_fast(X)
+  File "/home/rezvank/.local/lib/python3.9/site-packages/sklearn/neural_network/_multilayer_perceptron.py", line 159, in _forward_pass_fast
+    X = self._validate_data(X, accept_sparse=["csr", "csc"], reset=False)
+  File "/home/rezvank/.local/lib/python3.9/site-packages/sklearn/base.py", line 557, in _validate_data
+    X = check_array(X, **check_params)
+  File "/home/rezvank/.local/lib/python3.9/site-packages/sklearn/utils/validation.py", line 792, in check_array
+    _assert_all_finite(array, allow_nan=force_all_finite == "allow-nan")
+  File "/home/rezvank/.local/lib/python3.9/site-packages/sklearn/utils/validation.py", line 114, in _assert_all_finite
+    raise ValueError(
+ValueError: Input contains NaN, infinity or a value too large for dtype('float64').
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Traceback (most recent call last):
+  File "/lustre06/project/6003138/rezvank/6_test/6_os.py", line 709, in <module>
+    main()
+  File "/lustre06/project/6003138/rezvank/6_test/6_os.py", line 649, in main
+    OperonSEQer(str(args.path)+str(args.out)+'_Data_Formatted.txt',
+  File "/lustre06/project/6003138/rezvank/6_test/6_os.py", line 473, in OperonSEQer
+    predictions = model2.predict(X_test3)
+  File "/home/rezvank/.local/lib/python3.9/site-packages/sklearn/neural_network/_multilayer_perceptron.py", line 1167, in predict
+    y_pred = self._forward_pass_fast(X)
+  File "/home/rezvank/.local/lib/python3.9/site-packages/sklearn/neural_network/_multilayer_perceptron.py", line 159, in _forward_pass_fast
+    X = self._validate_data(X, accept_sparse=["csr", "csc"], reset=False)
+  File "/home/rezvank/.local/lib/python3.9/site-packages/sklearn/base.py", line 557, in _validate_data
+    X = check_array(X, **check_params)
+  File "/home/rezvank/.local/lib/python3.9/site-packages/sklearn/utils/validation.py", line 792, in check_array
+    _assert_all_finite(array, allow_nan=force_all_finite == "allow-nan")
+  File "/home/rezvank/.local/lib/python3.9/site-packages/sklearn/utils/validation.py", line 114, in _assert_all_finite
+    raise ValueError(
+ValueError: Input contains NaN, infinity or a value too large for dtype('float64').
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Traceback (most recent call last):
+  File "/lustre06/project/6003138/rezvank/6_test/6_os.py", line 709, in <module>
+    main()
+  File "/lustre06/project/6003138/rezvank/6_test/6_os.py", line 649, in main
+    OperonSEQer(str(args.path)+str(args.out)+'_Data_Formatted.txt',
+  File "/lustre06/project/6003138/rezvank/6_test/6_os.py", line 473, in OperonSEQer
+    predictions = model2.predict(X_test3)
+  File "/home/rezvank/.local/lib/python3.9/site-packages/sklearn/neural_network/_multilayer_perceptron.py", line 1167, in predict
+    y_pred = self._forward_pass_fast(X)
+  File "/home/rezvank/.local/lib/python3.9/site-packages/sklearn/neural_network/_multilayer_perceptron.py", line 159, in _forward_pass_fast
+    X = self._validate_data(X, accept_sparse=["csr", "csc"], reset=False)
+  File "/home/rezvank/.local/lib/python3.9/site-packages/sklearn/base.py", line 557, in _validate_data
+    X = check_array(X, **check_params)
+  File "/home/rezvank/.local/lib/python3.9/site-packages/sklearn/utils/validation.py", line 792, in check_array
+    _assert_all_finite(array, allow_nan=force_all_finite == "allow-nan")
+  File "/home/rezvank/.local/lib/python3.9/site-packages/sklearn/utils/validation.py", line 114, in _assert_all_finite
+    raise ValueError(
+ValueError: Input contains NaN, infinity or a value too large for dtype('float64').
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Traceback (most recent call last):
+  File "/lustre06/project/6003138/rezvank/6_test/6_os.py", line 709, in <module>
+    main()
+  File "/lustre06/project/6003138/rezvank/6_test/6_os.py", line 649, in main
+    OperonSEQer(str(args.path)+str(args.out)+'_Data_Formatted.txt',
+  File "/lustre06/project/6003138/rezvank/6_test/6_os.py", line 473, in OperonSEQer
+    predictions = model2.predict(X_test3)
+  File "/home/rezvank/.local/lib/python3.9/site-packages/sklearn/neural_network/_multilayer_perceptron.py", line 1167, in predict
+    y_pred = self._forward_pass_fast(X)
+  File "/home/rezvank/.local/lib/python3.9/site-packages/sklearn/neural_network/_multilayer_perceptron.py", line 159, in _forward_pass_fast
+    X = self._validate_data(X, accept_sparse=["csr", "csc"], reset=False)
+  File "/home/rezvank/.local/lib/python3.9/site-packages/sklearn/base.py", line 557, in _validate_data
+    X = check_array(X, **check_params)
+  File "/home/rezvank/.local/lib/python3.9/site-packages/sklearn/utils/validation.py", line 792, in check_array
+    _assert_all_finite(array, allow_nan=force_all_finite == "allow-nan")
+  File "/home/rezvank/.local/lib/python3.9/site-packages/sklearn/utils/validation.py", line 114, in _assert_all_finite
+    raise ValueError(
+ValueError: Input contains NaN, infinity or a value too large for dtype('float64').
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Traceback (most recent call last):
+  File "/lustre06/project/6003138/rezvank/6_test/6_os.py", line 709, in <module>
+    main()
+  File "/lustre06/project/6003138/rezvank/6_test/6_os.py", line 649, in main
+    OperonSEQer(str(args.path)+str(args.out)+'_Data_Formatted.txt',
+  File "/lustre06/project/6003138/rezvank/6_test/6_os.py", line 473, in OperonSEQer
+    predictions = model2.predict(X_test3)
+  File "/home/rezvank/.local/lib/python3.9/site-packages/sklearn/neural_network/_multilayer_perceptron.py", line 1167, in predict
+    y_pred = self._forward_pass_fast(X)
+  File "/home/rezvank/.local/lib/python3.9/site-packages/sklearn/neural_network/_multilayer_perceptron.py", line 159, in _forward_pass_fast
+    X = self._validate_data(X, accept_sparse=["csr", "csc"], reset=False)
+  File "/home/rezvank/.local/lib/python3.9/site-packages/sklearn/base.py", line 557, in _validate_data
+    X = check_array(X, **check_params)
+  File "/home/rezvank/.local/lib/python3.9/site-packages/sklearn/utils/validation.py", line 792, in check_array
+    _assert_all_finite(array, allow_nan=force_all_finite == "allow-nan")
+  File "/home/rezvank/.local/lib/python3.9/site-packages/sklearn/utils/validation.py", line 114, in _assert_all_finite
+    raise ValueError(
+ValueError: Input contains NaN, infinity or a value too large for dtype('float64').
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Traceback (most recent call last):
+  File "/lustre06/project/6003138/rezvank/6_test/6_os.py", line 709, in <module>
+    main()
+  File "/lustre06/project/6003138/rezvank/6_test/6_os.py", line 649, in main
+    OperonSEQer(str(args.path)+str(args.out)+'_Data_Formatted.txt',
+  File "/lustre06/project/6003138/rezvank/6_test/6_os.py", line 473, in OperonSEQer
+    predictions = model2.predict(X_test3)
+  File "/home/rezvank/.local/lib/python3.9/site-packages/sklearn/neural_network/_multilayer_perceptron.py", line 1167, in predict
+    y_pred = self._forward_pass_fast(X)
+  File "/home/rezvank/.local/lib/python3.9/site-packages/sklearn/neural_network/_multilayer_perceptron.py", line 159, in _forward_pass_fast
+    X = self._validate_data(X, accept_sparse=["csr", "csc"], reset=False)
+  File "/home/rezvank/.local/lib/python3.9/site-packages/sklearn/base.py", line 557, in _validate_data
+    X = check_array(X, **check_params)
+  File "/home/rezvank/.local/lib/python3.9/site-packages/sklearn/utils/validation.py", line 792, in check_array
+    _assert_all_finite(array, allow_nan=force_all_finite == "allow-nan")
+  File "/home/rezvank/.local/lib/python3.9/site-packages/sklearn/utils/validation.py", line 114, in _assert_all_finite
+    raise ValueError(
+ValueError: Input contains NaN, infinity or a value too large for dtype('float64').
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+********************txid224308********************
+113 non-operons were not labeled and 37 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.43      0.91      0.58        95
+           1       0.98      0.81      0.89       607
+
+    accuracy                           0.82       702
+   macro avg       0.70      0.86      0.73       702
+weighted avg       0.91      0.82      0.85       702
+
+Predicted    0    1  All
+True                    
+0           86    9   95
+1          116  491  607
+All        202  500  702
+**************************************************
+********************txid196627********************
+759 non-operons were not labeled and 24 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.54      0.71      0.61       423
+           1       0.87      0.76      0.81      1053
+
+    accuracy                           0.75      1476
+   macro avg       0.70      0.73      0.71      1476
+weighted avg       0.77      0.75      0.75      1476
+
+Predicted    0    1   All
+True                     
+0          300  123   423
+1          253  800  1053
+All        553  923  1476
+**************************************************
+********************txid511145********************
+1146 non-operons were not labeled and 63 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.78      0.85      0.82       952
+           1       0.91      0.87      0.89      1663
+
+    accuracy                           0.86      2615
+   macro avg       0.85      0.86      0.85      2615
+weighted avg       0.86      0.86      0.86      2615
+
+Predicted     0     1   All
+True                       
+0           809   143   952
+1           223  1440  1663
+All        1032  1583  2615
+**************************************************
+********************txid85962********************
+58 non-operons were not labeled and 1 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.33      0.82      0.47        56
+           1       0.98      0.87      0.93       743
+
+    accuracy                           0.87       799
+   macro avg       0.66      0.85      0.70       799
+weighted avg       0.94      0.87      0.89       799
+
+Predicted    0    1  All
+True                    
+0           46   10   56
+1           94  649  743
+All        140  659  799
+**************************************************
+********************txid297246********************
+56 non-operons were not labeled and 2 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.24      0.61      0.34        74
+           1       0.96      0.84      0.90       875
+
+    accuracy                           0.82       949
+   macro avg       0.60      0.72      0.62       949
+weighted avg       0.91      0.82      0.85       949
+
+Predicted    0    1  All
+True                    
+0           45   29   74
+1          142  733  875
+All        187  762  949
+**************************************************
+********************txid169963********************
+68 non-operons were not labeled and 114 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.13      0.96      0.23       104
+           1       0.99      0.29      0.45       917
+
+    accuracy                           0.36      1021
+   macro avg       0.56      0.63      0.34      1021
+weighted avg       0.90      0.36      0.43      1021
+
+Predicted    0    1   All
+True                     
+0          100    4   104
+1          650  267   917
+All        750  271  1021
+**************************************************
+********************txid272634********************
+52 non-operons were not labeled and 2 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.52      0.66      0.58        74
+           1       0.89      0.81      0.85       244
+
+    accuracy                           0.78       318
+   macro avg       0.70      0.74      0.71       318
+weighted avg       0.80      0.78      0.79       318
+
+Predicted   0    1  All
+True                   
+0          49   25   74
+1          46  198  244
+All        95  223  318
+**************************************************
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:3607: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self._set_item(key, value)
+/home/rezvank/.local/lib/python3.9/site-packages/pandas/core/frame.py:4901: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  return super().drop(
+Running XGB - no predictions provided
+Running MLP - no predictions provided
+Running SVM - no predictions provided
+Running RF - no predictions provided
+Running LR - no predictions provided
+Running GNB - no predictions provided
+done with OperonSEQer
+********************txid298386********************
+19 non-operons were not labeled and 0 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.61      0.46      0.52        68
+           1       0.95      0.97      0.96       676
+
+    accuracy                           0.92       744
+   macro avg       0.78      0.71      0.74       744
+weighted avg       0.92      0.92      0.92       744
+
+Predicted   0    1  All
+True                   
+0          31   37   68
+1          20  656  676
+All        51  693  744
+**************************************************
+/home/rezvank/.local/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1308: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/rezvank/.local/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1308: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/rezvank/.local/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1308: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+********************txid176299********************
+0 non-operons were not labeled and 0 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         0
+           1       1.00      0.86      0.92        14
+
+    accuracy                           0.86        14
+   macro avg       0.50      0.43      0.46        14
+weighted avg       1.00      0.86      0.92        14
+
+Predicted  0   1  All
+True                 
+1          2  12   14
+All        2  12   14
+**************************************************
+/home/rezvank/.local/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1308: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/rezvank/.local/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1308: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+/home/rezvank/.local/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1308: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+********************txid224326********************
+0 non-operons were not labeled and 0 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         0
+           1       1.00      0.75      0.86        20
+
+    accuracy                           0.75        20
+   macro avg       0.50      0.38      0.43        20
+weighted avg       1.00      0.75      0.86        20
+
+Predicted  0   1  All
+True                 
+1          5  15   20
+All        5  15   20
+**************************************************
+********************txid224911********************
+0 non-operons were not labeled and 1 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.25      0.50      0.33         2
+           1       0.92      0.79      0.85        14
+
+    accuracy                           0.75        16
+   macro avg       0.58      0.64      0.59        16
+weighted avg       0.83      0.75      0.78        16
+
+Predicted  0   1  All
+True                 
+0          1   1    2
+1          3  11   14
+All        4  12   16
+**************************************************
+********************txid208964********************
+1 non-operons were not labeled and 0 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.14      0.50      0.22         2
+           1       0.98      0.91      0.95        67
+
+    accuracy                           0.90        69
+   macro avg       0.56      0.71      0.58        69
+weighted avg       0.96      0.90      0.92        69
+
+Predicted  0   1  All
+True                 
+0          1   1    2
+1          6  61   67
+All        7  62   69
+**************************************************
+********************txid214092********************
+0 non-operons were not labeled and 0 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           1       1.00      1.00      1.00         6
+
+    accuracy                           1.00         6
+   macro avg       1.00      1.00      1.00         6
+weighted avg       1.00      1.00      1.00         6
+
+Predicted  1  All
+True             
+1          6    6
+All        6    6
+**************************************************
+********************txid6239********************
+38 non-operons were not labeled and 143 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.02      0.94      0.04        18
+           1       1.00      0.22      0.36      1041
+
+    accuracy                           0.23      1059
+   macro avg       0.51      0.58      0.20      1059
+weighted avg       0.98      0.23      0.35      1059
+
+Predicted    0    1   All
+True                     
+0           17    1    18
+1          816  225  1041
+All        833  226  1059
+**************************************************

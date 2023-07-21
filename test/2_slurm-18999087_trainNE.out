@@ -1,0 +1,260 @@
+********************txid224308********************
+0 non-operons were not labeled and 0 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.87      0.80      0.83       208
+           1       0.94      0.96      0.95       644
+
+    accuracy                           0.92       852
+   macro avg       0.90      0.88      0.89       852
+weighted avg       0.92      0.92      0.92       852
+
+Predicted  0.0  1.0  All
+True                    
+0          167   41  208
+1           26  618  644
+All        193  659  852
+**************************************************
+********************txid196627********************
+0 non-operons were not labeled and 0 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.93      0.85      0.89      1182
+           1       0.85      0.93      0.89      1077
+
+    accuracy                           0.89      2259
+   macro avg       0.89      0.89      0.89      2259
+weighted avg       0.89      0.89      0.89      2259
+
+Predicted   0.0   1.0   All
+True                       
+0          1008   174  1182
+1            74  1003  1077
+All        1082  1177  2259
+**************************************************
+********************txid511145********************
+0 non-operons were not labeled and 0 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.90      0.93      0.92      2098
+           1       0.91      0.88      0.89      1726
+
+    accuracy                           0.91      3824
+   macro avg       0.91      0.90      0.90      3824
+weighted avg       0.91      0.91      0.91      3824
+
+Predicted   0.0   1.0   All
+True                       
+0          1945   153  2098
+1           207  1519  1726
+All        2152  1672  3824
+**************************************************
+********************txid85962********************
+0 non-operons were not labeled and 0 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.90      0.77      0.83       114
+           1       0.97      0.99      0.98       744
+
+    accuracy                           0.96       858
+   macro avg       0.93      0.88      0.90       858
+weighted avg       0.96      0.96      0.96       858
+
+Predicted  0.0  1.0  All
+True                    
+0           88   26  114
+1           10  734  744
+All         98  760  858
+**************************************************
+********************txid297246********************
+0 non-operons were not labeled and 0 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.75      0.59      0.66       130
+           1       0.94      0.97      0.96       877
+
+    accuracy                           0.92      1007
+   macro avg       0.84      0.78      0.81      1007
+weighted avg       0.92      0.92      0.92      1007
+
+Predicted  0.0  1.0   All
+True                     
+0           77   53   130
+1           26  851   877
+All        103  904  1007
+**************************************************
+********************txid169963********************
+0 non-operons were not labeled and 0 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.87      0.78      0.83       172
+           1       0.96      0.98      0.97      1031
+
+    accuracy                           0.95      1203
+   macro avg       0.92      0.88      0.90      1203
+weighted avg       0.95      0.95      0.95      1203
+
+Predicted  0.0   1.0   All
+True                      
+0          135    37   172
+1           20  1011  1031
+All        155  1048  1203
+**************************************************
+********************txid272634********************
+0 non-operons were not labeled and 0 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.88      0.59      0.70       126
+           1       0.82      0.96      0.88       246
+
+    accuracy                           0.83       372
+   macro avg       0.85      0.77      0.79       372
+weighted avg       0.84      0.83      0.82       372
+
+Predicted  0.0  1.0  All
+True                    
+0           74   52  126
+1           10  236  246
+All         84  288  372
+**************************************************
+********************txid298386********************
+0 non-operons were not labeled and 0 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.40      0.68      0.50        87
+           1       0.95      0.87      0.91       676
+
+    accuracy                           0.85       763
+   macro avg       0.68      0.77      0.71       763
+weighted avg       0.89      0.85      0.86       763
+
+Predicted  0.0  1.0  All
+True                    
+0           59   28   87
+1           89  587  676
+All        148  615  763
+**************************************************
+********************txid176299********************
+0 non-operons were not labeled and 0 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           1       1.00      1.00      1.00        14
+
+    accuracy                           1.00        14
+   macro avg       1.00      1.00      1.00        14
+weighted avg       1.00      1.00      1.00        14
+
+Predicted  1.0  All
+True               
+1           14   14
+All         14   14
+**************************************************
+********************txid224326********************
+0 non-operons were not labeled and 0 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           1       1.00      1.00      1.00        20
+
+    accuracy                           1.00        20
+   macro avg       1.00      1.00      1.00        20
+weighted avg       1.00      1.00      1.00        20
+
+Predicted  1.0  All
+True               
+1           20   20
+All         20   20
+**************************************************
+********************txid224911********************
+0 non-operons were not labeled and 0 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.50      0.50      0.50         2
+           1       0.93      0.93      0.93        15
+
+    accuracy                           0.88        17
+   macro avg       0.72      0.72      0.72        17
+weighted avg       0.88      0.88      0.88        17
+
+Predicted  0.0  1.0  All
+True                    
+0            1    1    2
+1            1   14   15
+All          2   15   17
+**************************************************
+********************txid208964********************
+0 non-operons were not labeled and 0 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           0       1.00      0.67      0.80         3
+           1       0.99      1.00      0.99        67
+
+    accuracy                           0.99        70
+   macro avg       0.99      0.83      0.90        70
+weighted avg       0.99      0.99      0.98        70
+
+Predicted  0.0  1.0  All
+True                    
+0            2    1    3
+1            0   67   67
+All          2   68   70
+**************************************************
+********************txid214092********************
+0 non-operons were not labeled and 0 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           1       1.00      1.00      1.00         6
+
+    accuracy                           1.00         6
+   macro avg       1.00      1.00      1.00         6
+weighted avg       1.00      1.00      1.00         6
+
+Predicted  1.0  All
+True               
+1            6    6
+All          6    6
+**************************************************
+********************txid6239********************
+0 non-operons were not labeled and 0 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.21      0.62      0.31        56
+           1       0.98      0.89      0.93      1184
+
+    accuracy                           0.88      1240
+   macro avg       0.59      0.76      0.62      1240
+weighted avg       0.95      0.88      0.90      1240
+
+Predicted  0.0   1.0   All
+True                      
+0           35    21    56
+1          134  1050  1184
+All        169  1071  1240
+**************************************************

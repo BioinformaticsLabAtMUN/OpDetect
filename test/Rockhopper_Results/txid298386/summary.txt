@@ -1,0 +1,24 @@
+
+Assembling transcripts from reads in file:             	SRR500950.fastq
+Assembling transcripts from reads in file:             	SRR500951.fastq
+
+Aligning reads to assembled transcripts using file:	SRR500950.fastq
+
+	Total reads in file:        	0
+	Perfectly aligned reads:    	0	0%
+
+Aligning reads to assembled transcripts using file:	SRR500951.fastq
+
+	Total reads in file:        	0
+	Perfectly aligned reads:    	0	0%
+
+Total number of assembled transcripts:		0
+	Average transcript length:             	0
+	Median transcript length:              	0
+	Total number of assembled bases:       	0
+
+Summary of results written to file:               	Rockhopper_Results/txid298386/summary.txt
+Details of assembled transcripts written to file: 	Rockhopper_Results/txid298386/transcripts.txt
+
+FINSIHED.
+

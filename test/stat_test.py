@@ -12,9 +12,9 @@ from Orange.evaluation import compute_CD, graph_ranks
 
 # Directory containing the model outputs (replace with your actual directory)
 dir = "outputs"
-models = ['om', 'rh', 'of', 'os', 'final_train', 'final']
-model_names = ['Operon Mapper', 'Rockhopper', 'Operon Finder', 'OperonSEQer','Our Model', 'Our Model NE']
-dataset_names = ['txid224308','txid196627','txid511145','txid85962','txid297246','txid169963','txid272634','txid298386']#,'txid6239'] #['txid176299','txid224326','txid224911','txid208964', 'txid214092',]
+models = ['om', 'rh', 'of', 'os', 'final_train']#, 'final']
+model_names = ['Operon Mapper', 'Rockhopper', 'Operon Finder', 'OperonSEQer','Our Model']#, 'Our Model NE']
+dataset_names = ['txid224308','txid196627','txid511145','txid85962','txid297246','txid169963','txid272634','txid298386','txid6239'] #['txid176299','txid224326','txid224911','txid208964', 'txid214092',]
 
 # Read the CSV files path = f'{dir}/{model}_{txid}.csv'
 
@@ -70,6 +70,11 @@ N = num_datasets
 ranks = rankdata(outputs, axis=0)
 ranks = num_classifiers - ranks.astype(int) + 1 # highest to lowest
 mean_ranks = np.mean(ranks, axis=1)
+
+# print ranks
+for i in range(num_classifiers):
+    print(f'{model_names[i]}: {ranks[i]}')
+
 
 #generate a critical difference diagram with Nemenyi post-hoc, default alpha=0.05
 cd = compute_CD(mean_ranks, num_datasets) #tested on 7 datasets

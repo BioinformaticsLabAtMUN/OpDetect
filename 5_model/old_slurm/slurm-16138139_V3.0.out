@@ -1,516 +1,0 @@
-created virtual environment CPython3.10.2.final.0-64 in 924ms
-  creator CPython3Posix(dest=/localscratch/rezvank.16138139.0/env, clear=False, no_vcs_ignore=False, global=False)
-  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/rezvank/.local/share/virtualenv)
-    added seed packages: pip==21.3.1, setuptools==67.6.1, wheel==0.37.1
-  activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
-Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo/avx2, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo/generic, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
-Requirement already satisfied: pip in /localscratch/rezvank.16138139.0/env/lib/python3.10/site-packages (21.3.1)
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/pip-23.0+computecanada-py3-none-any.whl
-Installing collected packages: pip
-  Attempting uninstall: pip
-    Found existing installation: pip 21.3.1
-    Uninstalling pip-21.3.1:
-      Successfully uninstalled pip-21.3.1
-Successfully installed pip-23.0+computecanada
-Looking in links: /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo/avx2, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo/generic, /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo/generic/numpy-1.24.2+computecanada-cp310-cp310-linux_x86_64.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo/avx2/pandas-2.0.0+computecanada-cp310-cp310-linux_x86_64.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo/avx2/matplotlib-3.7.0+computecanada-cp310-cp310-linux_x86_64.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo/generic/scipy-1.10.1+computecanada-cp310-cp310-linux_x86_64.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo/generic/tensorflow-2.11.0+computecanada-cp310-cp310-linux_x86_64.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo/generic/scikit_learn-1.2.1+computecanada-cp310-cp310-linux_x86_64.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/tzdata-2023.3+computecanada-py2.py3-none-any.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/pytz-2023.3+computecanada-py2.py3-none-any.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/python_dateutil-2.8.2+computecanada-py2.py3-none-any.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo/generic/contourpy-1.0.7+computecanada-cp310-cp310-linux_x86_64.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/cycler-0.11.0+computecanada-py3-none-any.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/packaging-23.1+computecanada-py3-none-any.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo/avx2/Pillow-9.5.0+computecanada-cp310-cp310-linux_x86_64.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo/avx2/kiwisolver-1.4.4+computecanada-cp310-cp310-linux_x86_64.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/fonttools-4.39.3+computecanada-cp310-cp310-linux_x86_64.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/pyparsing-3.0.9+computecanada-py3-none-any.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/flatbuffers-20190709135844+computecanada-py2.py3-none-any.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/typing_extensions-4.5.0+computecanada-py3-none-any.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/tensorflow_estimator-2.11.0+computecanada-py2.py3-none-any.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/six-1.16.0+computecanada-py2.py3-none-any.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/wrapt-1.15.0+computecanada-cp310-cp310-linux_x86_64.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/tensorboard-2.11.2+computecanada-py3-none-any.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/google_pasta-0.2.0+computecanada-py3-none-any.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/gast-0.4.0+computecanada-py3-none-any.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo/generic/grpcio-1.51.3+computecanada-cp310-cp310-linux_x86_64.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/libclang-14.0.1+computecanada-py2.py3-none-linux_x86_64.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo/avx2/protobuf-3.19.4+computecanada-cp310-cp310-linux_x86_64.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/opt_einsum-3.3.0+computecanada-py3-none-any.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/absl_py-1.4.0+computecanada-py3-none-any.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/tensorflow_io_gcs_filesystem-0.26.0+computecanada-cp310-cp310-linux_x86_64.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo/avx2/h5py-3.8.0+computecanada-cp310-cp310-linux_x86_64.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/keras-2.11.0+computecanada-py2.py3-none-any.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/astunparse-1.6.3+computecanada-py2.py3-none-any.whl
-Requirement already satisfied: setuptools in /localscratch/rezvank.16138139.0/env/lib/python3.10/site-packages (from tensorflow->-r requirements.txt (line 5)) (67.6.1)
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/termcolor-2.2.0+computecanada-py3-none-any.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/threadpoolctl-3.1.0+computecanada-py3-none-any.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/joblib-1.2.0+computecanada-py3-none-any.whl
-Requirement already satisfied: wheel<1.0,>=0.23.0 in /localscratch/rezvank.16138139.0/env/lib/python3.10/site-packages (from astunparse>=1.6.0->tensorflow->-r requirements.txt (line 5)) (0.37.1)
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/Markdown-3.4.3+computecanada-py3-none-any.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/google_auth_oauthlib-0.4.6+computecanada-py2.py3-none-any.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/Werkzeug-2.2.3+computecanada-py3-none-any.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/google_auth-2.17.3+computecanada-py2.py3-none-any.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/requests-2.28.2+computecanada-py3-none-any.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/tensorboard_data_server-0.6.1+computecanada-py3-none-linux_x86_64.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/tensorboard_plugin_wit-1.8.1+computecanada-py3-none-any.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/rsa-4.9+computecanada-py3-none-any.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/pyasn1_modules-0.3.0+computecanada-py2.py3-none-any.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/cachetools-5.3.0+computecanada-py3-none-any.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/requests_oauthlib-1.3.1+computecanada-py2.py3-none-any.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/charset_normalizer-3.1.0+computecanada-py3-none-any.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/urllib3-1.26.15+computecanada-py2.py3-none-any.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/certifi-2022.12.7+computecanada-py3-none-any.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/idna-3.4+computecanada-py3-none-any.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/gentoo/generic/MarkupSafe-2.1.2+computecanada-cp310-cp310-linux_x86_64.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/pyasn1-0.5.0+computecanada-py2.py3-none-any.whl
-Processing /cvmfs/soft.computecanada.ca/custom/python/wheelhouse/generic/oauthlib-3.2.2+computecanada-py3-none-any.whl
-Installing collected packages: tensorboard-plugin-wit, pytz, libclang, flatbuffers, wrapt, urllib3, tzdata, typing-extensions, threadpoolctl, termcolor, tensorflow-io-gcs-filesystem, tensorflow-estimator, tensorboard-data-server, six, pyparsing, pyasn1, protobuf, pillow, packaging, oauthlib, numpy, MarkupSafe, markdown, kiwisolver, keras, joblib, idna, grpcio, gast, fonttools, cycler, charset-normalizer, certifi, cachetools, absl-py, werkzeug, scipy, rsa, requests, python-dateutil, pyasn1-modules, opt-einsum, h5py, google-pasta, contourpy, astunparse, scikit-learn, requests-oauthlib, pandas, matplotlib, google-auth, google-auth-oauthlib, tensorboard, tensorflow
-Successfully installed MarkupSafe-2.1.2+computecanada absl-py-1.4.0+computecanada astunparse-1.6.3+computecanada cachetools-5.3.0+computecanada certifi-2022.12.7+computecanada charset-normalizer-3.1.0+computecanada contourpy-1.0.7+computecanada cycler-0.11.0+computecanada flatbuffers-20190709135844+computecanada fonttools-4.39.3+computecanada gast-0.4.0+computecanada google-auth-2.17.3+computecanada google-auth-oauthlib-0.4.6+computecanada google-pasta-0.2.0+computecanada grpcio-1.51.3+computecanada h5py-3.8.0+computecanada idna-3.4+computecanada joblib-1.2.0+computecanada keras-2.11.0+computecanada kiwisolver-1.4.4+computecanada libclang-14.0.1+computecanada markdown-3.4.3+computecanada matplotlib-3.7.0+computecanada numpy-1.24.2+computecanada oauthlib-3.2.2+computecanada opt-einsum-3.3.0+computecanada packaging-23.1+computecanada pandas-2.0.0+computecanada pillow-9.5.0+computecanada protobuf-3.19.4+computecanada pyasn1-0.5.0+computecanada pyasn1-modules-0.3.0+computecanada pyparsing-3.0.9+computecanada python-dateutil-2.8.2+computecanada pytz-2023.3+computecanada requests-2.28.2+computecanada requests-oauthlib-1.3.1+computecanada rsa-4.9+computecanada scikit-learn-1.2.1+computecanada scipy-1.10.1+computecanada six-1.16.0+computecanada tensorboard-2.11.2+computecanada tensorboard-data-server-0.6.1+computecanada tensorboard-plugin-wit-1.8.1+computecanada tensorflow-2.11.0+computecanada tensorflow-estimator-2.11.0+computecanada tensorflow-io-gcs-filesystem-0.26.0+computecanada termcolor-2.2.0+computecanada threadpoolctl-3.1.0+computecanada typing-extensions-4.5.0+computecanada tzdata-2023.3+computecanada urllib3-1.26.15+computecanada werkzeug-2.2.3+computecanada wrapt-1.15.0+computecanada
-Model: "model"
-_________________________________________________________________
- Layer (type)                Output Shape              Param #   
-=================================================================
- input_1 (InputLayer)        [(None, 145, 3, 1)]       0         
-                                                                 
- conv2d (Conv2D)             (None, 145, 1, 3)         12        
-                                                                 
- dropout (Dropout)           (None, 145, 1, 3)         0         
-                                                                 
- lambda (Lambda)             (None, 145, 3)            0         
-                                                                 
- lstm (LSTM)                 [(None, 145, 32),         4608      
-                              (None, 32),                        
-                              (None, 32)]                        
-                                                                 
- dropout_1 (Dropout)         (None, 145, 32)           0         
-                                                                 
- self_attention (SelfAttenti  ((None, 512),            1536      
- on)                          (None, 16, 145))                   
-                                                                 
- dense (Dense)               (None, 2)                 1026      
-                                                                 
-=================================================================
-Total params: 7,182
-Trainable params: 7,182
-Non-trainable params: 0
-_________________________________________________________________
-None
-Early stopping epoch: 35
-******Evaluating TEST set*********
-  1/125 [..............................] - ETA: 39s  8/125 [>.............................] - ETA: 0s  16/125 [==>...........................] - ETA: 0s 24/125 [====>.........................] - ETA: 0s 32/125 [======>.......................] - ETA: 0s 40/125 [========>.....................] - ETA: 0s 48/125 [==========>...................] - ETA: 0s 56/125 [============>.................] - ETA: 0s 64/125 [==============>...............] - ETA: 0s 72/125 [================>.............] - ETA: 0s 80/125 [==================>...........] - ETA: 0s 88/125 [====================>.........] - ETA: 0s 96/125 [======================>.......] - ETA: 0s104/125 [=======================>......] - ETA: 0s112/125 [=========================>....] - ETA: 0s120/125 [===========================>..] - ETA: 0s125/125 [==============================] - 1s 7ms/step
-fold 0
-              precision    recall  f1-score   support
-
-           0       0.74      0.92      0.82      1372
-           1       0.63      0.31      0.41       628
-
-    accuracy                           0.73      2000
-   macro avg       0.68      0.61      0.62      2000
-weighted avg       0.71      0.72      0.69      2000
-
-auc[0.7250] Recall[0.6118] F1[0.6164] at fold[0]
-______________________________________________________
-Model: "model_1"
-_________________________________________________________________
- Layer (type)                Output Shape              Param #   
-=================================================================
- input_2 (InputLayer)        [(None, 145, 3, 1)]       0         
-                                                                 
- conv2d_1 (Conv2D)           (None, 145, 1, 3)         12        
-                                                                 
- dropout_2 (Dropout)         (None, 145, 1, 3)         0         
-                                                                 
- lambda_1 (Lambda)           (None, 145, 3)            0         
-                                                                 
- lstm (LSTM)                 [(None, 145, 32),         4608      
-                              (None, 32),                        
-                              (None, 32)]                        
-                                                                 
- dropout_3 (Dropout)         (None, 145, 32)           0         
-                                                                 
- self_attention_1 (SelfAtten  ((None, 512),            1536      
- tion)                        (None, 16, 145))                   
-                                                                 
- dense_1 (Dense)             (None, 2)                 1026      
-                                                                 
-=================================================================
-Total params: 7,182
-Trainable params: 7,182
-Non-trainable params: 0
-_________________________________________________________________
-None
-Early stopping epoch: 37
-******Evaluating TEST set*********
-  1/125 [..............................] - ETA: 36s  9/125 [=>............................] - ETA: 0s  17/125 [===>..........................] - ETA: 0s 25/125 [=====>........................] - ETA: 0s 33/125 [======>.......................] - ETA: 0s 41/125 [========>.....................] - ETA: 0s 49/125 [==========>...................] - ETA: 0s 57/125 [============>.................] - ETA: 0s 65/125 [==============>...............] - ETA: 0s 73/125 [================>.............] - ETA: 0s 81/125 [==================>...........] - ETA: 0s 89/125 [====================>.........] - ETA: 0s 97/125 [======================>.......] - ETA: 0s105/125 [========================>.....] - ETA: 0s113/125 [==========================>...] - ETA: 0s121/125 [============================>.] - ETA: 0s125/125 [==============================] - 1s 7ms/step
-fold 1
-              precision    recall  f1-score   support
-
-           0       0.76      0.83      0.79      1372
-           1       0.54      0.44      0.48       628
-
-    accuracy                           0.70      2000
-   macro avg       0.65      0.63      0.64      2000
-weighted avg       0.69      0.70      0.70      2000
-
-auc[0.7045] Recall[0.6318] F1[0.6373] at fold[1]
-______________________________________________________
-Model: "model_2"
-_________________________________________________________________
- Layer (type)                Output Shape              Param #   
-=================================================================
- input_3 (InputLayer)        [(None, 145, 3, 1)]       0         
-                                                                 
- conv2d_2 (Conv2D)           (None, 145, 1, 3)         12        
-                                                                 
- dropout_4 (Dropout)         (None, 145, 1, 3)         0         
-                                                                 
- lambda_2 (Lambda)           (None, 145, 3)            0         
-                                                                 
- lstm (LSTM)                 [(None, 145, 32),         4608      
-                              (None, 32),                        
-                              (None, 32)]                        
-                                                                 
- dropout_5 (Dropout)         (None, 145, 32)           0         
-                                                                 
- self_attention_2 (SelfAtten  ((None, 512),            1536      
- tion)                        (None, 16, 145))                   
-                                                                 
- dense_2 (Dense)             (None, 2)                 1026      
-                                                                 
-=================================================================
-Total params: 7,182
-Trainable params: 7,182
-Non-trainable params: 0
-_________________________________________________________________
-None
-Early stopping epoch: 43
-******Evaluating TEST set*********
-  1/125 [..............................] - ETA: 36s  9/125 [=>............................] - ETA: 0s  17/125 [===>..........................] - ETA: 0s 25/125 [=====>........................] - ETA: 0s 33/125 [======>.......................] - ETA: 0s 41/125 [========>.....................] - ETA: 0s 49/125 [==========>...................] - ETA: 0s 57/125 [============>.................] - ETA: 0s 65/125 [==============>...............] - ETA: 0s 73/125 [================>.............] - ETA: 0s 81/125 [==================>...........] - ETA: 0s 89/125 [====================>.........] - ETA: 0s 97/125 [======================>.......] - ETA: 0s105/125 [========================>.....] - ETA: 0s113/125 [==========================>...] - ETA: 0s121/125 [============================>.] - ETA: 0s125/125 [==============================] - 1s 7ms/step
-fold 2
-              precision    recall  f1-score   support
-
-           0       0.75      0.87      0.80      1371
-           1       0.56      0.37      0.45       629
-
-    accuracy                           0.71      2000
-   macro avg       0.66      0.62      0.63      2000
-weighted avg       0.69      0.71      0.69      2000
-
-auc[0.7110] Recall[0.6197] F1[0.6263] at fold[2]
-______________________________________________________
-Model: "model_3"
-_________________________________________________________________
- Layer (type)                Output Shape              Param #   
-=================================================================
- input_4 (InputLayer)        [(None, 145, 3, 1)]       0         
-                                                                 
- conv2d_3 (Conv2D)           (None, 145, 1, 3)         12        
-                                                                 
- dropout_6 (Dropout)         (None, 145, 1, 3)         0         
-                                                                 
- lambda_3 (Lambda)           (None, 145, 3)            0         
-                                                                 
- lstm (LSTM)                 [(None, 145, 32),         4608      
-                              (None, 32),                        
-                              (None, 32)]                        
-                                                                 
- dropout_7 (Dropout)         (None, 145, 32)           0         
-                                                                 
- self_attention_3 (SelfAtten  ((None, 512),            1536      
- tion)                        (None, 16, 145))                   
-                                                                 
- dense_3 (Dense)             (None, 2)                 1026      
-                                                                 
-=================================================================
-Total params: 7,182
-Trainable params: 7,182
-Non-trainable params: 0
-_________________________________________________________________
-None
-Early stopping epoch: 0
-******Evaluating TEST set*********
-  1/125 [..............................] - ETA: 37s  9/125 [=>............................] - ETA: 0s  17/125 [===>..........................] - ETA: 0s 25/125 [=====>........................] - ETA: 0s 33/125 [======>.......................] - ETA: 0s 41/125 [========>.....................] - ETA: 0s 49/125 [==========>...................] - ETA: 0s 57/125 [============>.................] - ETA: 0s 65/125 [==============>...............] - ETA: 0s 73/125 [================>.............] - ETA: 0s 81/125 [==================>...........] - ETA: 0s 89/125 [====================>.........] - ETA: 0s 97/125 [======================>.......] - ETA: 0s105/125 [========================>.....] - ETA: 0s113/125 [==========================>...] - ETA: 0s121/125 [============================>.] - ETA: 0s125/125 [==============================] - 1s 7ms/step
-fold 3
-              precision    recall  f1-score   support
-
-           0       0.76      0.83      0.79      1371
-           1       0.52      0.42      0.46       629
-
-    accuracy                           0.70      2000
-   macro avg       0.64      0.62      0.63      2000
-weighted avg       0.68      0.70      0.69      2000
-
-auc[0.6970] Recall[0.6211] F1[0.6263] at fold[3]
-______________________________________________________
-Model: "model_4"
-_________________________________________________________________
- Layer (type)                Output Shape              Param #   
-=================================================================
- input_5 (InputLayer)        [(None, 145, 3, 1)]       0         
-                                                                 
- conv2d_4 (Conv2D)           (None, 145, 1, 3)         12        
-                                                                 
- dropout_8 (Dropout)         (None, 145, 1, 3)         0         
-                                                                 
- lambda_4 (Lambda)           (None, 145, 3)            0         
-                                                                 
- lstm (LSTM)                 [(None, 145, 32),         4608      
-                              (None, 32),                        
-                              (None, 32)]                        
-                                                                 
- dropout_9 (Dropout)         (None, 145, 32)           0         
-                                                                 
- self_attention_4 (SelfAtten  ((None, 512),            1536      
- tion)                        (None, 16, 145))                   
-                                                                 
- dense_4 (Dense)             (None, 2)                 1026      
-                                                                 
-=================================================================
-Total params: 7,182
-Trainable params: 7,182
-Non-trainable params: 0
-_________________________________________________________________
-None
-Early stopping epoch: 41
-******Evaluating TEST set*********
-  1/125 [..............................] - ETA: 36s  9/125 [=>............................] - ETA: 0s  17/125 [===>..........................] - ETA: 0s 25/125 [=====>........................] - ETA: 0s 33/125 [======>.......................] - ETA: 0s 41/125 [========>.....................] - ETA: 0s 49/125 [==========>...................] - ETA: 0s 57/125 [============>.................] - ETA: 0s 65/125 [==============>...............] - ETA: 0s 73/125 [================>.............] - ETA: 0s 81/125 [==================>...........] - ETA: 0s 89/125 [====================>.........] - ETA: 0s 97/125 [======================>.......] - ETA: 0s105/125 [========================>.....] - ETA: 0s113/125 [==========================>...] - ETA: 0s121/125 [============================>.] - ETA: 0s125/125 [==============================] - 1s 7ms/step
-fold 4
-              precision    recall  f1-score   support
-
-           0       0.74      0.91      0.82      1372
-           1       0.61      0.29      0.40       628
-
-    accuracy                           0.72      2000
-   macro avg       0.67      0.60      0.61      2000
-weighted avg       0.70      0.72      0.69      2000
-
-auc[0.7195] Recall[0.6039] F1[0.6067] at fold[4]
-______________________________________________________
-Model: "model_5"
-_________________________________________________________________
- Layer (type)                Output Shape              Param #   
-=================================================================
- input_6 (InputLayer)        [(None, 145, 3, 1)]       0         
-                                                                 
- conv2d_5 (Conv2D)           (None, 145, 1, 3)         12        
-                                                                 
- dropout_10 (Dropout)        (None, 145, 1, 3)         0         
-                                                                 
- lambda_5 (Lambda)           (None, 145, 3)            0         
-                                                                 
- lstm (LSTM)                 [(None, 145, 32),         4608      
-                              (None, 32),                        
-                              (None, 32)]                        
-                                                                 
- dropout_11 (Dropout)        (None, 145, 32)           0         
-                                                                 
- self_attention_5 (SelfAtten  ((None, 512),            1536      
- tion)                        (None, 16, 145))                   
-                                                                 
- dense_5 (Dense)             (None, 2)                 1026      
-                                                                 
-=================================================================
-Total params: 7,182
-Trainable params: 7,182
-Non-trainable params: 0
-_________________________________________________________________
-None
-Early stopping epoch: 31
-******Evaluating TEST set*********
-  1/125 [..............................] - ETA: 36s  8/125 [>.............................] - ETA: 0s  16/125 [==>...........................] - ETA: 0s 24/125 [====>.........................] - ETA: 0s 32/125 [======>.......................] - ETA: 0s 40/125 [========>.....................] - ETA: 0s 48/125 [==========>...................] - ETA: 0s 56/125 [============>.................] - ETA: 0s 64/125 [==============>...............] - ETA: 0s 72/125 [================>.............] - ETA: 0s 80/125 [==================>...........] - ETA: 0s 88/125 [====================>.........] - ETA: 0s 96/125 [======================>.......] - ETA: 0s104/125 [=======================>......] - ETA: 0s112/125 [=========================>....] - ETA: 0s120/125 [===========================>..] - ETA: 0s125/125 [==============================] - 1s 7ms/step
-fold 5
-              precision    recall  f1-score   support
-
-           0       0.77      0.80      0.79      1372
-           1       0.52      0.47      0.50       628
-
-    accuracy                           0.70      2000
-   macro avg       0.65      0.64      0.64      2000
-weighted avg       0.69      0.70      0.69      2000
-
-auc[0.6995] Recall[0.6376] F1[0.6411] at fold[5]
-______________________________________________________
-Model: "model_6"
-_________________________________________________________________
- Layer (type)                Output Shape              Param #   
-=================================================================
- input_7 (InputLayer)        [(None, 145, 3, 1)]       0         
-                                                                 
- conv2d_6 (Conv2D)           (None, 145, 1, 3)         12        
-                                                                 
- dropout_12 (Dropout)        (None, 145, 1, 3)         0         
-                                                                 
- lambda_6 (Lambda)           (None, 145, 3)            0         
-                                                                 
- lstm (LSTM)                 [(None, 145, 32),         4608      
-                              (None, 32),                        
-                              (None, 32)]                        
-                                                                 
- dropout_13 (Dropout)        (None, 145, 32)           0         
-                                                                 
- self_attention_6 (SelfAtten  ((None, 512),            1536      
- tion)                        (None, 16, 145))                   
-                                                                 
- dense_6 (Dense)             (None, 2)                 1026      
-                                                                 
-=================================================================
-Total params: 7,182
-Trainable params: 7,182
-Non-trainable params: 0
-_________________________________________________________________
-None
-Early stopping epoch: 39
-******Evaluating TEST set*********
-  1/125 [..............................] - ETA: 37s  8/125 [>.............................] - ETA: 0s  16/125 [==>...........................] - ETA: 0s 23/125 [====>.........................] - ETA: 0s 31/125 [======>.......................] - ETA: 0s 38/125 [========>.....................] - ETA: 0s 46/125 [==========>...................] - ETA: 0s 54/125 [===========>..................] - ETA: 0s 61/125 [=============>................] - ETA: 0s 68/125 [===============>..............] - ETA: 0s 76/125 [=================>............] - ETA: 0s 83/125 [==================>...........] - ETA: 0s 90/125 [====================>.........] - ETA: 0s 98/125 [======================>.......] - ETA: 0s106/125 [========================>.....] - ETA: 0s113/125 [==========================>...] - ETA: 0s120/125 [===========================>..] - ETA: 0s125/125 [==============================] - 1s 7ms/step
-fold 6
-              precision    recall  f1-score   support
-
-           0       0.75      0.87      0.80      1371
-           1       0.56      0.36      0.44       629
-
-    accuracy                           0.71      2000
-   macro avg       0.65      0.61      0.62      2000
-weighted avg       0.69      0.71      0.69      2000
-
-auc[0.7100] Recall[0.6142] F1[0.6203] at fold[6]
-______________________________________________________
-Model: "model_7"
-_________________________________________________________________
- Layer (type)                Output Shape              Param #   
-=================================================================
- input_8 (InputLayer)        [(None, 145, 3, 1)]       0         
-                                                                 
- conv2d_7 (Conv2D)           (None, 145, 1, 3)         12        
-                                                                 
- dropout_14 (Dropout)        (None, 145, 1, 3)         0         
-                                                                 
- lambda_7 (Lambda)           (None, 145, 3)            0         
-                                                                 
- lstm (LSTM)                 [(None, 145, 32),         4608      
-                              (None, 32),                        
-                              (None, 32)]                        
-                                                                 
- dropout_15 (Dropout)        (None, 145, 32)           0         
-                                                                 
- self_attention_7 (SelfAtten  ((None, 512),            1536      
- tion)                        (None, 16, 145))                   
-                                                                 
- dense_7 (Dense)             (None, 2)                 1026      
-                                                                 
-=================================================================
-Total params: 7,182
-Trainable params: 7,182
-Non-trainable params: 0
-_________________________________________________________________
-None
-Early stopping epoch: 31
-******Evaluating TEST set*********
-  1/125 [..............................] - ETA: 36s  9/125 [=>............................] - ETA: 0s  16/125 [==>...........................] - ETA: 0s 24/125 [====>.........................] - ETA: 0s 32/125 [======>.......................] - ETA: 0s 40/125 [========>.....................] - ETA: 0s 47/125 [==========>...................] - ETA: 0s 55/125 [============>.................] - ETA: 0s 62/125 [=============>................] - ETA: 0s 69/125 [===============>..............] - ETA: 0s 77/125 [=================>............] - ETA: 0s 85/125 [===================>..........] - ETA: 0s 93/125 [=====================>........] - ETA: 0s101/125 [=======================>......] - ETA: 0s109/125 [=========================>....] - ETA: 0s117/125 [===========================>..] - ETA: 0s125/125 [==============================] - ETA: 0s125/125 [==============================] - 1s 7ms/step
-fold 7
-              precision    recall  f1-score   support
-
-           0       0.77      0.82      0.79      1372
-           1       0.54      0.46      0.50       628
-
-    accuracy                           0.71      2000
-   macro avg       0.66      0.64      0.65      2000
-weighted avg       0.70      0.71      0.70      2000
-
-auc[0.7085] Recall[0.6407] F1[0.6459] at fold[7]
-______________________________________________________
-Model: "model_8"
-_________________________________________________________________
- Layer (type)                Output Shape              Param #   
-=================================================================
- input_9 (InputLayer)        [(None, 145, 3, 1)]       0         
-                                                                 
- conv2d_8 (Conv2D)           (None, 145, 1, 3)         12        
-                                                                 
- dropout_16 (Dropout)        (None, 145, 1, 3)         0         
-                                                                 
- lambda_8 (Lambda)           (None, 145, 3)            0         
-                                                                 
- lstm (LSTM)                 [(None, 145, 32),         4608      
-                              (None, 32),                        
-                              (None, 32)]                        
-                                                                 
- dropout_17 (Dropout)        (None, 145, 32)           0         
-                                                                 
- self_attention_8 (SelfAtten  ((None, 512),            1536      
- tion)                        (None, 16, 145))                   
-                                                                 
- dense_8 (Dense)             (None, 2)                 1026      
-                                                                 
-=================================================================
-Total params: 7,182
-Trainable params: 7,182
-Non-trainable params: 0
-_________________________________________________________________
-None
-Early stopping epoch: 42
-******Evaluating TEST set*********
-  1/125 [..............................] - ETA: 37s  9/125 [=>............................] - ETA: 0s  17/125 [===>..........................] - ETA: 0s 25/125 [=====>........................] - ETA: 0s 33/125 [======>.......................] - ETA: 0s 41/125 [========>.....................] - ETA: 0s 49/125 [==========>...................] - ETA: 0s 57/125 [============>.................] - ETA: 0s 65/125 [==============>...............] - ETA: 0s 73/125 [================>.............] - ETA: 0s 81/125 [==================>...........] - ETA: 0s 89/125 [====================>.........] - ETA: 0s 97/125 [======================>.......] - ETA: 0s105/125 [========================>.....] - ETA: 0s112/125 [=========================>....] - ETA: 0s120/125 [===========================>..] - ETA: 0s125/125 [==============================] - 1s 7ms/step
-fold 8
-              precision    recall  f1-score   support
-
-           0       0.74      0.86      0.80      1375
-           1       0.52      0.34      0.41       625
-
-    accuracy                           0.70      2000
-   macro avg       0.63      0.60      0.61      2000
-weighted avg       0.67      0.70      0.68      2000
-
-auc[0.6975] Recall[0.6007] F1[0.6052] at fold[8]
-______________________________________________________
-Model: "model_9"
-_________________________________________________________________
- Layer (type)                Output Shape              Param #   
-=================================================================
- input_10 (InputLayer)       [(None, 145, 3, 1)]       0         
-                                                                 
- conv2d_9 (Conv2D)           (None, 145, 1, 3)         12        
-                                                                 
- dropout_18 (Dropout)        (None, 145, 1, 3)         0         
-                                                                 
- lambda_9 (Lambda)           (None, 145, 3)            0         
-                                                                 
- lstm (LSTM)                 [(None, 145, 32),         4608      
-                              (None, 32),                        
-                              (None, 32)]                        
-                                                                 
- dropout_19 (Dropout)        (None, 145, 32)           0         
-                                                                 
- self_attention_9 (SelfAtten  ((None, 512),            1536      
- tion)                        (None, 16, 145))                   
-                                                                 
- dense_9 (Dense)             (None, 2)                 1026      
-                                                                 
-=================================================================
-Total params: 7,182
-Trainable params: 7,182
-Non-trainable params: 0
-_________________________________________________________________
-None
-Early stopping epoch: 46
-******Evaluating TEST set*********
-  1/125 [..............................] - ETA: 36s  8/125 [>.............................] - ETA: 0s  16/125 [==>...........................] - ETA: 0s 23/125 [====>.........................] - ETA: 0s 30/125 [======>.......................] - ETA: 0s 37/125 [=======>......................] - ETA: 0s 44/125 [=========>....................] - ETA: 0s 52/125 [===========>..................] - ETA: 0s 60/125 [=============>................] - ETA: 0s 67/125 [===============>..............] - ETA: 0s 75/125 [=================>............] - ETA: 0s 82/125 [==================>...........] - ETA: 0s 90/125 [====================>.........] - ETA: 0s 98/125 [======================>.......] - ETA: 0s106/125 [========================>.....] - ETA: 0s113/125 [==========================>...] - ETA: 0s121/125 [============================>.] - ETA: 0s125/125 [==============================] - 1s 7ms/step
-fold 9
-              precision    recall  f1-score   support
-
-           0       0.76      0.86      0.81      1373
-           1       0.57      0.41      0.48       627
-
-    accuracy                           0.72      2000
-   macro avg       0.67      0.64      0.64      2000
-weighted avg       0.70      0.72      0.71      2000
-
-auc[0.7200] Recall[0.6371] F1[0.6449] at fold[9]
-______________________________________________________
-Mean Accuracy[0.7092] IC [0.7035, 0.7150]
-Mean Recall[0.6219] IC [0.6135, 0.6302]
-Mean F1[0.6270] IC [0.6184, 0.6357]

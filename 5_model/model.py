@@ -30,15 +30,16 @@ def model(input_shape, num_labels, lstm_units, cnn_filters, F, D):
 
     encoder_out, _ = SelfAttention(size=F, num_hops=D, use_penalization=False)(rnn_out)
 
-    # encoder_out = Dropout(dropout_rate)(encoder_out)
+    # normalizing the output of the encoder lambda layer
+    encoder_out = Lambda(lambda x: K.l2_normalize(x, axis=1))(encoder_out)
 
-    dense_out = Dense(num_labels)(encoder_out)
+    dense_out = Dense(num_labels, activation='softmax')(encoder_out)
 
     model = Model(inputs=inputs, outputs=dense_out)
 
     model.summary()
 
-    # plot_model(model, to_file=models_dir / str(model_name+'_model.png'), show_shapes=True, show_layer_names=True)
+    # plot_model(model, to_file=models_dir+ '/' +str(model_name+'_model.png'), show_shapes=True, show_layer_names=True)
 
     return model
 
@@ -66,7 +67,11 @@ def get_input(args):
         data_dir =  data['data_dir']
         input_file = data_dir+ '/' +data['input_file']
         models_dir =  data_dir+ '/' +data['models_dir']
+        if not os.path.exists(models_dir):
+            os.makedirs(models_dir)
         figs_dir =  data_dir+ '/' +data['figs_dir']
+        if not os.path.exists(figs_dir):
+            os.makedirs(figs_dir)
         model_name = data['model_name']
 
 def plot(history, metric, plot_path, figsize=[8,6], fontsize=16):
@@ -106,7 +111,7 @@ if __name__ == '__main__':
     avg_acc = []
     avg_recall = []
     avg_f1 = []
-    avg_auroc = []
+    avg_AUROC = []
 
     for i in range(len(folds)):
         print("fold", i)
@@ -119,13 +124,12 @@ if __name__ == '__main__':
         fold_model = model(input_shape= X.shape[1:], num_labels = num_labels, lstm_units = lstm_units, \
             cnn_filters = cnn_filters, F = F, D= D)
 
-        # metrics = [tf.keras.metrics.AUC(curve='PR', name='auc_prc'), 'acc',  tf.keras.metrics.AUC(curve='ROC', name='auroc')]
-        # metrics_names = ['auc_prc', 'acc' , 'auroc']
-        metrics = [tf.keras.metrics.AUC(curve='ROC', name='AUROC')]
-        metrics_names = ['AUROC']
+        metrics = [tf.keras.metrics.AUC(curve='PR', name='AUPRC'), 'acc',  tf.keras.metrics.AUC(curve='ROC', name='AUROC')]
+        metrics_names = ['AUPRC', 'acc' , 'AUROC']
+
         optimizer = optimizers.Adam(learning_rate=learning_rate)
 
-        model_filename = models_dir / str(model_name+'_best_model_' + '_fold_' + str(i) + '.keras')        
+        model_filename = models_dir+ '/' +str(model_name+'_best_model_' + '_fold_' + str(i) + '.keras')        
         checkpoint = ModelCheckpoint(filepath=model_filename, monitor='val_AUROC', save_best_only=True, mode='max')
         early_stopping = EarlyStopping(monitor='val_AUROC', patience=patience, restore_best_weights = True)
 
@@ -140,11 +144,11 @@ if __name__ == '__main__':
         y_pred_random = to_categorical(y_pred_random)
 
         #Plot the Loss and Metric Curves
-        plot_path = figs_dir / str(model_name + '_loss_' + 'fold_' + str(i) + '.png')
+        plot_path = figs_dir+ '/' +str(model_name + '_loss_' + 'fold_' + str(i) + '.png')
         plot(history, 'loss', plot_path)
 
         for metric_name in metrics_names:
-            plot_path = figs_dir / str(model_name + '_'+metric_name+'_' + 'fold_' + str(i) + '.png')
+            plot_path = figs_dir+ '/' +str(model_name + '_'+metric_name+'_' + 'fold_' + str(i) + '.png')
             plot(history, metric_name, plot_path)
 
         # Evaluate model and predict data on TEST 
@@ -155,8 +159,8 @@ if __name__ == '__main__':
         y_test = np.argmax(y_test, axis=1)
 
         # calculate AUROC
-        fold_auroc = roc_auc_score(y_test, y_test_predict, average='macro')
-        avg_auroc.append(fold_auroc)
+        fold_AUROC = roc_auc_score(y_test, y_test_predict, average='macro')
+        avg_AUROC.append(fold_AUROC)
 
         # calculate accuracy
         fold_acc = accuracy_score(y_test, y_test_predict)
@@ -181,17 +185,17 @@ if __name__ == '__main__':
 
     print(fold_model.summary())
 
-    ic_auroc = st.t.interval(0.9, len(avg_auroc) - 1, loc=np.mean(avg_auroc), scale=st.sem(avg_auroc))
+    ic_AUROC = st.t.interval(0.9, len(avg_AUROC) - 1, loc=np.mean(avg_AUROC), scale=st.sem(avg_AUROC))
     ic_acc = st.t.interval(0.9, len(avg_acc) - 1, loc=np.mean(avg_acc), scale=st.sem(avg_acc))
     ic_recall = st.t.interval(0.9, len(avg_recall) - 1, loc=np.mean(avg_recall), scale=st.sem(avg_recall))
     ic_f1 = st.t.interval(0.9, len(avg_f1) - 1, loc = np.mean(avg_f1), scale=st.sem(avg_f1))
 
-    print('Mean  AUROC[{:.4f}] IC [{:.4f}, {:.4f}]'.format(np.mean(avg_auroc), ic_auroc[0], ic_auroc[1]))
+    print('Mean  AUROC[{:.4f}] IC [{:.4f}, {:.4f}]'.format(np.mean(avg_AUROC), ic_AUROC[0], ic_AUROC[1]))
     print('Mean Accuracy[{:.4f}] IC [{:.4f}, {:.4f}]'.format(np.mean(avg_acc), ic_acc[0], ic_acc[1]))
     print('Mean Recall[{:.4f}] IC [{:.4f}, {:.4f}]'.format(np.mean(avg_recall), ic_recall[0], ic_recall[1]))
     print('Mean F1[{:.4f}] IC [{:.4f}, {:.4f}]'.format(np.mean(avg_f1), ic_f1[0], ic_f1[1]))
 
-    print('Median  AUROC[{:.4f}]'.format(np.median(avg_auroc)))
+    print('Median  AUROC[{:.4f}]'.format(np.median(avg_AUROC)))
     print('Median Accuracy[{:.4f}]'.format(np.median(avg_acc)))
     print('Median Recall[{:.4f}]'.format(np.median(avg_recall)))
     print('Median F1[{:.4f}]'.format(np.median(avg_f1)))

@@ -1,4 +1,5 @@
 0_data/
 *__pycache__/
 *env/
+*venr/
 6_test/

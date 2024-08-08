@@ -1,0 +1,19 @@
+fold 0
+Traceback (most recent call last):
+  File "/lustre06/project/6003138/rezvank/5_model/baseline.py", line 129, in <module>
+    fold_model = model(input_shape= X.shape[1:], num_labels = NUM_LABELS, LSTM_units = LSTM_UNITS, \
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lustre06/project/6003138/rezvank/5_model/baseline.py", line 33, in model
+    rnn_in = Lambda(lambda x: K.squeeze(x, axis = 2))(x)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/lustre06/project/6003138/rezvank/5_model/env/lib/python3.11/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/lustre06/project/6003138/rezvank/5_model/env/lib/python3.11/site-packages/keras/src/layers/core/lambda_layer.py", line 95, in compute_output_shape
+    raise NotImplementedError(
+NotImplementedError: Exception encountered when calling Lambda.call().
+
+[1mWe could not automatically infer the shape of the Lambda's output. Please specify the `output_shape` argument for this Lambda layer.[0m
+
+Arguments received by Lambda.call():
+  • args=('<KerasTensor shape=(None, 1386, 3, 64), dtype=float32, sparse=False, name=keras_tensor_3>',)
+  • kwargs={'mask': 'None'}

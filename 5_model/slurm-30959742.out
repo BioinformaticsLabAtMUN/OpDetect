@@ -1,0 +1,1118 @@
+fold 0
+Model: "functional_1"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input_layer (InputLayer)        │ (None, 2772, 6, 3)     │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d (Conv2D)                 │ (None, 2758, 1, 64)    │        17,344 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda (Lambda)                 │ (None, 2758, 64)       │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lstm (LSTM)                     │ [(None, 2758, 64),     │        33,024 │
+│                                 │ (None, 64), (None,     │               │
+│                                 │ 64)]                   │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ self_attention (SelfAttention)  │ [(None, 1024), (None,  │         2,560 │
+│                                 │ 16, 2758)]             │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense (Dense)                   │ (None, 2)              │         2,050 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 54,978 (214.76 KB)
+ Trainable params: 54,978 (214.76 KB)
+ Non-trainable params: 0 (0.00 B)
+Epoch 1/100
+4/4 - 8s - 2s/step - acc: 0.0000e+00 - auc-prc: 0.8368 - auc-roc: 0.8310 - loss: 14.9831 - val_acc: 0.0000e+00 - val_auc-prc: 0.8470 - val_auc-roc: 0.8352 - val_loss: 15.3305
+Epoch 2/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8910 - auc-roc: 0.8726 - loss: 16.0794 - val_acc: 0.0000e+00 - val_auc-prc: 0.8503 - val_auc-roc: 0.8363 - val_loss: 15.1116
+Epoch 3/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8866 - auc-roc: 0.8704 - loss: 15.8546 - val_acc: 0.0000e+00 - val_auc-prc: 0.8507 - val_auc-roc: 0.8351 - val_loss: 14.8772
+Epoch 4/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8846 - auc-roc: 0.8699 - loss: 15.6199 - val_acc: 0.0000e+00 - val_auc-prc: 0.8508 - val_auc-roc: 0.8344 - val_loss: 14.6456
+Epoch 5/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8845 - auc-roc: 0.8699 - loss: 15.3909 - val_acc: 0.0000e+00 - val_auc-prc: 0.8492 - val_auc-roc: 0.8336 - val_loss: 14.4249
+Epoch 6/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8844 - auc-roc: 0.8699 - loss: 15.1749 - val_acc: 0.0000e+00 - val_auc-prc: 0.8487 - val_auc-roc: 0.8332 - val_loss: 14.2252
+Epoch 7/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8841 - auc-roc: 0.8699 - loss: 14.9819 - val_acc: 0.0000e+00 - val_auc-prc: 0.8489 - val_auc-roc: 0.8332 - val_loss: 14.0493
+Epoch 8/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8851 - auc-roc: 0.8705 - loss: 14.8124 - val_acc: 0.0000e+00 - val_auc-prc: 0.8525 - val_auc-roc: 0.8358 - val_loss: 13.8982
+Epoch 9/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8880 - auc-roc: 0.8719 - loss: 14.6681 - val_acc: 0.0000e+00 - val_auc-prc: 0.8553 - val_auc-roc: 0.8375 - val_loss: 13.7676
+Epoch 10/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8883 - auc-roc: 0.8721 - loss: 14.5407 - val_acc: 0.0000e+00 - val_auc-prc: 0.8533 - val_auc-roc: 0.8382 - val_loss: 13.6482
+Epoch 11/100
+4/4 - 6s - 2s/step - acc: 0.0000e+00 - auc-prc: 0.8881 - auc-roc: 0.8720 - loss: 14.4238 - val_acc: 0.0000e+00 - val_auc-prc: 0.8496 - val_auc-roc: 0.8374 - val_loss: 13.5394
+Epoch 12/100
+4/4 - 6s - 2s/step - acc: 0.0000e+00 - auc-prc: 0.8851 - auc-roc: 0.8708 - loss: 14.3183 - val_acc: 0.0000e+00 - val_auc-prc: 0.8450 - val_auc-roc: 0.8358 - val_loss: 13.4438
+Epoch 13/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8831 - auc-roc: 0.8697 - loss: 14.2265 - val_acc: 0.0000e+00 - val_auc-prc: 0.8427 - val_auc-roc: 0.8350 - val_loss: 13.3600
+Epoch 14/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8818 - auc-roc: 0.8687 - loss: 14.1449 - val_acc: 0.0000e+00 - val_auc-prc: 0.8392 - val_auc-roc: 0.8337 - val_loss: 13.2848
+Epoch 15/100
+4/4 - 6s - 2s/step - acc: 0.0000e+00 - auc-prc: 0.8809 - auc-roc: 0.8685 - loss: 14.0727 - val_acc: 0.0000e+00 - val_auc-prc: 0.8335 - val_auc-roc: 0.8316 - val_loss: 13.2199
+Epoch 16/100
+4/4 - 6s - 2s/step - acc: 0.0000e+00 - auc-prc: 0.8773 - auc-roc: 0.8661 - loss: 14.0098 - val_acc: 0.0000e+00 - val_auc-prc: 0.8305 - val_auc-roc: 0.8302 - val_loss: 13.1631
+Epoch 17/100
+4/4 - 6s - 2s/step - acc: 0.0000e+00 - auc-prc: 0.8756 - auc-roc: 0.8653 - loss: 13.9551 - val_acc: 0.0000e+00 - val_auc-prc: 0.8243 - val_auc-roc: 0.8274 - val_loss: 13.1131
+Epoch 18/100
+4/4 - 6s - 2s/step - acc: 0.0000e+00 - auc-prc: 0.8748 - auc-roc: 0.8650 - loss: 13.9063 - val_acc: 0.0000e+00 - val_auc-prc: 0.8209 - val_auc-roc: 0.8259 - val_loss: 13.0679
+Epoch 19/100
+4/4 - 6s - 2s/step - acc: 0.0000e+00 - auc-prc: 0.8730 - auc-roc: 0.8640 - loss: 13.8629 - val_acc: 0.0000e+00 - val_auc-prc: 0.8148 - val_auc-roc: 0.8238 - val_loss: 13.0287
+Epoch 20/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8702 - auc-roc: 0.8626 - loss: 13.8250 - val_acc: 0.0000e+00 - val_auc-prc: 0.8138 - val_auc-roc: 0.8240 - val_loss: 12.9946
+Epoch 21/100
+4/4 - 6s - 2s/step - acc: 0.0000e+00 - auc-prc: 0.8688 - auc-roc: 0.8617 - loss: 13.7921 - val_acc: 0.0000e+00 - val_auc-prc: 0.8102 - val_auc-roc: 0.8229 - val_loss: 12.9646
+Epoch 22/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8661 - auc-roc: 0.8606 - loss: 13.7631 - val_acc: 0.0000e+00 - val_auc-prc: 0.8088 - val_auc-roc: 0.8218 - val_loss: 12.9379
+Epoch 23/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8615 - auc-roc: 0.8591 - loss: 13.7372 - val_acc: 0.0000e+00 - val_auc-prc: 0.8056 - val_auc-roc: 0.8202 - val_loss: 12.9141
+Epoch 24/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8581 - auc-roc: 0.8576 - loss: 13.7142 - val_acc: 0.0000e+00 - val_auc-prc: 0.8051 - val_auc-roc: 0.8201 - val_loss: 12.8934
+Epoch 25/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8547 - auc-roc: 0.8567 - loss: 13.6943 - val_acc: 0.0000e+00 - val_auc-prc: 0.7956 - val_auc-roc: 0.8170 - val_loss: 12.8752
+Epoch 26/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8535 - auc-roc: 0.8558 - loss: 13.6767 - val_acc: 0.0000e+00 - val_auc-prc: 0.7906 - val_auc-roc: 0.8152 - val_loss: 12.8591
+Epoch 27/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8485 - auc-roc: 0.8544 - loss: 13.6611 - val_acc: 0.0000e+00 - val_auc-prc: 0.7858 - val_auc-roc: 0.8134 - val_loss: 12.8450
+Epoch 28/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8443 - auc-roc: 0.8539 - loss: 13.6474 - val_acc: 0.0000e+00 - val_auc-prc: 0.7831 - val_auc-roc: 0.8126 - val_loss: 12.8327
+Epoch 29/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8399 - auc-roc: 0.8529 - loss: 13.6357 - val_acc: 0.0000e+00 - val_auc-prc: 0.7797 - val_auc-roc: 0.8107 - val_loss: 12.8218
+Epoch 30/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8400 - auc-roc: 0.8526 - loss: 13.6252 - val_acc: 0.0000e+00 - val_auc-prc: 0.7803 - val_auc-roc: 0.8107 - val_loss: 12.8127
+Early stopping epoch: 29
+******Evaluating TEST set*********
+4/4 - 1s - 276ms/step
+/lustre06/project/6003138/rezvank/5_model/env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1517: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/lustre06/project/6003138/rezvank/5_model/env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1517: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/lustre06/project/6003138/rezvank/5_model/env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1517: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00        21
+           1       0.79      1.00      0.88        79
+
+    accuracy                           0.79       100
+   macro avg       0.40      0.50      0.44       100
+weighted avg       0.62      0.79      0.70       100
+
+******Evaluating RANDOM Model*********
+              precision    recall  f1-score   support
+
+           0       0.14      0.29      0.18        21
+           1       0.73      0.52      0.61        79
+
+    accuracy                           0.47       100
+   macro avg       0.43      0.40      0.40       100
+weighted avg       0.61      0.47      0.52       100
+
+______________________________________________________
+fold 1
+Model: "functional_3"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input_layer_1 (InputLayer)      │ (None, 2772, 6, 3)     │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d_1 (Conv2D)               │ (None, 2758, 1, 64)    │        17,344 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda_1 (Lambda)               │ (None, 2758, 64)       │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lstm (LSTM)                     │ [(None, 2758, 64),     │        33,024 │
+│                                 │ (None, 64), (None,     │               │
+│                                 │ 64)]                   │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ self_attention_1                │ [(None, 1024), (None,  │         2,560 │
+│ (SelfAttention)                 │ 16, 2758)]             │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense_1 (Dense)                 │ (None, 2)              │         2,050 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 54,978 (214.76 KB)
+ Trainable params: 54,978 (214.76 KB)
+ Non-trainable params: 0 (0.00 B)
+Epoch 1/100
+4/4 - 8s - 2s/step - acc: 0.0000e+00 - auc-prc: 0.7702 - auc-roc: 0.6851 - loss: 3.6661 - val_acc: 0.0000e+00 - val_auc-prc: 0.7646 - val_auc-roc: 0.7643 - val_loss: 3.1269
+Epoch 2/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8276 - auc-roc: 0.8721 - loss: 2.9082 - val_acc: 0.0000e+00 - val_auc-prc: 0.7939 - val_auc-roc: 0.8126 - val_loss: 3.7360
+Epoch 3/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8206 - auc-roc: 0.8671 - loss: 2.8950 - val_acc: 0.0000e+00 - val_auc-prc: 0.7804 - val_auc-roc: 0.7835 - val_loss: 2.7085
+Epoch 4/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8220 - auc-roc: 0.8652 - loss: 2.5828 - val_acc: 0.0000e+00 - val_auc-prc: 0.7139 - val_auc-roc: 0.7360 - val_loss: 2.5443
+Epoch 5/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.7399 - auc-roc: 0.8148 - loss: 2.4326 - val_acc: 0.0000e+00 - val_auc-prc: 0.7055 - val_auc-roc: 0.7337 - val_loss: 2.3693
+Epoch 6/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.7978 - auc-roc: 0.8618 - loss: 2.2374 - val_acc: 0.0000e+00 - val_auc-prc: 0.7572 - val_auc-roc: 0.7696 - val_loss: 2.2085
+Epoch 7/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8347 - auc-roc: 0.8866 - loss: 2.0488 - val_acc: 0.0000e+00 - val_auc-prc: 0.7351 - val_auc-roc: 0.7592 - val_loss: 2.0878
+Epoch 8/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8367 - auc-roc: 0.8901 - loss: 1.8981 - val_acc: 0.0000e+00 - val_auc-prc: 0.7371 - val_auc-roc: 0.7680 - val_loss: 2.0223
+Epoch 9/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8391 - auc-roc: 0.8944 - loss: 1.7982 - val_acc: 0.0000e+00 - val_auc-prc: 0.7474 - val_auc-roc: 0.7838 - val_loss: 1.9618
+Epoch 10/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8395 - auc-roc: 0.8941 - loss: 1.7060 - val_acc: 0.0000e+00 - val_auc-prc: 0.7461 - val_auc-roc: 0.7778 - val_loss: 1.7982
+Epoch 11/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8390 - auc-roc: 0.8933 - loss: 1.5794 - val_acc: 0.0000e+00 - val_auc-prc: 0.7577 - val_auc-roc: 0.7806 - val_loss: 1.6603
+Epoch 12/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8394 - auc-roc: 0.8941 - loss: 1.4749 - val_acc: 0.0000e+00 - val_auc-prc: 0.7697 - val_auc-roc: 0.7868 - val_loss: 1.5630
+Epoch 13/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8395 - auc-roc: 0.8946 - loss: 1.3858 - val_acc: 0.0000e+00 - val_auc-prc: 0.7820 - val_auc-roc: 0.7963 - val_loss: 1.4877
+Epoch 14/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8398 - auc-roc: 0.8952 - loss: 1.3026 - val_acc: 0.0000e+00 - val_auc-prc: 0.7835 - val_auc-roc: 0.8040 - val_loss: 1.4255
+Epoch 15/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8404 - auc-roc: 0.8959 - loss: 1.2297 - val_acc: 0.0000e+00 - val_auc-prc: 0.7938 - val_auc-roc: 0.8123 - val_loss: 1.3405
+Epoch 16/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8406 - auc-roc: 0.8960 - loss: 1.1548 - val_acc: 0.0000e+00 - val_auc-prc: 0.8031 - val_auc-roc: 0.8198 - val_loss: 1.2497
+Epoch 17/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8381 - auc-roc: 0.8963 - loss: 1.0822 - val_acc: 0.0000e+00 - val_auc-prc: 0.8194 - val_auc-roc: 0.8367 - val_loss: 1.1796
+Epoch 18/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8372 - auc-roc: 0.8967 - loss: 1.0124 - val_acc: 0.0000e+00 - val_auc-prc: 0.8433 - val_auc-roc: 0.8619 - val_loss: 1.1566
+Epoch 19/100
+4/4 - 6s - 2s/step - acc: 0.0000e+00 - auc-prc: 0.8498 - auc-roc: 0.9046 - loss: 0.9432 - val_acc: 0.0000e+00 - val_auc-prc: 0.8492 - val_auc-roc: 0.8724 - val_loss: 1.5658
+Epoch 20/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8631 - auc-roc: 0.9121 - loss: 0.8687 - val_acc: 0.0000e+00 - val_auc-prc: 0.8660 - val_auc-roc: 0.8845 - val_loss: 1.6249
+Epoch 21/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8894 - auc-roc: 0.9238 - loss: 0.8207 - val_acc: 0.0000e+00 - val_auc-prc: 0.8590 - val_auc-roc: 0.8801 - val_loss: 1.5929
+Epoch 22/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.9052 - auc-roc: 0.9303 - loss: 0.7769 - val_acc: 0.0000e+00 - val_auc-prc: 0.8692 - val_auc-roc: 0.8825 - val_loss: 1.5333
+Epoch 23/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.9125 - auc-roc: 0.9328 - loss: 0.7230 - val_acc: 0.0000e+00 - val_auc-prc: 0.8645 - val_auc-roc: 0.8809 - val_loss: 1.6474
+Epoch 24/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.7270 - auc-roc: 0.7807 - loss: 1.0120 - val_acc: 0.0000e+00 - val_auc-prc: 0.5464 - val_auc-roc: 0.5840 - val_loss: 1.2564
+Epoch 25/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.4930 - auc-roc: 0.4883 - loss: 1.3298 - val_acc: 0.0000e+00 - val_auc-prc: 0.5714 - val_auc-roc: 0.6190 - val_loss: 1.2430
+Epoch 26/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.5128 - auc-roc: 0.5250 - loss: 1.2540 - val_acc: 0.0000e+00 - val_auc-prc: 0.5610 - val_auc-roc: 0.6028 - val_loss: 1.2497
+Epoch 27/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.5155 - auc-roc: 0.5300 - loss: 1.1974 - val_acc: 0.0000e+00 - val_auc-prc: 0.6148 - val_auc-roc: 0.6725 - val_loss: 1.2448
+Epoch 28/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.6024 - auc-roc: 0.6700 - loss: 1.1372 - val_acc: 0.0000e+00 - val_auc-prc: 0.6323 - val_auc-roc: 0.6969 - val_loss: 1.2254
+Epoch 29/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.7042 - auc-roc: 0.7900 - loss: 1.0730 - val_acc: 0.0000e+00 - val_auc-prc: 0.6865 - val_auc-roc: 0.7565 - val_loss: 1.2028
+Epoch 30/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.7944 - auc-roc: 0.8688 - loss: 1.0112 - val_acc: 0.0000e+00 - val_auc-prc: 0.7125 - val_auc-roc: 0.7846 - val_loss: 1.1932
+Epoch 31/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8308 - auc-roc: 0.8925 - loss: 0.9634 - val_acc: 0.0000e+00 - val_auc-prc: 0.7151 - val_auc-roc: 0.7868 - val_loss: 1.2717
+Epoch 32/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8304 - auc-roc: 0.8916 - loss: 0.9013 - val_acc: 0.0000e+00 - val_auc-prc: 0.7048 - val_auc-roc: 0.7785 - val_loss: 1.0775
+Epoch 33/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8025 - auc-roc: 0.8730 - loss: 0.8296 - val_acc: 0.0000e+00 - val_auc-prc: 0.6897 - val_auc-roc: 0.7657 - val_loss: 0.9793
+Epoch 34/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.7747 - auc-roc: 0.8526 - loss: 0.7667 - val_acc: 0.0000e+00 - val_auc-prc: 0.6988 - val_auc-roc: 0.7746 - val_loss: 0.9101
+Epoch 35/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.7494 - auc-roc: 0.8322 - loss: 0.7120 - val_acc: 0.0000e+00 - val_auc-prc: 0.6992 - val_auc-roc: 0.7754 - val_loss: 0.8700
+Epoch 36/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.7495 - auc-roc: 0.8324 - loss: 0.6660 - val_acc: 0.0000e+00 - val_auc-prc: 0.7205 - val_auc-roc: 0.7914 - val_loss: 1.0715
+Epoch 37/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.7692 - auc-roc: 0.8487 - loss: 0.6246 - val_acc: 0.0000e+00 - val_auc-prc: 0.7302 - val_auc-roc: 0.7998 - val_loss: 1.0558
+Epoch 38/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.7938 - auc-roc: 0.8677 - loss: 0.5903 - val_acc: 0.0000e+00 - val_auc-prc: 0.7349 - val_auc-roc: 0.8008 - val_loss: 1.2819
+Epoch 39/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.7921 - auc-roc: 0.8663 - loss: 0.5608 - val_acc: 0.0000e+00 - val_auc-prc: 0.7369 - val_auc-roc: 0.8021 - val_loss: 1.3792
+Epoch 40/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.7904 - auc-roc: 0.8651 - loss: 0.5349 - val_acc: 0.0000e+00 - val_auc-prc: 0.7549 - val_auc-roc: 0.8156 - val_loss: 1.3774
+Early stopping epoch: 39
+******Evaluating TEST set*********
+4/4 - 1s - 294ms/step
+              precision    recall  f1-score   support
+
+           0       0.86      0.43      0.57        28
+           1       0.81      0.97      0.89        72
+
+    accuracy                           0.82       100
+   macro avg       0.84      0.70      0.73       100
+weighted avg       0.83      0.82      0.80       100
+
+******Evaluating RANDOM Model*********
+              precision    recall  f1-score   support
+
+           0       0.32      0.64      0.43        28
+           1       0.77      0.47      0.59        72
+
+    accuracy                           0.52       100
+   macro avg       0.55      0.56      0.51       100
+weighted avg       0.65      0.52      0.54       100
+
+______________________________________________________
+fold 2
+Model: "functional_5"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input_layer_2 (InputLayer)      │ (None, 2772, 6, 3)     │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d_2 (Conv2D)               │ (None, 2758, 1, 64)    │        17,344 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda_2 (Lambda)               │ (None, 2758, 64)       │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lstm (LSTM)                     │ [(None, 2758, 64),     │        33,024 │
+│                                 │ (None, 64), (None,     │               │
+│                                 │ 64)]                   │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ self_attention_2                │ [(None, 1024), (None,  │         2,560 │
+│ (SelfAttention)                 │ 16, 2758)]             │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense_2 (Dense)                 │ (None, 2)              │         2,050 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 54,978 (214.76 KB)
+ Trainable params: 54,978 (214.76 KB)
+ Non-trainable params: 0 (0.00 B)
+Epoch 1/100
+4/4 - 8s - 2s/step - acc: 0.0000e+00 - auc-prc: 0.5793 - auc-roc: 0.4931 - loss: 4.8083 - val_acc: 0.0000e+00 - val_auc-prc: 0.8140 - val_auc-roc: 0.7889 - val_loss: 3.1884
+Epoch 2/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8392 - auc-roc: 0.8662 - loss: 3.2080 - val_acc: 0.0000e+00 - val_auc-prc: 0.7597 - val_auc-roc: 0.7810 - val_loss: 3.1872
+Epoch 3/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8032 - auc-roc: 0.8479 - loss: 2.9959 - val_acc: 0.0000e+00 - val_auc-prc: 0.7707 - val_auc-roc: 0.7754 - val_loss: 3.0914
+Epoch 4/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8025 - auc-roc: 0.8466 - loss: 2.9615 - val_acc: 0.0000e+00 - val_auc-prc: 0.7556 - val_auc-roc: 0.7677 - val_loss: 3.0319
+Epoch 5/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8090 - auc-roc: 0.8570 - loss: 2.9034 - val_acc: 0.0000e+00 - val_auc-prc: 0.7604 - val_auc-roc: 0.7708 - val_loss: 2.9715
+Epoch 6/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8138 - auc-roc: 0.8643 - loss: 2.8281 - val_acc: 0.0000e+00 - val_auc-prc: 0.7570 - val_auc-roc: 0.7725 - val_loss: 2.9211
+Epoch 7/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8197 - auc-roc: 0.8714 - loss: 2.7566 - val_acc: 0.0000e+00 - val_auc-prc: 0.7615 - val_auc-roc: 0.7853 - val_loss: 2.8969
+Epoch 8/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8261 - auc-roc: 0.8806 - loss: 2.7120 - val_acc: 0.0000e+00 - val_auc-prc: 0.7639 - val_auc-roc: 0.7917 - val_loss: 2.8388
+Epoch 9/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8296 - auc-roc: 0.8862 - loss: 2.6340 - val_acc: 0.0000e+00 - val_auc-prc: 0.7608 - val_auc-roc: 0.7826 - val_loss: 2.7394
+Epoch 10/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8299 - auc-roc: 0.8868 - loss: 2.5581 - val_acc: 0.0000e+00 - val_auc-prc: 0.7604 - val_auc-roc: 0.7810 - val_loss: 2.6607
+Epoch 11/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8299 - auc-roc: 0.8866 - loss: 2.4932 - val_acc: 0.0000e+00 - val_auc-prc: 0.7613 - val_auc-roc: 0.7838 - val_loss: 2.5990
+Epoch 12/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8282 - auc-roc: 0.8850 - loss: 2.4332 - val_acc: 0.0000e+00 - val_auc-prc: 0.7646 - val_auc-roc: 0.7930 - val_loss: 2.5497
+Epoch 13/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8257 - auc-roc: 0.8837 - loss: 2.3823 - val_acc: 0.0000e+00 - val_auc-prc: 0.7722 - val_auc-roc: 0.7982 - val_loss: 2.4864
+Epoch 14/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8257 - auc-roc: 0.8840 - loss: 2.3165 - val_acc: 0.0000e+00 - val_auc-prc: 0.7694 - val_auc-roc: 0.7927 - val_loss: 2.4142
+Epoch 15/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8240 - auc-roc: 0.8829 - loss: 2.2575 - val_acc: 0.0000e+00 - val_auc-prc: 0.7680 - val_auc-roc: 0.7918 - val_loss: 2.3569
+Epoch 16/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8235 - auc-roc: 0.8818 - loss: 2.2063 - val_acc: 0.0000e+00 - val_auc-prc: 0.7760 - val_auc-roc: 0.8019 - val_loss: 2.3103
+Epoch 17/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8234 - auc-roc: 0.8817 - loss: 2.1605 - val_acc: 0.0000e+00 - val_auc-prc: 0.7770 - val_auc-roc: 0.8040 - val_loss: 2.2603
+Epoch 18/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8206 - auc-roc: 0.8803 - loss: 2.1094 - val_acc: 0.0000e+00 - val_auc-prc: 0.7744 - val_auc-roc: 0.8024 - val_loss: 2.2089
+Epoch 19/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8200 - auc-roc: 0.8794 - loss: 2.0621 - val_acc: 0.0000e+00 - val_auc-prc: 0.7811 - val_auc-roc: 0.8080 - val_loss: 2.1667
+Epoch 20/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8196 - auc-roc: 0.8787 - loss: 2.0206 - val_acc: 0.0000e+00 - val_auc-prc: 0.7804 - val_auc-roc: 0.8084 - val_loss: 2.1245
+Epoch 21/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8193 - auc-roc: 0.8787 - loss: 1.9755 - val_acc: 0.0000e+00 - val_auc-prc: 0.7955 - val_auc-roc: 0.8171 - val_loss: 2.0919
+Epoch 22/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8192 - auc-roc: 0.8784 - loss: 1.9377 - val_acc: 0.0000e+00 - val_auc-prc: 0.8069 - val_auc-roc: 0.8223 - val_loss: 2.0541
+Epoch 23/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8192 - auc-roc: 0.8789 - loss: 1.8958 - val_acc: 0.0000e+00 - val_auc-prc: 0.8054 - val_auc-roc: 0.8255 - val_loss: 2.1445
+Epoch 24/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8196 - auc-roc: 0.8794 - loss: 1.8602 - val_acc: 0.0000e+00 - val_auc-prc: 0.8278 - val_auc-roc: 0.8270 - val_loss: 1.9604
+Epoch 25/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8190 - auc-roc: 0.8787 - loss: 1.8291 - val_acc: 0.0000e+00 - val_auc-prc: 0.8261 - val_auc-roc: 0.8407 - val_loss: 2.2055
+Epoch 26/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8182 - auc-roc: 0.8757 - loss: 2.0678 - val_acc: 0.0000e+00 - val_auc-prc: 0.8242 - val_auc-roc: 0.8396 - val_loss: 2.0374
+Epoch 27/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8186 - auc-roc: 0.8798 - loss: 1.7517 - val_acc: 0.0000e+00 - val_auc-prc: 0.8267 - val_auc-roc: 0.8347 - val_loss: 1.8648
+Epoch 28/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8174 - auc-roc: 0.8763 - loss: 1.8548 - val_acc: 0.0000e+00 - val_auc-prc: 0.8338 - val_auc-roc: 0.8563 - val_loss: 2.4775
+Epoch 29/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8198 - auc-roc: 0.8807 - loss: 1.9565 - val_acc: 0.0000e+00 - val_auc-prc: 0.8434 - val_auc-roc: 0.8520 - val_loss: 1.9342
+Epoch 30/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8192 - auc-roc: 0.8798 - loss: 1.7830 - val_acc: 0.0000e+00 - val_auc-prc: 0.8453 - val_auc-roc: 0.8564 - val_loss: 2.1507
+Epoch 31/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8233 - auc-roc: 0.8789 - loss: 2.0120 - val_acc: 0.0000e+00 - val_auc-prc: 0.8481 - val_auc-roc: 0.8699 - val_loss: 2.5246
+Epoch 32/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8455 - auc-roc: 0.8924 - loss: 2.0078 - val_acc: 0.0000e+00 - val_auc-prc: 0.7848 - val_auc-roc: 0.7700 - val_loss: 1.7736
+Epoch 33/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.7034 - auc-roc: 0.7685 - loss: 1.7809 - val_acc: 0.0000e+00 - val_auc-prc: 0.6673 - val_auc-roc: 0.6922 - val_loss: 1.7865
+Epoch 34/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.7584 - auc-roc: 0.8157 - loss: 1.6902 - val_acc: 0.0000e+00 - val_auc-prc: 0.8356 - val_auc-roc: 0.8445 - val_loss: 1.9810
+Epoch 35/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8207 - auc-roc: 0.8801 - loss: 1.6884 - val_acc: 0.0000e+00 - val_auc-prc: 0.8272 - val_auc-roc: 0.8499 - val_loss: 2.3163
+Epoch 36/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8182 - auc-roc: 0.8768 - loss: 1.5560 - val_acc: 0.0000e+00 - val_auc-prc: 0.5906 - val_auc-roc: 0.6338 - val_loss: 1.7304
+Epoch 37/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.5136 - auc-roc: 0.5264 - loss: 1.7537 - val_acc: 0.0000e+00 - val_auc-prc: 0.5315 - val_auc-roc: 0.5524 - val_loss: 1.8031
+Epoch 38/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.5055 - auc-roc: 0.5112 - loss: 1.8101 - val_acc: 0.0000e+00 - val_auc-prc: 0.5214 - val_auc-roc: 0.5365 - val_loss: 1.7795
+Epoch 39/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.5155 - auc-roc: 0.5300 - loss: 1.7619 - val_acc: 0.0000e+00 - val_auc-prc: 0.5271 - val_auc-roc: 0.5448 - val_loss: 1.7220
+Epoch 40/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.5155 - auc-roc: 0.5300 - loss: 1.6802 - val_acc: 0.0000e+00 - val_auc-prc: 0.5479 - val_auc-roc: 0.5743 - val_loss: 1.6625
+Epoch 41/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.5155 - auc-roc: 0.5300 - loss: 1.5956 - val_acc: 0.0000e+00 - val_auc-prc: 0.5770 - val_auc-roc: 0.6109 - val_loss: 1.6144
+Epoch 42/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.6016 - auc-roc: 0.6653 - loss: 1.5208 - val_acc: 0.0000e+00 - val_auc-prc: 0.7408 - val_auc-roc: 0.7579 - val_loss: 1.5896
+Epoch 43/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8162 - auc-roc: 0.8601 - loss: 1.4685 - val_acc: 0.0000e+00 - val_auc-prc: 0.7406 - val_auc-roc: 0.7594 - val_loss: 1.6079
+Epoch 44/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8201 - auc-roc: 0.8684 - loss: 1.4626 - val_acc: 0.0000e+00 - val_auc-prc: 0.7448 - val_auc-roc: 0.7725 - val_loss: 1.6333
+Epoch 45/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8298 - auc-roc: 0.8873 - loss: 1.4504 - val_acc: 0.0000e+00 - val_auc-prc: 0.7419 - val_auc-roc: 0.7636 - val_loss: 1.5584
+Epoch 46/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8266 - auc-roc: 0.8816 - loss: 1.3934 - val_acc: 0.0000e+00 - val_auc-prc: 0.7417 - val_auc-roc: 0.7610 - val_loss: 1.5031
+Epoch 47/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8290 - auc-roc: 0.8856 - loss: 1.3602 - val_acc: 0.0000e+00 - val_auc-prc: 0.7420 - val_auc-roc: 0.7610 - val_loss: 1.4703
+Epoch 48/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8297 - auc-roc: 0.8868 - loss: 1.3345 - val_acc: 0.0000e+00 - val_auc-prc: 0.7427 - val_auc-roc: 0.7628 - val_loss: 1.4462
+Epoch 49/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8295 - auc-roc: 0.8862 - loss: 1.3097 - val_acc: 0.0000e+00 - val_auc-prc: 0.7437 - val_auc-roc: 0.7660 - val_loss: 1.4304
+Epoch 50/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8300 - auc-roc: 0.8870 - loss: 1.2897 - val_acc: 0.0000e+00 - val_auc-prc: 0.7497 - val_auc-roc: 0.7734 - val_loss: 1.4162
+Epoch 51/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8313 - auc-roc: 0.8893 - loss: 1.2713 - val_acc: 0.0000e+00 - val_auc-prc: 0.7517 - val_auc-roc: 0.7785 - val_loss: 1.3911
+WARNING:tensorflow:5 out of the last 9 calls to <function TensorFlowTrainer.make_predict_function.<locals>.one_step_on_data_distributed at 0x14e4ce6f9620> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:6 out of the last 12 calls to <function TensorFlowTrainer.make_predict_function.<locals>.one_step_on_data_distributed at 0x14e4ce6f9620> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+Early stopping epoch: 50
+******Evaluating TEST set*********
+4/4 - 1s - 265ms/step
+              precision    recall  f1-score   support
+
+           0       1.00      0.27      0.42        26
+           1       0.80      1.00      0.89        74
+
+    accuracy                           0.81       100
+   macro avg       0.90      0.63      0.66       100
+weighted avg       0.85      0.81      0.77       100
+
+******Evaluating RANDOM Model*********
+              precision    recall  f1-score   support
+
+           0       0.16      0.31      0.21        26
+           1       0.63      0.42      0.50        74
+
+    accuracy                           0.39       100
+   macro avg       0.39      0.36      0.36       100
+weighted avg       0.51      0.39      0.43       100
+
+______________________________________________________
+fold 3
+Model: "functional_7"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input_layer_3 (InputLayer)      │ (None, 2772, 6, 3)     │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d_3 (Conv2D)               │ (None, 2758, 1, 64)    │        17,344 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda_3 (Lambda)               │ (None, 2758, 64)       │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lstm (LSTM)                     │ [(None, 2758, 64),     │        33,024 │
+│                                 │ (None, 64), (None,     │               │
+│                                 │ 64)]                   │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ self_attention_3                │ [(None, 1024), (None,  │         2,560 │
+│ (SelfAttention)                 │ 16, 2758)]             │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense_3 (Dense)                 │ (None, 2)              │         2,050 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 54,978 (214.76 KB)
+ Trainable params: 54,978 (214.76 KB)
+ Non-trainable params: 0 (0.00 B)
+Epoch 1/100
+4/4 - 8s - 2s/step - acc: 0.0000e+00 - auc-prc: 0.4826 - auc-roc: 0.4558 - loss: 4.4831 - val_acc: 0.0000e+00 - val_auc-prc: 0.5000 - val_auc-roc: 0.5000 - val_loss: 3.1926
+Epoch 2/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.5000 - auc-roc: 0.5000 - loss: 3.0140 - val_acc: 0.0000e+00 - val_auc-prc: 0.5000 - val_auc-roc: 0.5000 - val_loss: 3.0052
+Epoch 3/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.4891 - auc-roc: 0.4950 - loss: 2.7890 - val_acc: 0.0000e+00 - val_auc-prc: 0.3870 - val_auc-roc: 0.3398 - val_loss: 3.1141
+Epoch 4/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.4433 - auc-roc: 0.4500 - loss: 2.7214 - val_acc: 0.0000e+00 - val_auc-prc: 0.5000 - val_auc-roc: 0.5000 - val_loss: 2.6876
+Epoch 5/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.5000 - auc-roc: 0.5000 - loss: 2.6319 - val_acc: 0.0000e+00 - val_auc-prc: 0.5000 - val_auc-roc: 0.5000 - val_loss: 2.5909
+Epoch 6/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.5000 - auc-roc: 0.5000 - loss: 2.5355 - val_acc: 0.0000e+00 - val_auc-prc: 0.5000 - val_auc-roc: 0.5000 - val_loss: 2.4489
+Epoch 7/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.5000 - auc-roc: 0.5000 - loss: 2.3757 - val_acc: 0.0000e+00 - val_auc-prc: 0.5000 - val_auc-roc: 0.5000 - val_loss: 2.3045
+Epoch 8/100
+4/4 - 6s - 2s/step - acc: 0.0000e+00 - auc-prc: 0.5000 - auc-roc: 0.5000 - loss: 2.2111 - val_acc: 0.0000e+00 - val_auc-prc: 0.5000 - val_auc-roc: 0.5000 - val_loss: 2.1809
+Epoch 9/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.5000 - auc-roc: 0.5000 - loss: 2.0680 - val_acc: 0.0000e+00 - val_auc-prc: 0.5000 - val_auc-roc: 0.5000 - val_loss: 2.0797
+Epoch 10/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.5000 - auc-roc: 0.5000 - loss: 1.9455 - val_acc: 0.0000e+00 - val_auc-prc: 0.5000 - val_auc-roc: 0.5000 - val_loss: 1.9966
+Epoch 11/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.5000 - auc-roc: 0.5000 - loss: 1.8415 - val_acc: 0.0000e+00 - val_auc-prc: 0.5000 - val_auc-roc: 0.5000 - val_loss: 1.9252
+Epoch 12/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.5000 - auc-roc: 0.5000 - loss: 1.7544 - val_acc: 0.0000e+00 - val_auc-prc: 0.5000 - val_auc-roc: 0.5000 - val_loss: 1.8564
+Epoch 13/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.5000 - auc-roc: 0.5000 - loss: 1.6803 - val_acc: 0.0000e+00 - val_auc-prc: 0.5000 - val_auc-roc: 0.5000 - val_loss: 1.7818
+Epoch 14/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.5000 - auc-roc: 0.5000 - loss: 1.6117 - val_acc: 0.0000e+00 - val_auc-prc: 0.5000 - val_auc-roc: 0.5000 - val_loss: 1.7057
+Epoch 15/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.5000 - auc-roc: 0.5000 - loss: 1.5469 - val_acc: 0.0000e+00 - val_auc-prc: 0.5000 - val_auc-roc: 0.5000 - val_loss: 1.6376
+Epoch 16/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.5000 - auc-roc: 0.5000 - loss: 1.4874 - val_acc: 0.0000e+00 - val_auc-prc: 0.5000 - val_auc-roc: 0.5000 - val_loss: 1.5757
+Epoch 17/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.5000 - auc-roc: 0.5000 - loss: 1.4293 - val_acc: 0.0000e+00 - val_auc-prc: 0.5000 - val_auc-roc: 0.5000 - val_loss: 1.5195
+Epoch 18/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.5000 - auc-roc: 0.5000 - loss: 1.3723 - val_acc: 0.0000e+00 - val_auc-prc: 0.5000 - val_auc-roc: 0.5000 - val_loss: 1.4661
+Epoch 19/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.5000 - auc-roc: 0.5000 - loss: 1.3160 - val_acc: 0.0000e+00 - val_auc-prc: 0.5000 - val_auc-roc: 0.5000 - val_loss: 1.4143
+Epoch 20/100
+4/4 - 6s - 2s/step - acc: 0.0000e+00 - auc-prc: 0.4751 - auc-roc: 0.4850 - loss: 1.2613 - val_acc: 0.0000e+00 - val_auc-prc: 0.5000 - val_auc-roc: 0.5000 - val_loss: 1.3603
+Epoch 21/100
+4/4 - 6s - 2s/step - acc: 0.0000e+00 - auc-prc: 0.4510 - auc-roc: 0.4600 - loss: 1.2106 - val_acc: 0.0000e+00 - val_auc-prc: 0.4891 - val_auc-roc: 0.4950 - val_loss: 1.2987
+Early stopping epoch: 20
+******Evaluating TEST set*********
+4/4 - 1s - 276ms/step
+/lustre06/project/6003138/rezvank/5_model/env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1517: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/lustre06/project/6003138/rezvank/5_model/env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1517: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/lustre06/project/6003138/rezvank/5_model/env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1517: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+              precision    recall  f1-score   support
+
+           0       0.26      1.00      0.41        26
+           1       0.00      0.00      0.00        74
+
+    accuracy                           0.26       100
+   macro avg       0.13      0.50      0.21       100
+weighted avg       0.07      0.26      0.11       100
+
+******Evaluating RANDOM Model*********
+              precision    recall  f1-score   support
+
+           0       0.25      0.46      0.32        26
+           1       0.73      0.51      0.60        74
+
+    accuracy                           0.50       100
+   macro avg       0.49      0.49      0.46       100
+weighted avg       0.61      0.50      0.53       100
+
+______________________________________________________
+fold 4
+Model: "functional_9"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input_layer_4 (InputLayer)      │ (None, 2772, 6, 3)     │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d_4 (Conv2D)               │ (None, 2758, 1, 64)    │        17,344 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda_4 (Lambda)               │ (None, 2758, 64)       │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lstm (LSTM)                     │ [(None, 2758, 64),     │        33,024 │
+│                                 │ (None, 64), (None,     │               │
+│                                 │ 64)]                   │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ self_attention_4                │ [(None, 1024), (None,  │         2,560 │
+│ (SelfAttention)                 │ 16, 2758)]             │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense_4 (Dense)                 │ (None, 2)              │         2,050 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 54,978 (214.76 KB)
+ Trainable params: 54,978 (214.76 KB)
+ Non-trainable params: 0 (0.00 B)
+Epoch 1/100
+4/4 - 8s - 2s/step - acc: 0.0000e+00 - auc-prc: 0.6008 - auc-roc: 0.5840 - loss: 7.4804 - val_acc: 0.0000e+00 - val_auc-prc: 0.5000 - val_auc-roc: 0.5000 - val_loss: 3.0403
+Epoch 2/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.5000 - auc-roc: 0.5000 - loss: 2.9009 - val_acc: 0.0000e+00 - val_auc-prc: 0.5000 - val_auc-roc: 0.5000 - val_loss: 2.8525
+Epoch 3/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.4891 - auc-roc: 0.4950 - loss: 2.6682 - val_acc: 0.0000e+00 - val_auc-prc: 0.4125 - val_auc-roc: 0.3987 - val_loss: 3.3509
+Epoch 4/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.4510 - auc-roc: 0.4600 - loss: 2.5346 - val_acc: 0.0000e+00 - val_auc-prc: 0.5000 - val_auc-roc: 0.5000 - val_loss: 2.4846
+Epoch 5/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.5000 - auc-roc: 0.5000 - loss: 2.3695 - val_acc: 0.0000e+00 - val_auc-prc: 0.5000 - val_auc-roc: 0.5000 - val_loss: 2.3463
+Epoch 6/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.5000 - auc-roc: 0.5000 - loss: 2.2410 - val_acc: 0.0000e+00 - val_auc-prc: 0.5000 - val_auc-roc: 0.5000 - val_loss: 2.2132
+Epoch 7/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.5000 - auc-roc: 0.5000 - loss: 2.0930 - val_acc: 0.0000e+00 - val_auc-prc: 0.5000 - val_auc-roc: 0.5000 - val_loss: 2.1054
+Epoch 8/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.5000 - auc-roc: 0.5000 - loss: 1.9629 - val_acc: 0.0000e+00 - val_auc-prc: 0.5000 - val_auc-roc: 0.5000 - val_loss: 2.0373
+Epoch 9/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.5000 - auc-roc: 0.5000 - loss: 1.8657 - val_acc: 0.0000e+00 - val_auc-prc: 0.5000 - val_auc-roc: 0.5000 - val_loss: 1.9979
+Epoch 10/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.5000 - auc-roc: 0.5000 - loss: 1.7909 - val_acc: 0.0000e+00 - val_auc-prc: 0.5000 - val_auc-roc: 0.5000 - val_loss: 1.9590
+Epoch 11/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.5000 - auc-roc: 0.5000 - loss: 1.7210 - val_acc: 0.0000e+00 - val_auc-prc: 0.5000 - val_auc-roc: 0.5000 - val_loss: 1.8755
+Epoch 12/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.5000 - auc-roc: 0.5000 - loss: 1.6360 - val_acc: 0.0000e+00 - val_auc-prc: 0.5000 - val_auc-roc: 0.5000 - val_loss: 1.7725
+Epoch 13/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.5000 - auc-roc: 0.5000 - loss: 1.5527 - val_acc: 0.0000e+00 - val_auc-prc: 0.5000 - val_auc-roc: 0.5000 - val_loss: 1.6838
+Epoch 14/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.5000 - auc-roc: 0.5000 - loss: 1.4782 - val_acc: 0.0000e+00 - val_auc-prc: 0.5000 - val_auc-roc: 0.5000 - val_loss: 1.6134
+Epoch 15/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.5000 - auc-roc: 0.5000 - loss: 1.4120 - val_acc: 0.0000e+00 - val_auc-prc: 0.5000 - val_auc-roc: 0.5000 - val_loss: 1.5555
+Epoch 16/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.5000 - auc-roc: 0.5000 - loss: 1.3524 - val_acc: 0.0000e+00 - val_auc-prc: 0.5000 - val_auc-roc: 0.5000 - val_loss: 1.5044
+Epoch 17/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.5000 - auc-roc: 0.5000 - loss: 1.2966 - val_acc: 0.0000e+00 - val_auc-prc: 0.5000 - val_auc-roc: 0.5000 - val_loss: 1.4581
+Epoch 18/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.5000 - auc-roc: 0.5000 - loss: 1.2458 - val_acc: 0.0000e+00 - val_auc-prc: 0.5000 - val_auc-roc: 0.5000 - val_loss: 1.4143
+Epoch 19/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.5000 - auc-roc: 0.5000 - loss: 1.1971 - val_acc: 0.0000e+00 - val_auc-prc: 0.5000 - val_auc-roc: 0.5000 - val_loss: 1.3691
+Epoch 20/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.5000 - auc-roc: 0.5000 - loss: 1.1492 - val_acc: 0.0000e+00 - val_auc-prc: 0.5000 - val_auc-roc: 0.5000 - val_loss: 1.3218
+Epoch 21/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.5000 - auc-roc: 0.5000 - loss: 1.1027 - val_acc: 0.0000e+00 - val_auc-prc: 0.4816 - val_auc-roc: 0.4900 - val_loss: 1.2762
+Early stopping epoch: 20
+******Evaluating TEST set*********
+4/4 - 1s - 286ms/step
+              precision    recall  f1-score   support
+
+           0       0.26      0.96      0.41        27
+           1       0.00      0.00      0.00        73
+
+    accuracy                           0.26       100
+   macro avg       0.13      0.48      0.21       100
+weighted avg       0.07      0.26      0.11       100
+
+******Evaluating RANDOM Model*********
+              precision    recall  f1-score   support
+
+           0       0.31      0.52      0.39        27
+           1       0.76      0.58      0.66        73
+
+    accuracy                           0.56       100
+   macro avg       0.54      0.55      0.52       100
+weighted avg       0.64      0.56      0.58       100
+
+______________________________________________________
+fold 5
+Model: "functional_11"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input_layer_5 (InputLayer)      │ (None, 2772, 6, 3)     │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d_5 (Conv2D)               │ (None, 2758, 1, 64)    │        17,344 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda_5 (Lambda)               │ (None, 2758, 64)       │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lstm (LSTM)                     │ [(None, 2758, 64),     │        33,024 │
+│                                 │ (None, 64), (None,     │               │
+│                                 │ 64)]                   │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ self_attention_5                │ [(None, 1024), (None,  │         2,560 │
+│ (SelfAttention)                 │ 16, 2758)]             │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense_5 (Dense)                 │ (None, 2)              │         2,050 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 54,978 (214.76 KB)
+ Trainable params: 54,978 (214.76 KB)
+ Non-trainable params: 0 (0.00 B)
+Epoch 1/100
+4/4 - 8s - 2s/step - acc: 0.0000e+00 - auc-prc: 0.8051 - auc-roc: 0.7700 - loss: 3.0973 - val_acc: 0.0000e+00 - val_auc-prc: 0.7519 - val_auc-roc: 0.7462 - val_loss: 6.0297
+Epoch 2/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8205 - auc-roc: 0.8528 - loss: 3.6121 - val_acc: 0.0000e+00 - val_auc-prc: 0.7049 - val_auc-roc: 0.6795 - val_loss: 2.9766
+Epoch 3/100
+4/4 - 6s - 2s/step - acc: 0.0000e+00 - auc-prc: 0.7936 - auc-roc: 0.8331 - loss: 2.7612 - val_acc: 0.0000e+00 - val_auc-prc: 0.6586 - val_auc-roc: 0.6511 - val_loss: 2.7816
+Epoch 4/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.6331 - auc-roc: 0.7029 - loss: 2.5849 - val_acc: 0.0000e+00 - val_auc-prc: 0.6016 - val_auc-roc: 0.6086 - val_loss: 2.6036
+Epoch 5/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.6041 - auc-roc: 0.6708 - loss: 2.3742 - val_acc: 0.0000e+00 - val_auc-prc: 0.6076 - val_auc-roc: 0.6085 - val_loss: 2.4454
+Epoch 6/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.6859 - auc-roc: 0.7641 - loss: 2.1697 - val_acc: 0.0000e+00 - val_auc-prc: 0.6129 - val_auc-roc: 0.6070 - val_loss: 2.3156
+Epoch 7/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8124 - auc-roc: 0.8674 - loss: 1.9883 - val_acc: 0.0000e+00 - val_auc-prc: 0.6166 - val_auc-roc: 0.6080 - val_loss: 2.2168
+Epoch 8/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8420 - auc-roc: 0.8882 - loss: 1.8351 - val_acc: 0.0000e+00 - val_auc-prc: 0.6138 - val_auc-roc: 0.6093 - val_loss: 2.1527
+Epoch 9/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8429 - auc-roc: 0.8899 - loss: 1.7141 - val_acc: 0.0000e+00 - val_auc-prc: 0.6165 - val_auc-roc: 0.6177 - val_loss: 2.1068
+Epoch 10/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8440 - auc-roc: 0.8921 - loss: 1.6127 - val_acc: 0.0000e+00 - val_auc-prc: 0.6190 - val_auc-roc: 0.6261 - val_loss: 2.0394
+Epoch 11/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8420 - auc-roc: 0.8879 - loss: 1.5154 - val_acc: 0.0000e+00 - val_auc-prc: 0.6193 - val_auc-roc: 0.6266 - val_loss: 1.9263
+Epoch 12/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8407 - auc-roc: 0.8851 - loss: 1.4155 - val_acc: 0.0000e+00 - val_auc-prc: 0.6266 - val_auc-roc: 0.6271 - val_loss: 1.8043
+Epoch 13/100
+4/4 - 6s - 2s/step - acc: 0.0000e+00 - auc-prc: 0.8406 - auc-roc: 0.8851 - loss: 1.3209 - val_acc: 0.0000e+00 - val_auc-prc: 0.6398 - val_auc-roc: 0.6324 - val_loss: 1.6998
+Epoch 14/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8402 - auc-roc: 0.8844 - loss: 1.2350 - val_acc: 0.0000e+00 - val_auc-prc: 0.6496 - val_auc-roc: 0.6375 - val_loss: 1.6165
+Epoch 15/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8403 - auc-roc: 0.8846 - loss: 1.1582 - val_acc: 0.0000e+00 - val_auc-prc: 0.6479 - val_auc-roc: 0.6379 - val_loss: 1.5545
+Epoch 16/100
+4/4 - 6s - 2s/step - acc: 0.0000e+00 - auc-prc: 0.8406 - auc-roc: 0.8851 - loss: 1.0891 - val_acc: 0.0000e+00 - val_auc-prc: 0.6493 - val_auc-roc: 0.6424 - val_loss: 1.5066
+Epoch 17/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8406 - auc-roc: 0.8850 - loss: 1.0272 - val_acc: 0.0000e+00 - val_auc-prc: 0.6618 - val_auc-roc: 0.6539 - val_loss: 1.4693
+Epoch 18/100
+4/4 - 6s - 2s/step - acc: 0.0000e+00 - auc-prc: 0.8404 - auc-roc: 0.8848 - loss: 0.9707 - val_acc: 0.0000e+00 - val_auc-prc: 0.6720 - val_auc-roc: 0.6615 - val_loss: 1.5544
+Epoch 19/100
+4/4 - 6s - 2s/step - acc: 0.0000e+00 - auc-prc: 0.8403 - auc-roc: 0.8844 - loss: 0.9192 - val_acc: 0.0000e+00 - val_auc-prc: 0.6910 - val_auc-roc: 0.6736 - val_loss: 1.6223
+Epoch 20/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8402 - auc-roc: 0.8841 - loss: 0.8711 - val_acc: 0.0000e+00 - val_auc-prc: 0.6910 - val_auc-roc: 0.6737 - val_loss: 1.5796
+Epoch 21/100
+4/4 - 6s - 2s/step - acc: 0.0000e+00 - auc-prc: 0.8387 - auc-roc: 0.8829 - loss: 0.8269 - val_acc: 0.0000e+00 - val_auc-prc: 0.6903 - val_auc-roc: 0.6731 - val_loss: 1.5342
+Early stopping epoch: 20
+******Evaluating TEST set*********
+4/4 - 1s - 272ms/step
+/lustre06/project/6003138/rezvank/5_model/env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1517: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/lustre06/project/6003138/rezvank/5_model/env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1517: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/lustre06/project/6003138/rezvank/5_model/env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1517: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00        38
+           1       0.62      1.00      0.77        62
+
+    accuracy                           0.62       100
+   macro avg       0.31      0.50      0.38       100
+weighted avg       0.38      0.62      0.47       100
+
+******Evaluating RANDOM Model*********
+              precision    recall  f1-score   support
+
+           0       0.34      0.39      0.37        38
+           1       0.59      0.53      0.56        62
+
+    accuracy                           0.48       100
+   macro avg       0.47      0.46      0.46       100
+weighted avg       0.49      0.48      0.49       100
+
+______________________________________________________
+fold 6
+Model: "functional_13"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input_layer_6 (InputLayer)      │ (None, 2772, 6, 3)     │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d_6 (Conv2D)               │ (None, 2758, 1, 64)    │        17,344 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda_6 (Lambda)               │ (None, 2758, 64)       │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lstm (LSTM)                     │ [(None, 2758, 64),     │        33,024 │
+│                                 │ (None, 64), (None,     │               │
+│                                 │ 64)]                   │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ self_attention_6                │ [(None, 1024), (None,  │         2,560 │
+│ (SelfAttention)                 │ 16, 2758)]             │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense_6 (Dense)                 │ (None, 2)              │         2,050 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 54,978 (214.76 KB)
+ Trainable params: 54,978 (214.76 KB)
+ Non-trainable params: 0 (0.00 B)
+Epoch 1/100
+4/4 - 8s - 2s/step - acc: 0.0000e+00 - auc-prc: 0.7920 - auc-roc: 0.7169 - loss: 6.8743 - val_acc: 0.0000e+00 - val_auc-prc: 0.7553 - val_auc-roc: 0.7287 - val_loss: 7.9673
+Epoch 2/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.9035 - auc-roc: 0.8923 - loss: 4.8759 - val_acc: 0.0000e+00 - val_auc-prc: 0.7324 - val_auc-roc: 0.7253 - val_loss: 7.8544
+Epoch 3/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8366 - auc-roc: 0.8640 - loss: 4.7588 - val_acc: 0.0000e+00 - val_auc-prc: 0.7363 - val_auc-roc: 0.7268 - val_loss: 7.7296
+Epoch 4/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8378 - auc-roc: 0.8646 - loss: 4.6333 - val_acc: 0.0000e+00 - val_auc-prc: 0.7338 - val_auc-roc: 0.7264 - val_loss: 7.6055
+Epoch 5/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8229 - auc-roc: 0.8565 - loss: 4.5105 - val_acc: 0.0000e+00 - val_auc-prc: 0.7226 - val_auc-roc: 0.7239 - val_loss: 7.4869
+Epoch 6/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8229 - auc-roc: 0.8565 - loss: 4.3944 - val_acc: 0.0000e+00 - val_auc-prc: 0.7163 - val_auc-roc: 0.7221 - val_loss: 7.3790
+Epoch 7/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8229 - auc-roc: 0.8565 - loss: 4.2900 - val_acc: 0.0000e+00 - val_auc-prc: 0.7184 - val_auc-roc: 0.7228 - val_loss: 7.2842
+Epoch 8/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8229 - auc-roc: 0.8565 - loss: 4.1984 - val_acc: 0.0000e+00 - val_auc-prc: 0.7184 - val_auc-roc: 0.7229 - val_loss: 7.2017
+Epoch 9/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8229 - auc-roc: 0.8565 - loss: 4.1195 - val_acc: 0.0000e+00 - val_auc-prc: 0.7186 - val_auc-roc: 0.7231 - val_loss: 7.1310
+Epoch 10/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8229 - auc-roc: 0.8565 - loss: 4.0513 - val_acc: 0.0000e+00 - val_auc-prc: 0.7192 - val_auc-roc: 0.7236 - val_loss: 7.0692
+Epoch 11/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8229 - auc-roc: 0.8565 - loss: 3.9915 - val_acc: 0.0000e+00 - val_auc-prc: 0.7248 - val_auc-roc: 0.7259 - val_loss: 7.0138
+Epoch 12/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8303 - auc-roc: 0.8606 - loss: 3.9373 - val_acc: 0.0000e+00 - val_auc-prc: 0.7250 - val_auc-roc: 0.7261 - val_loss: 6.8407
+Epoch 13/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8303 - auc-roc: 0.8606 - loss: 3.8879 - val_acc: 0.0000e+00 - val_auc-prc: 0.7265 - val_auc-roc: 0.7293 - val_loss: 6.7904
+Epoch 14/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8303 - auc-roc: 0.8606 - loss: 3.8430 - val_acc: 0.0000e+00 - val_auc-prc: 0.7331 - val_auc-roc: 0.7313 - val_loss: 6.7466
+Epoch 15/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8303 - auc-roc: 0.8606 - loss: 3.8022 - val_acc: 0.0000e+00 - val_auc-prc: 0.7404 - val_auc-roc: 0.7333 - val_loss: 6.5913
+Epoch 16/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8378 - auc-roc: 0.8646 - loss: 3.7638 - val_acc: 0.0000e+00 - val_auc-prc: 0.7404 - val_auc-roc: 0.7334 - val_loss: 6.5435
+Epoch 17/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8378 - auc-roc: 0.8646 - loss: 3.7279 - val_acc: 0.0000e+00 - val_auc-prc: 0.7396 - val_auc-roc: 0.7335 - val_loss: 6.5171
+Epoch 18/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8378 - auc-roc: 0.8646 - loss: 3.6945 - val_acc: 0.0000e+00 - val_auc-prc: 0.7381 - val_auc-roc: 0.7331 - val_loss: 6.4907
+Epoch 19/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8443 - auc-roc: 0.8681 - loss: 3.6622 - val_acc: 0.0000e+00 - val_auc-prc: 0.7384 - val_auc-roc: 0.7334 - val_loss: 6.4570
+Epoch 20/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8444 - auc-roc: 0.8681 - loss: 3.6312 - val_acc: 0.0000e+00 - val_auc-prc: 0.7368 - val_auc-roc: 0.7299 - val_loss: 6.5472
+Epoch 21/100
+4/4 - 6s - 2s/step - acc: 0.0000e+00 - auc-prc: 0.8443 - auc-roc: 0.8681 - loss: 3.6013 - val_acc: 0.0000e+00 - val_auc-prc: 0.7355 - val_auc-roc: 0.7297 - val_loss: 6.5287
+Epoch 22/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8443 - auc-roc: 0.8681 - loss: 3.5722 - val_acc: 0.0000e+00 - val_auc-prc: 0.7425 - val_auc-roc: 0.7314 - val_loss: 6.6136
+Epoch 23/100
+4/4 - 6s - 2s/step - acc: 0.0000e+00 - auc-prc: 0.8443 - auc-roc: 0.8681 - loss: 3.5434 - val_acc: 0.0000e+00 - val_auc-prc: 0.7425 - val_auc-roc: 0.7313 - val_loss: 6.5851
+Epoch 24/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8443 - auc-roc: 0.8680 - loss: 3.5151 - val_acc: 0.0000e+00 - val_auc-prc: 0.7425 - val_auc-roc: 0.7314 - val_loss: 6.5573
+Epoch 25/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8443 - auc-roc: 0.8681 - loss: 3.4874 - val_acc: 0.0000e+00 - val_auc-prc: 0.7425 - val_auc-roc: 0.7314 - val_loss: 6.5299
+Epoch 26/100
+4/4 - 6s - 2s/step - acc: 0.0000e+00 - auc-prc: 0.8443 - auc-roc: 0.8680 - loss: 3.4601 - val_acc: 0.0000e+00 - val_auc-prc: 0.7460 - val_auc-roc: 0.7322 - val_loss: 6.5028
+Epoch 27/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8443 - auc-roc: 0.8680 - loss: 3.4332 - val_acc: 0.0000e+00 - val_auc-prc: 0.7449 - val_auc-roc: 0.7320 - val_loss: 6.4764
+Epoch 28/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8443 - auc-roc: 0.8681 - loss: 3.4068 - val_acc: 0.0000e+00 - val_auc-prc: 0.7452 - val_auc-roc: 0.7322 - val_loss: 6.4500
+Epoch 29/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8443 - auc-roc: 0.8681 - loss: 3.3806 - val_acc: 0.0000e+00 - val_auc-prc: 0.7408 - val_auc-roc: 0.7312 - val_loss: 6.4241
+Epoch 30/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8443 - auc-roc: 0.8681 - loss: 3.3547 - val_acc: 0.0000e+00 - val_auc-prc: 0.7398 - val_auc-roc: 0.7311 - val_loss: 6.3985
+Epoch 31/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8443 - auc-roc: 0.8681 - loss: 3.3292 - val_acc: 0.0000e+00 - val_auc-prc: 0.7398 - val_auc-roc: 0.7311 - val_loss: 6.3731
+Epoch 32/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8443 - auc-roc: 0.8680 - loss: 3.3040 - val_acc: 0.0000e+00 - val_auc-prc: 0.7397 - val_auc-roc: 0.7311 - val_loss: 6.3485
+Epoch 33/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8443 - auc-roc: 0.8681 - loss: 3.2795 - val_acc: 0.0000e+00 - val_auc-prc: 0.7469 - val_auc-roc: 0.7323 - val_loss: 6.3242
+Epoch 34/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8443 - auc-roc: 0.8680 - loss: 3.2553 - val_acc: 0.0000e+00 - val_auc-prc: 0.7470 - val_auc-roc: 0.7323 - val_loss: 6.3001
+Epoch 35/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8443 - auc-roc: 0.8681 - loss: 3.2313 - val_acc: 0.0000e+00 - val_auc-prc: 0.7468 - val_auc-roc: 0.7322 - val_loss: 6.2765
+Epoch 36/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8511 - auc-roc: 0.8715 - loss: 3.2078 - val_acc: 0.0000e+00 - val_auc-prc: 0.7458 - val_auc-roc: 0.7322 - val_loss: 6.2533
+Epoch 37/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8511 - auc-roc: 0.8715 - loss: 3.1847 - val_acc: 0.0000e+00 - val_auc-prc: 0.7456 - val_auc-roc: 0.7321 - val_loss: 6.2304
+Early stopping epoch: 36
+******Evaluating TEST set*********
+4/4 - 1s - 285ms/step
+/lustre06/project/6003138/rezvank/5_model/env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1517: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/lustre06/project/6003138/rezvank/5_model/env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1517: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/lustre06/project/6003138/rezvank/5_model/env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1517: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00        33
+           1       0.67      1.00      0.80        67
+
+    accuracy                           0.67       100
+   macro avg       0.34      0.50      0.40       100
+weighted avg       0.45      0.67      0.54       100
+
+******Evaluating RANDOM Model*********
+              precision    recall  f1-score   support
+
+           0       0.30      0.42      0.35        33
+           1       0.65      0.52      0.58        67
+
+    accuracy                           0.49       100
+   macro avg       0.48      0.47      0.47       100
+weighted avg       0.53      0.49      0.50       100
+
+______________________________________________________
+fold 7
+Model: "functional_15"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input_layer_7 (InputLayer)      │ (None, 2772, 6, 3)     │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d_7 (Conv2D)               │ (None, 2758, 1, 64)    │        17,344 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda_7 (Lambda)               │ (None, 2758, 64)       │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lstm (LSTM)                     │ [(None, 2758, 64),     │        33,024 │
+│                                 │ (None, 64), (None,     │               │
+│                                 │ 64)]                   │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ self_attention_7                │ [(None, 1024), (None,  │         2,560 │
+│ (SelfAttention)                 │ 16, 2758)]             │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense_7 (Dense)                 │ (None, 2)              │         2,050 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 54,978 (214.76 KB)
+ Trainable params: 54,978 (214.76 KB)
+ Non-trainable params: 0 (0.00 B)
+Epoch 1/100
+4/4 - 8s - 2s/step - acc: 0.0000e+00 - auc-prc: 0.8439 - auc-roc: 0.8559 - loss: 8.0416 - val_acc: 0.0000e+00 - val_auc-prc: 0.7835 - val_auc-roc: 0.7598 - val_loss: 14.0807
+Epoch 2/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8044 - auc-roc: 0.8441 - loss: 15.5527 - val_acc: 0.0000e+00 - val_auc-prc: 0.7641 - val_auc-roc: 0.7512 - val_loss: 13.2579
+Epoch 3/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8035 - auc-roc: 0.8405 - loss: 15.0706 - val_acc: 0.0000e+00 - val_auc-prc: 0.7546 - val_auc-roc: 0.7461 - val_loss: 12.6664
+Epoch 4/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8039 - auc-roc: 0.8405 - loss: 14.6602 - val_acc: 0.0000e+00 - val_auc-prc: 0.7504 - val_auc-roc: 0.7441 - val_loss: 12.3098
+Epoch 5/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8090 - auc-roc: 0.8419 - loss: 14.3236 - val_acc: 0.0000e+00 - val_auc-prc: 0.7498 - val_auc-roc: 0.7434 - val_loss: 12.0297
+Epoch 6/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8125 - auc-roc: 0.8430 - loss: 14.0654 - val_acc: 0.0000e+00 - val_auc-prc: 0.7515 - val_auc-roc: 0.7441 - val_loss: 11.8315
+Epoch 7/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8135 - auc-roc: 0.8436 - loss: 13.8886 - val_acc: 0.0000e+00 - val_auc-prc: 0.7532 - val_auc-roc: 0.7444 - val_loss: 11.7099
+Epoch 8/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8182 - auc-roc: 0.8441 - loss: 13.7867 - val_acc: 0.0000e+00 - val_auc-prc: 0.7663 - val_auc-roc: 0.7522 - val_loss: 11.6620
+Epoch 9/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8230 - auc-roc: 0.8453 - loss: 13.7497 - val_acc: 0.0000e+00 - val_auc-prc: 0.7868 - val_auc-roc: 0.7630 - val_loss: 11.6262
+Epoch 10/100
+4/4 - 6s - 2s/step - acc: 0.0000e+00 - auc-prc: 0.8386 - auc-roc: 0.8495 - loss: 13.7079 - val_acc: 0.0000e+00 - val_auc-prc: 0.8019 - val_auc-roc: 0.7736 - val_loss: 11.5762
+Epoch 11/100
+4/4 - 6s - 2s/step - acc: 0.0000e+00 - auc-prc: 0.8400 - auc-roc: 0.8485 - loss: 13.6600 - val_acc: 0.0000e+00 - val_auc-prc: 0.7604 - val_auc-roc: 0.7503 - val_loss: 11.5383
+Epoch 12/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8309 - auc-roc: 0.8461 - loss: 13.6286 - val_acc: 0.0000e+00 - val_auc-prc: 0.5854 - val_auc-roc: 0.6735 - val_loss: 11.5227
+Epoch 13/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.7578 - auc-roc: 0.8261 - loss: 13.6139 - val_acc: 0.0000e+00 - val_auc-prc: 0.5961 - val_auc-roc: 0.6816 - val_loss: 11.5063
+Epoch 14/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.7925 - auc-roc: 0.8358 - loss: 13.5974 - val_acc: 0.0000e+00 - val_auc-prc: 0.6887 - val_auc-roc: 0.7115 - val_loss: 11.4922
+Epoch 15/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8131 - auc-roc: 0.8408 - loss: 13.5857 - val_acc: 0.0000e+00 - val_auc-prc: 0.7498 - val_auc-roc: 0.7499 - val_loss: 11.4850
+Epoch 16/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8026 - auc-roc: 0.8382 - loss: 13.5784 - val_acc: 0.0000e+00 - val_auc-prc: 0.6232 - val_auc-roc: 0.6958 - val_loss: 11.4788
+Epoch 17/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8034 - auc-roc: 0.8388 - loss: 13.5729 - val_acc: 0.0000e+00 - val_auc-prc: 0.6777 - val_auc-roc: 0.7136 - val_loss: 11.4748
+Epoch 18/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8066 - auc-roc: 0.8400 - loss: 13.5691 - val_acc: 0.0000e+00 - val_auc-prc: 0.6870 - val_auc-roc: 0.7156 - val_loss: 11.4720
+Epoch 19/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.7968 - auc-roc: 0.8382 - loss: 13.5669 - val_acc: 0.0000e+00 - val_auc-prc: 0.6542 - val_auc-roc: 0.7058 - val_loss: 11.4694
+Epoch 20/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8091 - auc-roc: 0.8408 - loss: 13.5644 - val_acc: 0.0000e+00 - val_auc-prc: 0.6777 - val_auc-roc: 0.7136 - val_loss: 11.4682
+Epoch 21/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8066 - auc-roc: 0.8400 - loss: 13.5630 - val_acc: 0.0000e+00 - val_auc-prc: 0.6882 - val_auc-roc: 0.7207 - val_loss: 11.4675
+Epoch 22/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8053 - auc-roc: 0.8392 - loss: 13.5626 - val_acc: 0.0000e+00 - val_auc-prc: 0.6051 - val_auc-roc: 0.6860 - val_loss: 11.4669
+Epoch 23/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8131 - auc-roc: 0.8408 - loss: 13.5621 - val_acc: 0.0000e+00 - val_auc-prc: 0.7073 - val_auc-roc: 0.7235 - val_loss: 11.4664
+Epoch 24/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.7632 - auc-roc: 0.8188 - loss: 13.5617 - val_acc: 0.0000e+00 - val_auc-prc: 0.7351 - val_auc-roc: 0.7412 - val_loss: 11.4657
+Epoch 25/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.7941 - auc-roc: 0.8328 - loss: 13.5611 - val_acc: 0.0000e+00 - val_auc-prc: 0.6193 - val_auc-roc: 0.6811 - val_loss: 11.4657
+Epoch 26/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8079 - auc-roc: 0.8406 - loss: 13.5611 - val_acc: 0.0000e+00 - val_auc-prc: 0.7475 - val_auc-roc: 0.7523 - val_loss: 11.4655
+Epoch 27/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8218 - auc-roc: 0.8486 - loss: 13.5606 - val_acc: 0.0000e+00 - val_auc-prc: 0.5709 - val_auc-roc: 0.6619 - val_loss: 11.4655
+Epoch 28/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.7469 - auc-roc: 0.8238 - loss: 13.5607 - val_acc: 0.0000e+00 - val_auc-prc: 0.5995 - val_auc-roc: 0.6784 - val_loss: 11.4654
+Epoch 29/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.7850 - auc-roc: 0.8296 - loss: 13.5608 - val_acc: 0.0000e+00 - val_auc-prc: 0.6600 - val_auc-roc: 0.7013 - val_loss: 11.4653
+Epoch 30/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8237 - auc-roc: 0.8474 - loss: 13.5606 - val_acc: 0.0000e+00 - val_auc-prc: 0.7430 - val_auc-roc: 0.7494 - val_loss: 11.4652
+Early stopping epoch: 29
+******Evaluating TEST set*********
+4/4 - 1s - 278ms/step
+/lustre06/project/6003138/rezvank/5_model/env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1517: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/lustre06/project/6003138/rezvank/5_model/env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1517: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/lustre06/project/6003138/rezvank/5_model/env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1517: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00        29
+           1       0.71      1.00      0.83        71
+
+    accuracy                           0.71       100
+   macro avg       0.35      0.50      0.42       100
+weighted avg       0.50      0.71      0.59       100
+
+******Evaluating RANDOM Model*********
+              precision    recall  f1-score   support
+
+           0       0.29      0.52      0.37        29
+           1       0.71      0.48      0.57        71
+
+    accuracy                           0.49       100
+   macro avg       0.50      0.50      0.47       100
+weighted avg       0.59      0.49      0.51       100
+
+______________________________________________________
+fold 8
+Model: "functional_17"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input_layer_8 (InputLayer)      │ (None, 2772, 6, 3)     │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d_8 (Conv2D)               │ (None, 2758, 1, 64)    │        17,344 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda_8 (Lambda)               │ (None, 2758, 64)       │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lstm (LSTM)                     │ [(None, 2758, 64),     │        33,024 │
+│                                 │ (None, 64), (None,     │               │
+│                                 │ 64)]                   │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ self_attention_8                │ [(None, 1024), (None,  │         2,560 │
+│ (SelfAttention)                 │ 16, 2758)]             │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense_8 (Dense)                 │ (None, 2)              │         2,050 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 54,978 (214.76 KB)
+ Trainable params: 54,978 (214.76 KB)
+ Non-trainable params: 0 (0.00 B)
+Epoch 1/100
+4/4 - 8s - 2s/step - acc: 0.0000e+00 - auc-prc: 0.8532 - auc-roc: 0.8471 - loss: 4.4680 - val_acc: 0.0000e+00 - val_auc-prc: 0.8343 - val_auc-roc: 0.7996 - val_loss: 5.0203
+Epoch 2/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.9006 - auc-roc: 0.8826 - loss: 4.8223 - val_acc: 0.0000e+00 - val_auc-prc: 0.8276 - val_auc-roc: 0.7982 - val_loss: 4.6800
+Epoch 3/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8767 - auc-roc: 0.8738 - loss: 4.2074 - val_acc: 0.0000e+00 - val_auc-prc: 0.8212 - val_auc-roc: 0.7954 - val_loss: 4.3588
+Epoch 4/100
+4/4 - 5s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8405 - auc-roc: 0.8577 - loss: 4.0860 - val_acc: 0.0000e+00 - val_auc-prc: 0.8108 - val_auc-roc: 0.7888 - val_loss: 4.0662
+Epoch 5/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8260 - auc-roc: 0.8503 - loss: 3.9870 - val_acc: 0.0000e+00 - val_auc-prc: 0.8008 - val_auc-roc: 0.7835 - val_loss: 4.1361
+Epoch 6/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8259 - auc-roc: 0.8501 - loss: 3.9163 - val_acc: 0.0000e+00 - val_auc-prc: 0.7988 - val_auc-roc: 0.7800 - val_loss: 4.0913
+Epoch 7/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8256 - auc-roc: 0.8498 - loss: 3.7206 - val_acc: 0.0000e+00 - val_auc-prc: 0.8034 - val_auc-roc: 0.7809 - val_loss: 3.9222
+Epoch 8/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8332 - auc-roc: 0.8537 - loss: 3.5616 - val_acc: 0.0000e+00 - val_auc-prc: 0.8007 - val_auc-roc: 0.7799 - val_loss: 3.9508
+Epoch 9/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8479 - auc-roc: 0.8609 - loss: 3.4366 - val_acc: 0.0000e+00 - val_auc-prc: 0.8075 - val_auc-roc: 0.7810 - val_loss: 4.1620
+Epoch 10/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8513 - auc-roc: 0.8625 - loss: 3.3278 - val_acc: 0.0000e+00 - val_auc-prc: 0.8103 - val_auc-roc: 0.7807 - val_loss: 4.7044
+Epoch 11/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8567 - auc-roc: 0.8648 - loss: 3.2276 - val_acc: 0.0000e+00 - val_auc-prc: 0.8114 - val_auc-roc: 0.7799 - val_loss: 5.0946
+Epoch 12/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8890 - auc-roc: 0.8730 - loss: 3.1382 - val_acc: 0.0000e+00 - val_auc-prc: 0.8192 - val_auc-roc: 0.7798 - val_loss: 5.1777
+Epoch 13/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8824 - auc-roc: 0.8707 - loss: 3.0641 - val_acc: 0.0000e+00 - val_auc-prc: 0.8186 - val_auc-roc: 0.7791 - val_loss: 5.1122
+Epoch 14/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8856 - auc-roc: 0.8704 - loss: 3.0007 - val_acc: 0.0000e+00 - val_auc-prc: 0.8176 - val_auc-roc: 0.7784 - val_loss: 5.0542
+Epoch 15/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8864 - auc-roc: 0.8705 - loss: 2.9445 - val_acc: 0.0000e+00 - val_auc-prc: 0.8160 - val_auc-roc: 0.7776 - val_loss: 5.0024
+Epoch 16/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8872 - auc-roc: 0.8712 - loss: 2.8944 - val_acc: 0.0000e+00 - val_auc-prc: 0.8146 - val_auc-roc: 0.7771 - val_loss: 4.9582
+Epoch 17/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8921 - auc-roc: 0.8741 - loss: 2.8520 - val_acc: 0.0000e+00 - val_auc-prc: 0.8113 - val_auc-roc: 0.7762 - val_loss: 4.9198
+Epoch 18/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8958 - auc-roc: 0.8765 - loss: 2.8152 - val_acc: 0.0000e+00 - val_auc-prc: 0.8103 - val_auc-roc: 0.7761 - val_loss: 4.4035
+Epoch 19/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.9029 - auc-roc: 0.8809 - loss: 2.7836 - val_acc: 0.0000e+00 - val_auc-prc: 0.8082 - val_auc-roc: 0.7761 - val_loss: 4.6973
+Epoch 20/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.9067 - auc-roc: 0.8825 - loss: 2.5952 - val_acc: 0.0000e+00 - val_auc-prc: 0.8057 - val_auc-roc: 0.7760 - val_loss: 4.5122
+Epoch 21/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.9059 - auc-roc: 0.8820 - loss: 2.7330 - val_acc: 0.0000e+00 - val_auc-prc: 0.8073 - val_auc-roc: 0.7761 - val_loss: 4.8135
+Early stopping epoch: 20
+******Evaluating TEST set*********
+4/4 - 1s - 268ms/step
+              precision    recall  f1-score   support
+
+           0       1.00      0.24      0.39        29
+           1       0.76      1.00      0.87        71
+
+    accuracy                           0.78       100
+   macro avg       0.88      0.62      0.63       100
+weighted avg       0.83      0.78      0.73       100
+
+******Evaluating RANDOM Model*********
+              precision    recall  f1-score   support
+
+           0       0.23      0.45      0.30        29
+           1       0.63      0.38      0.47        71
+
+    accuracy                           0.40       100
+   macro avg       0.43      0.41      0.39       100
+weighted avg       0.51      0.40      0.42       100
+
+______________________________________________________
+fold 9
+Model: "functional_19"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input_layer_9 (InputLayer)      │ (None, 2772, 6, 3)     │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d_9 (Conv2D)               │ (None, 2758, 1, 64)    │        17,344 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda_9 (Lambda)               │ (None, 2758, 64)       │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lstm (LSTM)                     │ [(None, 2758, 64),     │        33,024 │
+│                                 │ (None, 64), (None,     │               │
+│                                 │ 64)]                   │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ self_attention_9                │ [(None, 1024), (None,  │         2,560 │
+│ (SelfAttention)                 │ 16, 2758)]             │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense_9 (Dense)                 │ (None, 2)              │         2,050 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 54,978 (214.76 KB)
+ Trainable params: 54,978 (214.76 KB)
+ Non-trainable params: 0 (0.00 B)
+Epoch 1/100
+4/4 - 8s - 2s/step - acc: 0.0000e+00 - auc-prc: 0.8662 - auc-roc: 0.8598 - loss: 4.4491 - val_acc: 0.0000e+00 - val_auc-prc: 0.6994 - val_auc-roc: 0.7125 - val_loss: 7.4504
+Epoch 2/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8290 - auc-roc: 0.8598 - loss: 4.6621 - val_acc: 0.0000e+00 - val_auc-prc: 0.7066 - val_auc-roc: 0.7159 - val_loss: 7.2969
+Epoch 3/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8229 - auc-roc: 0.8565 - loss: 4.3750 - val_acc: 0.0000e+00 - val_auc-prc: 0.7010 - val_auc-roc: 0.7080 - val_loss: 7.3007
+Epoch 4/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8229 - auc-roc: 0.8565 - loss: 4.0918 - val_acc: 0.0000e+00 - val_auc-prc: 0.6973 - val_auc-roc: 0.7009 - val_loss: 7.2808
+Epoch 5/100
+4/4 - 6s - 2s/step - acc: 0.0000e+00 - auc-prc: 0.8229 - auc-roc: 0.8565 - loss: 3.8280 - val_acc: 0.0000e+00 - val_auc-prc: 0.6927 - val_auc-roc: 0.6984 - val_loss: 7.0368
+Epoch 6/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8229 - auc-roc: 0.8565 - loss: 3.5924 - val_acc: 0.0000e+00 - val_auc-prc: 0.6984 - val_auc-roc: 0.7000 - val_loss: 6.8255
+Epoch 7/100
+4/4 - 10s - 3s/step - acc: 0.0000e+00 - auc-prc: 0.8229 - auc-roc: 0.8565 - loss: 3.3905 - val_acc: 0.0000e+00 - val_auc-prc: 0.6950 - val_auc-roc: 0.6979 - val_loss: 6.6507
+Epoch 8/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8229 - auc-roc: 0.8565 - loss: 3.2271 - val_acc: 0.0000e+00 - val_auc-prc: 0.6948 - val_auc-roc: 0.6972 - val_loss: 6.5179
+Epoch 9/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8217 - auc-roc: 0.8558 - loss: 3.1023 - val_acc: 0.0000e+00 - val_auc-prc: 0.6929 - val_auc-roc: 0.6959 - val_loss: 6.4065
+Epoch 10/100
+4/4 - 10s - 3s/step - acc: 0.0000e+00 - auc-prc: 0.8217 - auc-roc: 0.8558 - loss: 2.9930 - val_acc: 0.0000e+00 - val_auc-prc: 0.6953 - val_auc-roc: 0.6963 - val_loss: 6.3026
+Epoch 11/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8217 - auc-roc: 0.8558 - loss: 2.8919 - val_acc: 0.0000e+00 - val_auc-prc: 0.6890 - val_auc-roc: 0.6939 - val_loss: 6.2118
+Epoch 12/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8266 - auc-roc: 0.8585 - loss: 2.8063 - val_acc: 0.0000e+00 - val_auc-prc: 0.6844 - val_auc-roc: 0.6922 - val_loss: 6.1394
+Epoch 13/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8328 - auc-roc: 0.8618 - loss: 2.7370 - val_acc: 0.0000e+00 - val_auc-prc: 0.7004 - val_auc-roc: 0.6953 - val_loss: 6.0759
+Epoch 14/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8391 - auc-roc: 0.8649 - loss: 2.6752 - val_acc: 0.0000e+00 - val_auc-prc: 0.6921 - val_auc-roc: 0.6933 - val_loss: 6.0200
+Epoch 15/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8483 - auc-roc: 0.8693 - loss: 2.6220 - val_acc: 0.0000e+00 - val_auc-prc: 0.7102 - val_auc-roc: 0.6959 - val_loss: 5.9721
+Epoch 16/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8462 - auc-roc: 0.8686 - loss: 2.5758 - val_acc: 0.0000e+00 - val_auc-prc: 0.7044 - val_auc-roc: 0.6949 - val_loss: 5.9318
+Epoch 17/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8513 - auc-roc: 0.8701 - loss: 2.5373 - val_acc: 0.0000e+00 - val_auc-prc: 0.7059 - val_auc-roc: 0.6945 - val_loss: 5.8968
+Epoch 18/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8415 - auc-roc: 0.8670 - loss: 2.5030 - val_acc: 0.0000e+00 - val_auc-prc: 0.7088 - val_auc-roc: 0.6948 - val_loss: 5.8660
+Epoch 19/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8392 - auc-roc: 0.8665 - loss: 2.4738 - val_acc: 0.0000e+00 - val_auc-prc: 0.7052 - val_auc-roc: 0.6943 - val_loss: 5.8398
+Epoch 20/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8497 - auc-roc: 0.8682 - loss: 2.4487 - val_acc: 0.0000e+00 - val_auc-prc: 0.7127 - val_auc-roc: 0.6943 - val_loss: 5.8174
+Epoch 21/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8728 - auc-roc: 0.8713 - loss: 2.4269 - val_acc: 0.0000e+00 - val_auc-prc: 0.7115 - val_auc-roc: 0.6935 - val_loss: 5.7975
+Epoch 22/100
+4/4 - 6s - 1s/step - acc: 0.0000e+00 - auc-prc: 0.8733 - auc-roc: 0.8714 - loss: 2.4079 - val_acc: 0.0000e+00 - val_auc-prc: 0.7119 - val_auc-roc: 0.6937 - val_loss: 5.7803
+Early stopping epoch: 21
+******Evaluating TEST set*********
+4/4 - 1s - 323ms/step
+/lustre06/project/6003138/rezvank/5_model/env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1517: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/lustre06/project/6003138/rezvank/5_model/env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1517: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/lustre06/project/6003138/rezvank/5_model/env/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1517: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00        35
+           1       0.65      1.00      0.79        65
+
+    accuracy                           0.65       100
+   macro avg       0.33      0.50      0.39       100
+weighted avg       0.42      0.65      0.51       100
+
+******Evaluating RANDOM Model*********
+              precision    recall  f1-score   support
+
+           0       0.36      0.49      0.41        35
+           1       0.66      0.54      0.59        65
+
+    accuracy                           0.52       100
+   macro avg       0.51      0.51      0.50       100
+weighted avg       0.56      0.52      0.53       100
+
+______________________________________________________
+Model: "functional_19"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input_layer_9 (InputLayer)      │ (None, 2772, 6, 3)     │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d_9 (Conv2D)               │ (None, 2758, 1, 64)    │        17,344 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda_9 (Lambda)               │ (None, 2758, 64)       │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lstm (LSTM)                     │ [(None, 2758, 64),     │        33,024 │
+│                                 │ (None, 64), (None,     │               │
+│                                 │ 64)]                   │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ self_attention_9                │ [(None, 1024), (None,  │         2,560 │
+│ (SelfAttention)                 │ 16, 2758)]             │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense_9 (Dense)                 │ (None, 2)              │         2,050 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 164,936 (644.29 KB)
+ Trainable params: 54,978 (214.76 KB)
+ Non-trainable params: 0 (0.00 B)
+ Optimizer params: 109,958 (429.53 KB)
+None
+Mean AUC_ROC[0.5437] IC [0.4988, 0.5887]
+Mean Accuracy[0.6370] IC [0.5150, 0.7590]
+Mean Recall[0.5437] IC [0.4988, 0.5887]
+Mean F1[0.4458] IC [0.3434, 0.5483]
+Median AUC_ROC[0.5000]
+Median Accuracy[0.6900]
+Median Recall[0.5000]
+Median F1[0.4082]

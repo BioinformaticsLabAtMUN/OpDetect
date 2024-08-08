@@ -1,0 +1,1059 @@
+fold 0
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_1 (InputLayer)        [(None, 150, 6, 3)]       0         
+                                                                 
+ conv2d (Conv2D)             (None, 146, 1, 64)        5824      
+                                                                 
+ lambda (Lambda)             (None, 146, 64)           0         
+                                                                 
+ lstm (LSTM)                 [(None, 146, 64),         33024     
+                              (None, 64),                        
+                              (None, 64)]                        
+                                                                 
+ self_attention (SelfAttenti  ((None, 1024),           2560      
+ on)                          (None, 16, 146))                   
+                                                                 
+ dense (Dense)               (None, 2)                 2050      
+                                                                 
+=================================================================
+Total params: 43,458
+Trainable params: 43,458
+Non-trainable params: 0
+_________________________________________________________________
+Epoch 1/100
+290/290 - 18s - loss: 0.3135 - acc: 0.8688 - auc: 0.9385 - val_loss: 0.2604 - val_acc: 0.8931 - val_auc: 0.9577 - 18s/epoch - 63ms/step
+Epoch 2/100
+290/290 - 15s - loss: 0.2881 - acc: 0.8830 - auc: 0.9467 - val_loss: 0.2490 - val_acc: 0.8931 - val_auc: 0.9614 - 15s/epoch - 53ms/step
+Epoch 3/100
+290/290 - 16s - loss: 0.2792 - acc: 0.8883 - auc: 0.9500 - val_loss: 0.2497 - val_acc: 0.8921 - val_auc: 0.9609 - 16s/epoch - 55ms/step
+Epoch 4/100
+290/290 - 16s - loss: 0.2694 - acc: 0.8906 - auc: 0.9535 - val_loss: 0.2551 - val_acc: 0.8941 - val_auc: 0.9601 - 16s/epoch - 55ms/step
+Epoch 5/100
+290/290 - 16s - loss: 0.2660 - acc: 0.8940 - auc: 0.9545 - val_loss: 0.2515 - val_acc: 0.8912 - val_auc: 0.9619 - 16s/epoch - 55ms/step
+Epoch 6/100
+290/290 - 16s - loss: 0.2630 - acc: 0.8961 - auc: 0.9557 - val_loss: 0.2418 - val_acc: 0.8912 - val_auc: 0.9640 - 16s/epoch - 55ms/step
+Epoch 7/100
+290/290 - 16s - loss: 0.2591 - acc: 0.8961 - auc: 0.9580 - val_loss: 0.2648 - val_acc: 0.8863 - val_auc: 0.9578 - 16s/epoch - 56ms/step
+Epoch 8/100
+290/290 - 16s - loss: 0.2550 - acc: 0.8989 - auc: 0.9589 - val_loss: 0.2601 - val_acc: 0.8950 - val_auc: 0.9583 - 16s/epoch - 56ms/step
+Epoch 9/100
+290/290 - 16s - loss: 0.2586 - acc: 0.8977 - auc: 0.9578 - val_loss: 0.2377 - val_acc: 0.8960 - val_auc: 0.9649 - 16s/epoch - 56ms/step
+Epoch 10/100
+290/290 - 16s - loss: 0.2555 - acc: 0.8978 - auc: 0.9589 - val_loss: 0.2439 - val_acc: 0.8931 - val_auc: 0.9624 - 16s/epoch - 56ms/step
+Epoch 11/100
+290/290 - 16s - loss: 0.2488 - acc: 0.9004 - auc: 0.9607 - val_loss: 0.2345 - val_acc: 0.9048 - val_auc: 0.9662 - 16s/epoch - 54ms/step
+Epoch 12/100
+290/290 - 16s - loss: 0.2497 - acc: 0.8981 - auc: 0.9609 - val_loss: 0.2320 - val_acc: 0.8980 - val_auc: 0.9663 - 16s/epoch - 56ms/step
+Epoch 13/100
+290/290 - 16s - loss: 0.2463 - acc: 0.9025 - auc: 0.9618 - val_loss: 0.2319 - val_acc: 0.8931 - val_auc: 0.9664 - 16s/epoch - 56ms/step
+Epoch 14/100
+290/290 - 16s - loss: 0.2449 - acc: 0.8999 - auc: 0.9627 - val_loss: 0.2331 - val_acc: 0.9028 - val_auc: 0.9661 - 16s/epoch - 56ms/step
+Epoch 15/100
+290/290 - 16s - loss: 0.2392 - acc: 0.9030 - auc: 0.9646 - val_loss: 0.2385 - val_acc: 0.9067 - val_auc: 0.9653 - 16s/epoch - 56ms/step
+Epoch 16/100
+290/290 - 16s - loss: 0.2419 - acc: 0.9039 - auc: 0.9636 - val_loss: 0.2338 - val_acc: 0.9067 - val_auc: 0.9668 - 16s/epoch - 56ms/step
+Epoch 17/100
+290/290 - 16s - loss: 0.2349 - acc: 0.9046 - auc: 0.9658 - val_loss: 0.2341 - val_acc: 0.9077 - val_auc: 0.9677 - 16s/epoch - 56ms/step
+Epoch 18/100
+290/290 - 16s - loss: 0.2343 - acc: 0.9058 - auc: 0.9662 - val_loss: 0.2324 - val_acc: 0.9028 - val_auc: 0.9673 - 16s/epoch - 56ms/step
+Epoch 19/100
+290/290 - 16s - loss: 0.2289 - acc: 0.9079 - auc: 0.9678 - val_loss: 0.2298 - val_acc: 0.8999 - val_auc: 0.9677 - 16s/epoch - 56ms/step
+Epoch 20/100
+290/290 - 16s - loss: 0.2272 - acc: 0.9095 - auc: 0.9679 - val_loss: 0.2341 - val_acc: 0.8921 - val_auc: 0.9676 - 16s/epoch - 56ms/step
+Epoch 21/100
+290/290 - 16s - loss: 0.2224 - acc: 0.9096 - auc: 0.9695 - val_loss: 0.2291 - val_acc: 0.8970 - val_auc: 0.9697 - 16s/epoch - 56ms/step
+Epoch 22/100
+290/290 - 16s - loss: 0.2202 - acc: 0.9123 - auc: 0.9704 - val_loss: 0.2417 - val_acc: 0.8912 - val_auc: 0.9674 - 16s/epoch - 54ms/step
+Epoch 23/100
+290/290 - 16s - loss: 0.2176 - acc: 0.9129 - auc: 0.9713 - val_loss: 0.2250 - val_acc: 0.9106 - val_auc: 0.9699 - 16s/epoch - 54ms/step
+Epoch 24/100
+290/290 - 15s - loss: 0.2168 - acc: 0.9102 - auc: 0.9712 - val_loss: 0.2310 - val_acc: 0.9028 - val_auc: 0.9691 - 15s/epoch - 52ms/step
+Epoch 25/100
+290/290 - 15s - loss: 0.2089 - acc: 0.9155 - auc: 0.9737 - val_loss: 0.2463 - val_acc: 0.8902 - val_auc: 0.9636 - 15s/epoch - 53ms/step
+Epoch 26/100
+290/290 - 16s - loss: 0.2061 - acc: 0.9179 - auc: 0.9741 - val_loss: 0.2399 - val_acc: 0.8989 - val_auc: 0.9655 - 16s/epoch - 55ms/step
+Epoch 27/100
+290/290 - 16s - loss: 0.2011 - acc: 0.9195 - auc: 0.9754 - val_loss: 0.2362 - val_acc: 0.9009 - val_auc: 0.9679 - 16s/epoch - 55ms/step
+Epoch 28/100
+290/290 - 16s - loss: 0.1959 - acc: 0.9201 - auc: 0.9768 - val_loss: 0.2419 - val_acc: 0.8999 - val_auc: 0.9661 - 16s/epoch - 55ms/step
+Epoch 29/100
+290/290 - 16s - loss: 0.1936 - acc: 0.9220 - auc: 0.9775 - val_loss: 0.2652 - val_acc: 0.8931 - val_auc: 0.9594 - 16s/epoch - 55ms/step
+Epoch 30/100
+290/290 - 15s - loss: 0.1887 - acc: 0.9233 - auc: 0.9782 - val_loss: 0.2580 - val_acc: 0.8931 - val_auc: 0.9618 - 15s/epoch - 52ms/step
+Epoch 31/100
+290/290 - 16s - loss: 0.1834 - acc: 0.9250 - auc: 0.9793 - val_loss: 0.2558 - val_acc: 0.8921 - val_auc: 0.9657 - 16s/epoch - 54ms/step
+Epoch 32/100
+290/290 - 15s - loss: 0.1821 - acc: 0.9272 - auc: 0.9790 - val_loss: 0.2534 - val_acc: 0.8931 - val_auc: 0.9641 - 15s/epoch - 53ms/step
+Epoch 33/100
+290/290 - 15s - loss: 0.1742 - acc: 0.9332 - auc: 0.9814 - val_loss: 0.2547 - val_acc: 0.8960 - val_auc: 0.9654 - 15s/epoch - 53ms/step
+Early stopping epoch: 32
+******Evaluating TEST set*********
+33/33 - 1s - 749ms/epoch - 23ms/step
+              precision    recall  f1-score   support
+
+           0       0.90      0.86      0.88       400
+           1       0.92      0.94      0.93       629
+
+    accuracy                           0.91      1029
+   macro avg       0.91      0.90      0.91      1029
+weighted avg       0.91      0.91      0.91      1029
+
+******Evaluating RANDOM Model*********
+              precision    recall  f1-score   support
+
+           0       0.39      0.49      0.43       400
+           1       0.61      0.51      0.56       629
+
+    accuracy                           0.50      1029
+   macro avg       0.50      0.50      0.50      1029
+weighted avg       0.53      0.50      0.51      1029
+
+______________________________________________________
+fold 1
+Model: "model_1"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_2 (InputLayer)        [(None, 150, 6, 3)]       0         
+                                                                 
+ conv2d_1 (Conv2D)           (None, 146, 1, 64)        5824      
+                                                                 
+ lambda_1 (Lambda)           (None, 146, 64)           0         
+                                                                 
+ lstm (LSTM)                 [(None, 146, 64),         33024     
+                              (None, 64),                        
+                              (None, 64)]                        
+                                                                 
+ self_attention_1 (SelfAtten  ((None, 1024),           2560      
+ tion)                        (None, 16, 146))                   
+                                                                 
+ dense_1 (Dense)             (None, 2)                 2050      
+                                                                 
+=================================================================
+Total params: 43,458
+Trainable params: 43,458
+Non-trainable params: 0
+_________________________________________________________________
+Epoch 1/100
+290/290 - 18s - loss: 0.3152 - acc: 0.8637 - auc: 0.9372 - val_loss: 0.2860 - val_acc: 0.8873 - val_auc: 0.9507 - 18s/epoch - 62ms/step
+Epoch 2/100
+290/290 - 16s - loss: 0.2804 - acc: 0.8860 - auc: 0.9498 - val_loss: 0.2736 - val_acc: 0.8902 - val_auc: 0.9529 - 16s/epoch - 56ms/step
+Epoch 3/100
+290/290 - 16s - loss: 0.2673 - acc: 0.8938 - auc: 0.9544 - val_loss: 0.2821 - val_acc: 0.8814 - val_auc: 0.9521 - 16s/epoch - 54ms/step
+Epoch 4/100
+290/290 - 15s - loss: 0.2673 - acc: 0.8952 - auc: 0.9530 - val_loss: 0.2635 - val_acc: 0.8902 - val_auc: 0.9574 - 15s/epoch - 53ms/step
+Epoch 5/100
+290/290 - 15s - loss: 0.2607 - acc: 0.8948 - auc: 0.9562 - val_loss: 0.2583 - val_acc: 0.8941 - val_auc: 0.9591 - 15s/epoch - 52ms/step
+Epoch 6/100
+290/290 - 15s - loss: 0.2602 - acc: 0.8962 - auc: 0.9570 - val_loss: 0.2605 - val_acc: 0.8999 - val_auc: 0.9576 - 15s/epoch - 53ms/step
+Epoch 7/100
+290/290 - 16s - loss: 0.2562 - acc: 0.8983 - auc: 0.9580 - val_loss: 0.2547 - val_acc: 0.9018 - val_auc: 0.9594 - 16s/epoch - 54ms/step
+Epoch 8/100
+290/290 - 16s - loss: 0.2561 - acc: 0.8987 - auc: 0.9583 - val_loss: 0.2726 - val_acc: 0.8892 - val_auc: 0.9539 - 16s/epoch - 54ms/step
+Epoch 9/100
+290/290 - 16s - loss: 0.2526 - acc: 0.8987 - auc: 0.9593 - val_loss: 0.2631 - val_acc: 0.8912 - val_auc: 0.9581 - 16s/epoch - 54ms/step
+Epoch 10/100
+290/290 - 16s - loss: 0.2523 - acc: 0.8983 - auc: 0.9598 - val_loss: 0.2550 - val_acc: 0.8989 - val_auc: 0.9598 - 16s/epoch - 55ms/step
+Epoch 11/100
+290/290 - 16s - loss: 0.2501 - acc: 0.8957 - auc: 0.9603 - val_loss: 0.2608 - val_acc: 0.8989 - val_auc: 0.9577 - 16s/epoch - 54ms/step
+Epoch 12/100
+290/290 - 16s - loss: 0.2475 - acc: 0.8988 - auc: 0.9615 - val_loss: 0.2588 - val_acc: 0.8950 - val_auc: 0.9592 - 16s/epoch - 55ms/step
+Epoch 13/100
+290/290 - 16s - loss: 0.2450 - acc: 0.9017 - auc: 0.9620 - val_loss: 0.2680 - val_acc: 0.8950 - val_auc: 0.9556 - 16s/epoch - 56ms/step
+Epoch 14/100
+290/290 - 16s - loss: 0.2433 - acc: 0.8999 - auc: 0.9630 - val_loss: 0.2604 - val_acc: 0.9018 - val_auc: 0.9563 - 16s/epoch - 54ms/step
+Epoch 15/100
+290/290 - 16s - loss: 0.2424 - acc: 0.9013 - auc: 0.9632 - val_loss: 0.2699 - val_acc: 0.8892 - val_auc: 0.9557 - 16s/epoch - 54ms/step
+Epoch 16/100
+290/290 - 16s - loss: 0.2391 - acc: 0.9011 - auc: 0.9642 - val_loss: 0.2505 - val_acc: 0.9009 - val_auc: 0.9615 - 16s/epoch - 54ms/step
+Epoch 17/100
+290/290 - 16s - loss: 0.2362 - acc: 0.9019 - auc: 0.9656 - val_loss: 0.2473 - val_acc: 0.9038 - val_auc: 0.9619 - 16s/epoch - 55ms/step
+Epoch 18/100
+290/290 - 16s - loss: 0.2338 - acc: 0.9037 - auc: 0.9659 - val_loss: 0.2685 - val_acc: 0.8970 - val_auc: 0.9561 - 16s/epoch - 56ms/step
+Epoch 19/100
+290/290 - 17s - loss: 0.2332 - acc: 0.9071 - auc: 0.9659 - val_loss: 0.2559 - val_acc: 0.9038 - val_auc: 0.9592 - 17s/epoch - 57ms/step
+Epoch 20/100
+290/290 - 15s - loss: 0.2289 - acc: 0.9074 - auc: 0.9676 - val_loss: 0.2559 - val_acc: 0.8950 - val_auc: 0.9598 - 15s/epoch - 53ms/step
+Epoch 21/100
+290/290 - 15s - loss: 0.2286 - acc: 0.9066 - auc: 0.9675 - val_loss: 0.2660 - val_acc: 0.9009 - val_auc: 0.9525 - 15s/epoch - 53ms/step
+Epoch 22/100
+290/290 - 15s - loss: 0.2220 - acc: 0.9101 - auc: 0.9690 - val_loss: 0.2618 - val_acc: 0.8960 - val_auc: 0.9583 - 15s/epoch - 53ms/step
+Epoch 23/100
+290/290 - 16s - loss: 0.2198 - acc: 0.9108 - auc: 0.9703 - val_loss: 0.2579 - val_acc: 0.8921 - val_auc: 0.9573 - 16s/epoch - 54ms/step
+Epoch 24/100
+290/290 - 15s - loss: 0.2178 - acc: 0.9130 - auc: 0.9705 - val_loss: 0.2533 - val_acc: 0.9018 - val_auc: 0.9585 - 15s/epoch - 53ms/step
+Epoch 25/100
+290/290 - 15s - loss: 0.2145 - acc: 0.9126 - auc: 0.9716 - val_loss: 0.2650 - val_acc: 0.8960 - val_auc: 0.9574 - 15s/epoch - 53ms/step
+Epoch 26/100
+290/290 - 15s - loss: 0.2150 - acc: 0.9115 - auc: 0.9714 - val_loss: 0.2630 - val_acc: 0.9009 - val_auc: 0.9564 - 15s/epoch - 53ms/step
+Epoch 27/100
+290/290 - 15s - loss: 0.2098 - acc: 0.9164 - auc: 0.9730 - val_loss: 0.2603 - val_acc: 0.9009 - val_auc: 0.9588 - 15s/epoch - 53ms/step
+Early stopping epoch: 26
+******Evaluating TEST set*********
+33/33 - 1s - 785ms/epoch - 24ms/step
+              precision    recall  f1-score   support
+
+           0       0.90      0.84      0.87       400
+           1       0.91      0.94      0.92       629
+
+    accuracy                           0.90      1029
+   macro avg       0.90      0.89      0.90      1029
+weighted avg       0.90      0.90      0.90      1029
+
+******Evaluating RANDOM Model*********
+              precision    recall  f1-score   support
+
+           0       0.40      0.55      0.47       400
+           1       0.63      0.49      0.55       629
+
+    accuracy                           0.51      1029
+   macro avg       0.52      0.52      0.51      1029
+weighted avg       0.54      0.51      0.52      1029
+
+______________________________________________________
+fold 2
+Model: "model_2"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_3 (InputLayer)        [(None, 150, 6, 3)]       0         
+                                                                 
+ conv2d_2 (Conv2D)           (None, 146, 1, 64)        5824      
+                                                                 
+ lambda_2 (Lambda)           (None, 146, 64)           0         
+                                                                 
+ lstm (LSTM)                 [(None, 146, 64),         33024     
+                              (None, 64),                        
+                              (None, 64)]                        
+                                                                 
+ self_attention_2 (SelfAtten  ((None, 1024),           2560      
+ tion)                        (None, 16, 146))                   
+                                                                 
+ dense_2 (Dense)             (None, 2)                 2050      
+                                                                 
+=================================================================
+Total params: 43,458
+Trainable params: 43,458
+Non-trainable params: 0
+_________________________________________________________________
+Epoch 1/100
+290/290 - 18s - loss: 0.3148 - acc: 0.8650 - auc: 0.9384 - val_loss: 0.3187 - val_acc: 0.8649 - val_auc: 0.9417 - 18s/epoch - 61ms/step
+Epoch 2/100
+290/290 - 15s - loss: 0.2822 - acc: 0.8849 - auc: 0.9491 - val_loss: 0.2918 - val_acc: 0.8873 - val_auc: 0.9478 - 15s/epoch - 52ms/step
+Epoch 3/100
+290/290 - 15s - loss: 0.2722 - acc: 0.8922 - auc: 0.9519 - val_loss: 0.2764 - val_acc: 0.8824 - val_auc: 0.9531 - 15s/epoch - 51ms/step
+Epoch 4/100
+290/290 - 16s - loss: 0.2656 - acc: 0.8925 - auc: 0.9541 - val_loss: 0.2733 - val_acc: 0.8844 - val_auc: 0.9533 - 16s/epoch - 56ms/step
+Epoch 5/100
+290/290 - 15s - loss: 0.2610 - acc: 0.8954 - auc: 0.9568 - val_loss: 0.2649 - val_acc: 0.8950 - val_auc: 0.9554 - 15s/epoch - 53ms/step
+Epoch 6/100
+290/290 - 16s - loss: 0.2603 - acc: 0.8950 - auc: 0.9573 - val_loss: 0.2624 - val_acc: 0.8950 - val_auc: 0.9575 - 16s/epoch - 54ms/step
+Epoch 7/100
+290/290 - 15s - loss: 0.2581 - acc: 0.8962 - auc: 0.9580 - val_loss: 0.2886 - val_acc: 0.8844 - val_auc: 0.9490 - 15s/epoch - 52ms/step
+Epoch 8/100
+290/290 - 15s - loss: 0.2557 - acc: 0.8958 - auc: 0.9593 - val_loss: 0.2667 - val_acc: 0.8941 - val_auc: 0.9578 - 15s/epoch - 52ms/step
+Epoch 9/100
+290/290 - 15s - loss: 0.2518 - acc: 0.8972 - auc: 0.9604 - val_loss: 0.2718 - val_acc: 0.8931 - val_auc: 0.9561 - 15s/epoch - 51ms/step
+Epoch 10/100
+290/290 - 15s - loss: 0.2514 - acc: 0.8975 - auc: 0.9608 - val_loss: 0.2746 - val_acc: 0.8873 - val_auc: 0.9542 - 15s/epoch - 51ms/step
+Epoch 11/100
+290/290 - 16s - loss: 0.2484 - acc: 0.8974 - auc: 0.9612 - val_loss: 0.2716 - val_acc: 0.8873 - val_auc: 0.9557 - 16s/epoch - 55ms/step
+Epoch 12/100
+290/290 - 16s - loss: 0.2471 - acc: 0.9021 - auc: 0.9621 - val_loss: 0.2621 - val_acc: 0.8882 - val_auc: 0.9581 - 16s/epoch - 54ms/step
+Epoch 13/100
+290/290 - 15s - loss: 0.2440 - acc: 0.8997 - auc: 0.9632 - val_loss: 0.2859 - val_acc: 0.8844 - val_auc: 0.9548 - 15s/epoch - 53ms/step
+Epoch 14/100
+290/290 - 15s - loss: 0.2387 - acc: 0.9022 - auc: 0.9645 - val_loss: 0.2610 - val_acc: 0.8941 - val_auc: 0.9598 - 15s/epoch - 52ms/step
+Epoch 15/100
+290/290 - 16s - loss: 0.2378 - acc: 0.9025 - auc: 0.9646 - val_loss: 0.2626 - val_acc: 0.8921 - val_auc: 0.9592 - 16s/epoch - 55ms/step
+Epoch 16/100
+290/290 - 16s - loss: 0.2339 - acc: 0.9049 - auc: 0.9665 - val_loss: 0.2588 - val_acc: 0.8902 - val_auc: 0.9602 - 16s/epoch - 54ms/step
+Epoch 17/100
+290/290 - 15s - loss: 0.2321 - acc: 0.9052 - auc: 0.9665 - val_loss: 0.2683 - val_acc: 0.8902 - val_auc: 0.9565 - 15s/epoch - 53ms/step
+Epoch 18/100
+290/290 - 16s - loss: 0.2331 - acc: 0.9066 - auc: 0.9663 - val_loss: 0.2630 - val_acc: 0.8844 - val_auc: 0.9594 - 16s/epoch - 54ms/step
+Epoch 19/100
+290/290 - 16s - loss: 0.2285 - acc: 0.9080 - auc: 0.9678 - val_loss: 0.2651 - val_acc: 0.8882 - val_auc: 0.9581 - 16s/epoch - 55ms/step
+Epoch 20/100
+290/290 - 16s - loss: 0.2243 - acc: 0.9112 - auc: 0.9685 - val_loss: 0.2782 - val_acc: 0.8863 - val_auc: 0.9551 - 16s/epoch - 54ms/step
+Epoch 21/100
+290/290 - 16s - loss: 0.2228 - acc: 0.9114 - auc: 0.9690 - val_loss: 0.2786 - val_acc: 0.8892 - val_auc: 0.9561 - 16s/epoch - 56ms/step
+Epoch 22/100
+290/290 - 16s - loss: 0.2194 - acc: 0.9109 - auc: 0.9703 - val_loss: 0.2679 - val_acc: 0.8912 - val_auc: 0.9568 - 16s/epoch - 56ms/step
+Epoch 23/100
+290/290 - 16s - loss: 0.2160 - acc: 0.9135 - auc: 0.9710 - val_loss: 0.2803 - val_acc: 0.8873 - val_auc: 0.9563 - 16s/epoch - 56ms/step
+Epoch 24/100
+290/290 - 16s - loss: 0.2111 - acc: 0.9172 - auc: 0.9723 - val_loss: 0.2785 - val_acc: 0.8785 - val_auc: 0.9542 - 16s/epoch - 54ms/step
+Epoch 25/100
+290/290 - 16s - loss: 0.2080 - acc: 0.9176 - auc: 0.9729 - val_loss: 0.2887 - val_acc: 0.8805 - val_auc: 0.9521 - 16s/epoch - 56ms/step
+Epoch 26/100
+290/290 - 16s - loss: 0.2059 - acc: 0.9196 - auc: 0.9736 - val_loss: 0.2803 - val_acc: 0.8766 - val_auc: 0.9544 - 16s/epoch - 55ms/step
+Early stopping epoch: 25
+******Evaluating TEST set*********
+33/33 - 1s - 779ms/epoch - 24ms/step
+              precision    recall  f1-score   support
+
+           0       0.88      0.82      0.85       400
+           1       0.89      0.93      0.91       629
+
+    accuracy                           0.89      1029
+   macro avg       0.89      0.88      0.88      1029
+weighted avg       0.89      0.89      0.89      1029
+
+******Evaluating RANDOM Model*********
+              precision    recall  f1-score   support
+
+           0       0.37      0.48      0.42       400
+           1       0.60      0.49      0.54       629
+
+    accuracy                           0.48      1029
+   macro avg       0.48      0.48      0.48      1029
+weighted avg       0.51      0.48      0.49      1029
+
+______________________________________________________
+fold 3
+Model: "model_3"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_4 (InputLayer)        [(None, 150, 6, 3)]       0         
+                                                                 
+ conv2d_3 (Conv2D)           (None, 146, 1, 64)        5824      
+                                                                 
+ lambda_3 (Lambda)           (None, 146, 64)           0         
+                                                                 
+ lstm (LSTM)                 [(None, 146, 64),         33024     
+                              (None, 64),                        
+                              (None, 64)]                        
+                                                                 
+ self_attention_3 (SelfAtten  ((None, 1024),           2560      
+ tion)                        (None, 16, 146))                   
+                                                                 
+ dense_3 (Dense)             (None, 2)                 2050      
+                                                                 
+=================================================================
+Total params: 43,458
+Trainable params: 43,458
+Non-trainable params: 0
+_________________________________________________________________
+Epoch 1/100
+290/290 - 18s - loss: 0.3149 - acc: 0.8637 - auc: 0.9383 - val_loss: 0.3076 - val_acc: 0.8795 - val_auc: 0.9441 - 18s/epoch - 63ms/step
+Epoch 2/100
+290/290 - 16s - loss: 0.2769 - acc: 0.8886 - auc: 0.9513 - val_loss: 0.2701 - val_acc: 0.8902 - val_auc: 0.9523 - 16s/epoch - 55ms/step
+Epoch 3/100
+290/290 - 16s - loss: 0.2736 - acc: 0.8876 - auc: 0.9530 - val_loss: 0.2665 - val_acc: 0.8921 - val_auc: 0.9533 - 16s/epoch - 56ms/step
+Epoch 4/100
+290/290 - 15s - loss: 0.2652 - acc: 0.8935 - auc: 0.9552 - val_loss: 0.3114 - val_acc: 0.8756 - val_auc: 0.9366 - 15s/epoch - 53ms/step
+Epoch 5/100
+290/290 - 16s - loss: 0.2643 - acc: 0.8951 - auc: 0.9563 - val_loss: 0.2627 - val_acc: 0.8989 - val_auc: 0.9547 - 16s/epoch - 56ms/step
+Epoch 6/100
+290/290 - 16s - loss: 0.2596 - acc: 0.8959 - auc: 0.9575 - val_loss: 0.2665 - val_acc: 0.8989 - val_auc: 0.9547 - 16s/epoch - 55ms/step
+Epoch 7/100
+290/290 - 15s - loss: 0.2560 - acc: 0.8931 - auc: 0.9594 - val_loss: 0.2607 - val_acc: 0.8902 - val_auc: 0.9555 - 15s/epoch - 53ms/step
+Epoch 8/100
+290/290 - 16s - loss: 0.2551 - acc: 0.8965 - auc: 0.9594 - val_loss: 0.2570 - val_acc: 0.8960 - val_auc: 0.9549 - 16s/epoch - 55ms/step
+Epoch 9/100
+290/290 - 16s - loss: 0.2558 - acc: 0.8954 - auc: 0.9594 - val_loss: 0.2631 - val_acc: 0.9009 - val_auc: 0.9551 - 16s/epoch - 55ms/step
+Epoch 10/100
+290/290 - 16s - loss: 0.2509 - acc: 0.8992 - auc: 0.9606 - val_loss: 0.2579 - val_acc: 0.9009 - val_auc: 0.9576 - 16s/epoch - 56ms/step
+Epoch 11/100
+290/290 - 16s - loss: 0.2505 - acc: 0.8967 - auc: 0.9609 - val_loss: 0.2604 - val_acc: 0.8960 - val_auc: 0.9563 - 16s/epoch - 55ms/step
+Epoch 12/100
+290/290 - 15s - loss: 0.2471 - acc: 0.9000 - auc: 0.9619 - val_loss: 0.2568 - val_acc: 0.8989 - val_auc: 0.9557 - 15s/epoch - 53ms/step
+Epoch 13/100
+290/290 - 15s - loss: 0.2436 - acc: 0.9006 - auc: 0.9632 - val_loss: 0.2533 - val_acc: 0.9028 - val_auc: 0.9575 - 15s/epoch - 53ms/step
+Epoch 14/100
+290/290 - 15s - loss: 0.2405 - acc: 0.9022 - auc: 0.9642 - val_loss: 0.2587 - val_acc: 0.8931 - val_auc: 0.9555 - 15s/epoch - 52ms/step
+Epoch 15/100
+290/290 - 15s - loss: 0.2388 - acc: 0.9011 - auc: 0.9650 - val_loss: 0.2552 - val_acc: 0.8970 - val_auc: 0.9579 - 15s/epoch - 52ms/step
+Epoch 16/100
+290/290 - 15s - loss: 0.2351 - acc: 0.9039 - auc: 0.9654 - val_loss: 0.2662 - val_acc: 0.8941 - val_auc: 0.9543 - 15s/epoch - 51ms/step
+Epoch 17/100
+290/290 - 15s - loss: 0.2339 - acc: 0.9034 - auc: 0.9667 - val_loss: 0.2595 - val_acc: 0.9018 - val_auc: 0.9560 - 15s/epoch - 52ms/step
+Epoch 18/100
+290/290 - 15s - loss: 0.2314 - acc: 0.9062 - auc: 0.9672 - val_loss: 0.2544 - val_acc: 0.8999 - val_auc: 0.9573 - 15s/epoch - 53ms/step
+Epoch 19/100
+290/290 - 16s - loss: 0.2266 - acc: 0.9076 - auc: 0.9680 - val_loss: 0.2740 - val_acc: 0.8980 - val_auc: 0.9513 - 16s/epoch - 55ms/step
+Epoch 20/100
+290/290 - 16s - loss: 0.2194 - acc: 0.9096 - auc: 0.9705 - val_loss: 0.2597 - val_acc: 0.9018 - val_auc: 0.9551 - 16s/epoch - 54ms/step
+Epoch 21/100
+290/290 - 16s - loss: 0.2238 - acc: 0.9081 - auc: 0.9698 - val_loss: 0.2515 - val_acc: 0.9009 - val_auc: 0.9575 - 16s/epoch - 55ms/step
+Epoch 22/100
+290/290 - 16s - loss: 0.2162 - acc: 0.9112 - auc: 0.9717 - val_loss: 0.2757 - val_acc: 0.8902 - val_auc: 0.9519 - 16s/epoch - 54ms/step
+Epoch 23/100
+290/290 - 16s - loss: 0.2157 - acc: 0.9108 - auc: 0.9721 - val_loss: 0.2694 - val_acc: 0.8902 - val_auc: 0.9517 - 16s/epoch - 56ms/step
+Epoch 24/100
+290/290 - 16s - loss: 0.2086 - acc: 0.9133 - auc: 0.9737 - val_loss: 0.2808 - val_acc: 0.8892 - val_auc: 0.9505 - 16s/epoch - 54ms/step
+Epoch 25/100
+290/290 - 16s - loss: 0.2065 - acc: 0.9139 - auc: 0.9742 - val_loss: 0.2688 - val_acc: 0.8912 - val_auc: 0.9534 - 16s/epoch - 54ms/step
+Early stopping epoch: 24
+******Evaluating TEST set*********
+33/33 - 1s - 758ms/epoch - 23ms/step
+              precision    recall  f1-score   support
+
+           0       0.90      0.83      0.86       400
+           1       0.90      0.94      0.92       629
+
+    accuracy                           0.90      1029
+   macro avg       0.90      0.88      0.89      1029
+weighted avg       0.90      0.90      0.90      1029
+
+******Evaluating RANDOM Model*********
+              precision    recall  f1-score   support
+
+           0       0.40      0.49      0.44       400
+           1       0.63      0.54      0.58       629
+
+    accuracy                           0.52      1029
+   macro avg       0.51      0.52      0.51      1029
+weighted avg       0.54      0.52      0.53      1029
+
+______________________________________________________
+fold 4
+Model: "model_4"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_5 (InputLayer)        [(None, 150, 6, 3)]       0         
+                                                                 
+ conv2d_4 (Conv2D)           (None, 146, 1, 64)        5824      
+                                                                 
+ lambda_4 (Lambda)           (None, 146, 64)           0         
+                                                                 
+ lstm (LSTM)                 [(None, 146, 64),         33024     
+                              (None, 64),                        
+                              (None, 64)]                        
+                                                                 
+ self_attention_4 (SelfAtten  ((None, 1024),           2560      
+ tion)                        (None, 16, 146))                   
+                                                                 
+ dense_4 (Dense)             (None, 2)                 2050      
+                                                                 
+=================================================================
+Total params: 43,458
+Trainable params: 43,458
+Non-trainable params: 0
+_________________________________________________________________
+Epoch 1/100
+290/290 - 19s - loss: 0.3128 - acc: 0.8676 - auc: 0.9384 - val_loss: 0.2894 - val_acc: 0.8882 - val_auc: 0.9455 - 19s/epoch - 64ms/step
+Epoch 2/100
+290/290 - 16s - loss: 0.2832 - acc: 0.8838 - auc: 0.9488 - val_loss: 0.3039 - val_acc: 0.8795 - val_auc: 0.9432 - 16s/epoch - 55ms/step
+Epoch 3/100
+290/290 - 16s - loss: 0.2693 - acc: 0.8920 - auc: 0.9531 - val_loss: 0.2807 - val_acc: 0.8960 - val_auc: 0.9502 - 16s/epoch - 55ms/step
+Epoch 4/100
+290/290 - 16s - loss: 0.2636 - acc: 0.8963 - auc: 0.9558 - val_loss: 0.2789 - val_acc: 0.8960 - val_auc: 0.9494 - 16s/epoch - 55ms/step
+Epoch 5/100
+290/290 - 16s - loss: 0.2646 - acc: 0.8960 - auc: 0.9553 - val_loss: 0.2725 - val_acc: 0.8960 - val_auc: 0.9523 - 16s/epoch - 54ms/step
+Epoch 6/100
+290/290 - 16s - loss: 0.2574 - acc: 0.8951 - auc: 0.9577 - val_loss: 0.2727 - val_acc: 0.8941 - val_auc: 0.9530 - 16s/epoch - 55ms/step
+Epoch 7/100
+290/290 - 16s - loss: 0.2611 - acc: 0.8944 - auc: 0.9568 - val_loss: 0.2850 - val_acc: 0.8853 - val_auc: 0.9485 - 16s/epoch - 56ms/step
+Epoch 8/100
+290/290 - 16s - loss: 0.2557 - acc: 0.8970 - auc: 0.9591 - val_loss: 0.2799 - val_acc: 0.8960 - val_auc: 0.9503 - 16s/epoch - 56ms/step
+Epoch 9/100
+290/290 - 15s - loss: 0.2527 - acc: 0.8963 - auc: 0.9601 - val_loss: 0.2731 - val_acc: 0.8950 - val_auc: 0.9525 - 15s/epoch - 53ms/step
+Epoch 10/100
+290/290 - 15s - loss: 0.2489 - acc: 0.8976 - auc: 0.9610 - val_loss: 0.2726 - val_acc: 0.8960 - val_auc: 0.9537 - 15s/epoch - 53ms/step
+Epoch 11/100
+290/290 - 15s - loss: 0.2480 - acc: 0.9010 - auc: 0.9615 - val_loss: 0.2715 - val_acc: 0.8931 - val_auc: 0.9547 - 15s/epoch - 53ms/step
+Epoch 12/100
+290/290 - 15s - loss: 0.2450 - acc: 0.9000 - auc: 0.9625 - val_loss: 0.2707 - val_acc: 0.8970 - val_auc: 0.9555 - 15s/epoch - 53ms/step
+Epoch 13/100
+290/290 - 16s - loss: 0.2422 - acc: 0.9003 - auc: 0.9634 - val_loss: 0.2687 - val_acc: 0.8834 - val_auc: 0.9550 - 16s/epoch - 55ms/step
+Epoch 14/100
+290/290 - 15s - loss: 0.2409 - acc: 0.9022 - auc: 0.9639 - val_loss: 0.2940 - val_acc: 0.8776 - val_auc: 0.9473 - 15s/epoch - 53ms/step
+Epoch 15/100
+290/290 - 16s - loss: 0.2389 - acc: 0.9019 - auc: 0.9644 - val_loss: 0.2681 - val_acc: 0.8970 - val_auc: 0.9557 - 16s/epoch - 54ms/step
+Epoch 16/100
+290/290 - 16s - loss: 0.2364 - acc: 0.9032 - auc: 0.9655 - val_loss: 0.2643 - val_acc: 0.8941 - val_auc: 0.9572 - 16s/epoch - 56ms/step
+Epoch 17/100
+290/290 - 16s - loss: 0.2368 - acc: 0.9027 - auc: 0.9653 - val_loss: 0.2813 - val_acc: 0.8882 - val_auc: 0.9522 - 16s/epoch - 56ms/step
+Epoch 18/100
+290/290 - 16s - loss: 0.2329 - acc: 0.9064 - auc: 0.9664 - val_loss: 0.2741 - val_acc: 0.8931 - val_auc: 0.9539 - 16s/epoch - 56ms/step
+Epoch 19/100
+290/290 - 16s - loss: 0.2317 - acc: 0.9076 - auc: 0.9662 - val_loss: 0.2652 - val_acc: 0.8960 - val_auc: 0.9567 - 16s/epoch - 56ms/step
+Epoch 20/100
+290/290 - 16s - loss: 0.2294 - acc: 0.9067 - auc: 0.9677 - val_loss: 0.2733 - val_acc: 0.8931 - val_auc: 0.9538 - 16s/epoch - 55ms/step
+Epoch 21/100
+290/290 - 16s - loss: 0.2308 - acc: 0.9071 - auc: 0.9668 - val_loss: 0.2983 - val_acc: 0.8824 - val_auc: 0.9488 - 16s/epoch - 54ms/step
+Epoch 22/100
+290/290 - 16s - loss: 0.2209 - acc: 0.9109 - auc: 0.9698 - val_loss: 0.2810 - val_acc: 0.8863 - val_auc: 0.9522 - 16s/epoch - 54ms/step
+Epoch 23/100
+290/290 - 16s - loss: 0.2201 - acc: 0.9124 - auc: 0.9696 - val_loss: 0.2775 - val_acc: 0.8882 - val_auc: 0.9533 - 16s/epoch - 54ms/step
+Epoch 24/100
+290/290 - 16s - loss: 0.2154 - acc: 0.9125 - auc: 0.9711 - val_loss: 0.2998 - val_acc: 0.8882 - val_auc: 0.9483 - 16s/epoch - 54ms/step
+Epoch 25/100
+290/290 - 16s - loss: 0.2126 - acc: 0.9147 - auc: 0.9717 - val_loss: 0.2775 - val_acc: 0.8853 - val_auc: 0.9534 - 16s/epoch - 54ms/step
+Epoch 26/100
+290/290 - 16s - loss: 0.2102 - acc: 0.9153 - auc: 0.9730 - val_loss: 0.2973 - val_acc: 0.8873 - val_auc: 0.9460 - 16s/epoch - 55ms/step
+Early stopping epoch: 25
+******Evaluating TEST set*********
+33/33 - 1s - 781ms/epoch - 24ms/step
+              precision    recall  f1-score   support
+
+           0       0.89      0.83      0.86       400
+           1       0.90      0.93      0.92       629
+
+    accuracy                           0.89      1029
+   macro avg       0.89      0.88      0.89      1029
+weighted avg       0.89      0.89      0.89      1029
+
+******Evaluating RANDOM Model*********
+              precision    recall  f1-score   support
+
+           0       0.38      0.50      0.43       400
+           1       0.60      0.48      0.53       629
+
+    accuracy                           0.49      1029
+   macro avg       0.49      0.49      0.48      1029
+weighted avg       0.51      0.49      0.49      1029
+
+______________________________________________________
+fold 5
+Model: "model_5"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_6 (InputLayer)        [(None, 150, 6, 3)]       0         
+                                                                 
+ conv2d_5 (Conv2D)           (None, 146, 1, 64)        5824      
+                                                                 
+ lambda_5 (Lambda)           (None, 146, 64)           0         
+                                                                 
+ lstm (LSTM)                 [(None, 146, 64),         33024     
+                              (None, 64),                        
+                              (None, 64)]                        
+                                                                 
+ self_attention_5 (SelfAtten  ((None, 1024),           2560      
+ tion)                        (None, 16, 146))                   
+                                                                 
+ dense_5 (Dense)             (None, 2)                 2050      
+                                                                 
+=================================================================
+Total params: 43,458
+Trainable params: 43,458
+Non-trainable params: 0
+_________________________________________________________________
+Epoch 1/100
+290/290 - 18s - loss: 0.3188 - acc: 0.8621 - auc: 0.9361 - val_loss: 0.2570 - val_acc: 0.9018 - val_auc: 0.9597 - 18s/epoch - 63ms/step
+Epoch 2/100
+290/290 - 16s - loss: 0.2811 - acc: 0.8858 - auc: 0.9494 - val_loss: 0.2492 - val_acc: 0.9009 - val_auc: 0.9620 - 16s/epoch - 56ms/step
+Epoch 3/100
+290/290 - 15s - loss: 0.2728 - acc: 0.8883 - auc: 0.9520 - val_loss: 0.2422 - val_acc: 0.9096 - val_auc: 0.9642 - 15s/epoch - 53ms/step
+Epoch 4/100
+290/290 - 16s - loss: 0.2683 - acc: 0.8909 - auc: 0.9545 - val_loss: 0.2440 - val_acc: 0.9077 - val_auc: 0.9639 - 16s/epoch - 56ms/step
+Epoch 5/100
+290/290 - 16s - loss: 0.2665 - acc: 0.8951 - auc: 0.9542 - val_loss: 0.2415 - val_acc: 0.9116 - val_auc: 0.9650 - 16s/epoch - 55ms/step
+Epoch 6/100
+290/290 - 16s - loss: 0.2654 - acc: 0.8928 - auc: 0.9555 - val_loss: 0.2415 - val_acc: 0.9038 - val_auc: 0.9645 - 16s/epoch - 55ms/step
+Epoch 7/100
+290/290 - 16s - loss: 0.2600 - acc: 0.8946 - auc: 0.9577 - val_loss: 0.2544 - val_acc: 0.9028 - val_auc: 0.9613 - 16s/epoch - 55ms/step
+Epoch 8/100
+290/290 - 16s - loss: 0.2590 - acc: 0.8943 - auc: 0.9578 - val_loss: 0.2344 - val_acc: 0.9096 - val_auc: 0.9661 - 16s/epoch - 55ms/step
+Epoch 9/100
+290/290 - 16s - loss: 0.2551 - acc: 0.8960 - auc: 0.9593 - val_loss: 0.2390 - val_acc: 0.9057 - val_auc: 0.9653 - 16s/epoch - 55ms/step
+Epoch 10/100
+290/290 - 16s - loss: 0.2566 - acc: 0.8945 - auc: 0.9586 - val_loss: 0.2424 - val_acc: 0.9067 - val_auc: 0.9658 - 16s/epoch - 54ms/step
+Epoch 11/100
+290/290 - 16s - loss: 0.2490 - acc: 0.9011 - auc: 0.9608 - val_loss: 0.2408 - val_acc: 0.9028 - val_auc: 0.9657 - 16s/epoch - 55ms/step
+Epoch 12/100
+290/290 - 16s - loss: 0.2492 - acc: 0.8983 - auc: 0.9615 - val_loss: 0.2348 - val_acc: 0.9057 - val_auc: 0.9671 - 16s/epoch - 55ms/step
+Epoch 13/100
+290/290 - 16s - loss: 0.2459 - acc: 0.9006 - auc: 0.9623 - val_loss: 0.2483 - val_acc: 0.9038 - val_auc: 0.9610 - 16s/epoch - 55ms/step
+Epoch 14/100
+290/290 - 16s - loss: 0.2457 - acc: 0.8990 - auc: 0.9625 - val_loss: 0.2403 - val_acc: 0.9048 - val_auc: 0.9653 - 16s/epoch - 56ms/step
+Epoch 15/100
+290/290 - 15s - loss: 0.2415 - acc: 0.9026 - auc: 0.9635 - val_loss: 0.2617 - val_acc: 0.8844 - val_auc: 0.9598 - 15s/epoch - 53ms/step
+Epoch 16/100
+290/290 - 16s - loss: 0.2396 - acc: 0.9035 - auc: 0.9642 - val_loss: 0.2352 - val_acc: 0.9135 - val_auc: 0.9662 - 16s/epoch - 53ms/step
+Epoch 17/100
+290/290 - 16s - loss: 0.2363 - acc: 0.9032 - auc: 0.9653 - val_loss: 0.2492 - val_acc: 0.9018 - val_auc: 0.9597 - 16s/epoch - 56ms/step
+Epoch 18/100
+290/290 - 16s - loss: 0.2350 - acc: 0.9060 - auc: 0.9659 - val_loss: 0.2404 - val_acc: 0.8989 - val_auc: 0.9648 - 16s/epoch - 56ms/step
+Epoch 19/100
+290/290 - 15s - loss: 0.2306 - acc: 0.9071 - auc: 0.9676 - val_loss: 0.2443 - val_acc: 0.8999 - val_auc: 0.9632 - 15s/epoch - 53ms/step
+Epoch 20/100
+290/290 - 15s - loss: 0.2281 - acc: 0.9038 - auc: 0.9679 - val_loss: 0.2356 - val_acc: 0.9067 - val_auc: 0.9652 - 15s/epoch - 53ms/step
+Epoch 21/100
+290/290 - 15s - loss: 0.2249 - acc: 0.9082 - auc: 0.9688 - val_loss: 0.2391 - val_acc: 0.8970 - val_auc: 0.9648 - 15s/epoch - 52ms/step
+Epoch 22/100
+290/290 - 16s - loss: 0.2209 - acc: 0.9093 - auc: 0.9703 - val_loss: 0.2497 - val_acc: 0.8950 - val_auc: 0.9606 - 16s/epoch - 56ms/step
+Early stopping epoch: 21
+******Evaluating TEST set*********
+33/33 - 1s - 777ms/epoch - 24ms/step
+              precision    recall  f1-score   support
+
+           0       0.88      0.87      0.88       400
+           1       0.92      0.93      0.92       629
+
+    accuracy                           0.91      1029
+   macro avg       0.90      0.90      0.90      1029
+weighted avg       0.91      0.91      0.91      1029
+
+******Evaluating RANDOM Model*********
+              precision    recall  f1-score   support
+
+           0       0.37      0.49      0.42       400
+           1       0.59      0.47      0.53       629
+
+    accuracy                           0.48      1029
+   macro avg       0.48      0.48      0.47      1029
+weighted avg       0.51      0.48      0.48      1029
+
+______________________________________________________
+fold 6
+Model: "model_6"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_7 (InputLayer)        [(None, 150, 6, 3)]       0         
+                                                                 
+ conv2d_6 (Conv2D)           (None, 146, 1, 64)        5824      
+                                                                 
+ lambda_6 (Lambda)           (None, 146, 64)           0         
+                                                                 
+ lstm (LSTM)                 [(None, 146, 64),         33024     
+                              (None, 64),                        
+                              (None, 64)]                        
+                                                                 
+ self_attention_6 (SelfAtten  ((None, 1024),           2560      
+ tion)                        (None, 16, 146))                   
+                                                                 
+ dense_6 (Dense)             (None, 2)                 2050      
+                                                                 
+=================================================================
+Total params: 43,458
+Trainable params: 43,458
+Non-trainable params: 0
+_________________________________________________________________
+Epoch 1/100
+290/290 - 19s - loss: 0.3159 - acc: 0.8640 - auc: 0.9374 - val_loss: 0.3010 - val_acc: 0.8844 - val_auc: 0.9440 - 19s/epoch - 64ms/step
+Epoch 2/100
+290/290 - 16s - loss: 0.2863 - acc: 0.8818 - auc: 0.9469 - val_loss: 0.3259 - val_acc: 0.8649 - val_auc: 0.9381 - 16s/epoch - 54ms/step
+Epoch 3/100
+290/290 - 15s - loss: 0.2721 - acc: 0.8908 - auc: 0.9518 - val_loss: 0.2661 - val_acc: 0.8989 - val_auc: 0.9538 - 15s/epoch - 53ms/step
+Epoch 4/100
+290/290 - 15s - loss: 0.2669 - acc: 0.8900 - auc: 0.9549 - val_loss: 0.2619 - val_acc: 0.8980 - val_auc: 0.9549 - 15s/epoch - 53ms/step
+Epoch 5/100
+290/290 - 15s - loss: 0.2620 - acc: 0.8938 - auc: 0.9562 - val_loss: 0.2779 - val_acc: 0.8853 - val_auc: 0.9529 - 15s/epoch - 53ms/step
+Epoch 6/100
+290/290 - 16s - loss: 0.2587 - acc: 0.8962 - auc: 0.9577 - val_loss: 0.2588 - val_acc: 0.8980 - val_auc: 0.9571 - 16s/epoch - 54ms/step
+Epoch 7/100
+290/290 - 16s - loss: 0.2580 - acc: 0.8959 - auc: 0.9580 - val_loss: 0.2568 - val_acc: 0.9028 - val_auc: 0.9580 - 16s/epoch - 56ms/step
+Epoch 8/100
+290/290 - 16s - loss: 0.2560 - acc: 0.8986 - auc: 0.9585 - val_loss: 0.2483 - val_acc: 0.9018 - val_auc: 0.9604 - 16s/epoch - 56ms/step
+Epoch 9/100
+290/290 - 16s - loss: 0.2532 - acc: 0.8973 - auc: 0.9599 - val_loss: 0.2498 - val_acc: 0.8999 - val_auc: 0.9599 - 16s/epoch - 56ms/step
+Epoch 10/100
+290/290 - 16s - loss: 0.2500 - acc: 0.8993 - auc: 0.9610 - val_loss: 0.2703 - val_acc: 0.8999 - val_auc: 0.9555 - 16s/epoch - 55ms/step
+Epoch 11/100
+290/290 - 16s - loss: 0.2478 - acc: 0.8970 - auc: 0.9616 - val_loss: 0.2550 - val_acc: 0.9086 - val_auc: 0.9590 - 16s/epoch - 55ms/step
+Epoch 12/100
+290/290 - 16s - loss: 0.2451 - acc: 0.9005 - auc: 0.9624 - val_loss: 0.2505 - val_acc: 0.8980 - val_auc: 0.9616 - 16s/epoch - 54ms/step
+Epoch 13/100
+290/290 - 16s - loss: 0.2475 - acc: 0.8973 - auc: 0.9620 - val_loss: 0.2619 - val_acc: 0.8989 - val_auc: 0.9584 - 16s/epoch - 55ms/step
+Epoch 14/100
+290/290 - 16s - loss: 0.2452 - acc: 0.8997 - auc: 0.9626 - val_loss: 0.2641 - val_acc: 0.8931 - val_auc: 0.9562 - 16s/epoch - 55ms/step
+Epoch 15/100
+290/290 - 16s - loss: 0.2425 - acc: 0.9025 - auc: 0.9629 - val_loss: 0.2451 - val_acc: 0.9018 - val_auc: 0.9621 - 16s/epoch - 55ms/step
+Epoch 16/100
+290/290 - 15s - loss: 0.2396 - acc: 0.9030 - auc: 0.9645 - val_loss: 0.2702 - val_acc: 0.8912 - val_auc: 0.9577 - 15s/epoch - 53ms/step
+Epoch 17/100
+290/290 - 16s - loss: 0.2346 - acc: 0.9058 - auc: 0.9655 - val_loss: 0.2416 - val_acc: 0.9048 - val_auc: 0.9636 - 16s/epoch - 54ms/step
+Epoch 18/100
+290/290 - 16s - loss: 0.2336 - acc: 0.9057 - auc: 0.9662 - val_loss: 0.2610 - val_acc: 0.8844 - val_auc: 0.9587 - 16s/epoch - 54ms/step
+Epoch 19/100
+290/290 - 16s - loss: 0.2310 - acc: 0.9041 - auc: 0.9669 - val_loss: 0.2672 - val_acc: 0.8912 - val_auc: 0.9573 - 16s/epoch - 55ms/step
+Epoch 20/100
+290/290 - 16s - loss: 0.2296 - acc: 0.9038 - auc: 0.9676 - val_loss: 0.2472 - val_acc: 0.9018 - val_auc: 0.9620 - 16s/epoch - 56ms/step
+Epoch 21/100
+290/290 - 16s - loss: 0.2261 - acc: 0.9085 - auc: 0.9681 - val_loss: 0.2394 - val_acc: 0.8950 - val_auc: 0.9648 - 16s/epoch - 56ms/step
+Epoch 22/100
+290/290 - 16s - loss: 0.2211 - acc: 0.9095 - auc: 0.9701 - val_loss: 0.2508 - val_acc: 0.9028 - val_auc: 0.9620 - 16s/epoch - 54ms/step
+Epoch 23/100
+290/290 - 16s - loss: 0.2203 - acc: 0.9100 - auc: 0.9703 - val_loss: 0.2478 - val_acc: 0.8989 - val_auc: 0.9612 - 16s/epoch - 54ms/step
+Epoch 24/100
+290/290 - 16s - loss: 0.2145 - acc: 0.9136 - auc: 0.9718 - val_loss: 0.2570 - val_acc: 0.8892 - val_auc: 0.9598 - 16s/epoch - 55ms/step
+Epoch 25/100
+290/290 - 16s - loss: 0.2145 - acc: 0.9121 - auc: 0.9718 - val_loss: 0.2418 - val_acc: 0.8980 - val_auc: 0.9624 - 16s/epoch - 56ms/step
+Epoch 26/100
+290/290 - 16s - loss: 0.2097 - acc: 0.9133 - auc: 0.9730 - val_loss: 0.2487 - val_acc: 0.8989 - val_auc: 0.9618 - 16s/epoch - 56ms/step
+Epoch 27/100
+290/290 - 16s - loss: 0.2049 - acc: 0.9186 - auc: 0.9742 - val_loss: 0.2524 - val_acc: 0.8989 - val_auc: 0.9589 - 16s/epoch - 56ms/step
+Epoch 28/100
+290/290 - 16s - loss: 0.2026 - acc: 0.9194 - auc: 0.9752 - val_loss: 0.2497 - val_acc: 0.8941 - val_auc: 0.9603 - 16s/epoch - 56ms/step
+Epoch 29/100
+290/290 - 16s - loss: 0.1960 - acc: 0.9221 - auc: 0.9768 - val_loss: 0.2507 - val_acc: 0.9028 - val_auc: 0.9589 - 16s/epoch - 54ms/step
+Epoch 30/100
+290/290 - 16s - loss: 0.1891 - acc: 0.9223 - auc: 0.9780 - val_loss: 0.2436 - val_acc: 0.9028 - val_auc: 0.9611 - 16s/epoch - 55ms/step
+Epoch 31/100
+290/290 - 16s - loss: 0.1837 - acc: 0.9294 - auc: 0.9794 - val_loss: 0.2528 - val_acc: 0.9028 - val_auc: 0.9596 - 16s/epoch - 56ms/step
+Early stopping epoch: 30
+******Evaluating TEST set*********
+33/33 - 1s - 766ms/epoch - 23ms/step
+              precision    recall  f1-score   support
+
+           0       0.89      0.83      0.86       400
+           1       0.90      0.94      0.92       629
+
+    accuracy                           0.90      1029
+   macro avg       0.89      0.88      0.89      1029
+weighted avg       0.89      0.90      0.89      1029
+
+******Evaluating RANDOM Model*********
+              precision    recall  f1-score   support
+
+           0       0.38      0.49      0.43       400
+           1       0.60      0.49      0.54       629
+
+    accuracy                           0.49      1029
+   macro avg       0.49      0.49      0.48      1029
+weighted avg       0.52      0.49      0.50      1029
+
+______________________________________________________
+fold 7
+Model: "model_7"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_8 (InputLayer)        [(None, 150, 6, 3)]       0         
+                                                                 
+ conv2d_7 (Conv2D)           (None, 146, 1, 64)        5824      
+                                                                 
+ lambda_7 (Lambda)           (None, 146, 64)           0         
+                                                                 
+ lstm (LSTM)                 [(None, 146, 64),         33024     
+                              (None, 64),                        
+                              (None, 64)]                        
+                                                                 
+ self_attention_7 (SelfAtten  ((None, 1024),           2560      
+ tion)                        (None, 16, 146))                   
+                                                                 
+ dense_7 (Dense)             (None, 2)                 2050      
+                                                                 
+=================================================================
+Total params: 43,458
+Trainable params: 43,458
+Non-trainable params: 0
+_________________________________________________________________
+Epoch 1/100
+290/290 - 18s - loss: 0.3145 - acc: 0.8646 - auc: 0.9377 - val_loss: 0.2956 - val_acc: 0.8765 - val_auc: 0.9460 - 18s/epoch - 62ms/step
+Epoch 2/100
+290/290 - 16s - loss: 0.2805 - acc: 0.8862 - auc: 0.9489 - val_loss: 0.2896 - val_acc: 0.8794 - val_auc: 0.9493 - 16s/epoch - 55ms/step
+Epoch 3/100
+290/290 - 16s - loss: 0.2684 - acc: 0.8912 - auc: 0.9537 - val_loss: 0.2898 - val_acc: 0.8833 - val_auc: 0.9503 - 16s/epoch - 56ms/step
+Epoch 4/100
+290/290 - 16s - loss: 0.2643 - acc: 0.8931 - auc: 0.9551 - val_loss: 0.2912 - val_acc: 0.8765 - val_auc: 0.9495 - 16s/epoch - 56ms/step
+Epoch 5/100
+290/290 - 16s - loss: 0.2587 - acc: 0.8959 - auc: 0.9577 - val_loss: 0.2891 - val_acc: 0.8813 - val_auc: 0.9497 - 16s/epoch - 54ms/step
+Epoch 6/100
+290/290 - 16s - loss: 0.2564 - acc: 0.8988 - auc: 0.9584 - val_loss: 0.2875 - val_acc: 0.8852 - val_auc: 0.9504 - 16s/epoch - 55ms/step
+Epoch 7/100
+290/290 - 16s - loss: 0.2544 - acc: 0.8978 - auc: 0.9589 - val_loss: 0.2912 - val_acc: 0.8872 - val_auc: 0.9483 - 16s/epoch - 56ms/step
+Epoch 8/100
+290/290 - 16s - loss: 0.2503 - acc: 0.8993 - auc: 0.9599 - val_loss: 0.2891 - val_acc: 0.8833 - val_auc: 0.9495 - 16s/epoch - 56ms/step
+Epoch 9/100
+290/290 - 16s - loss: 0.2482 - acc: 0.9009 - auc: 0.9607 - val_loss: 0.2975 - val_acc: 0.8794 - val_auc: 0.9492 - 16s/epoch - 56ms/step
+Epoch 10/100
+290/290 - 16s - loss: 0.2480 - acc: 0.9017 - auc: 0.9615 - val_loss: 0.2961 - val_acc: 0.8745 - val_auc: 0.9473 - 16s/epoch - 56ms/step
+Epoch 11/100
+290/290 - 16s - loss: 0.2443 - acc: 0.9028 - auc: 0.9624 - val_loss: 0.2887 - val_acc: 0.8804 - val_auc: 0.9518 - 16s/epoch - 54ms/step
+Epoch 12/100
+290/290 - 16s - loss: 0.2442 - acc: 0.9004 - auc: 0.9626 - val_loss: 0.2858 - val_acc: 0.8852 - val_auc: 0.9517 - 16s/epoch - 56ms/step
+Epoch 13/100
+290/290 - 16s - loss: 0.2420 - acc: 0.9043 - auc: 0.9632 - val_loss: 0.2950 - val_acc: 0.8784 - val_auc: 0.9511 - 16s/epoch - 57ms/step
+Epoch 14/100
+290/290 - 16s - loss: 0.2382 - acc: 0.9038 - auc: 0.9644 - val_loss: 0.2854 - val_acc: 0.8784 - val_auc: 0.9512 - 16s/epoch - 56ms/step
+Epoch 15/100
+290/290 - 16s - loss: 0.2366 - acc: 0.9042 - auc: 0.9649 - val_loss: 0.2817 - val_acc: 0.8755 - val_auc: 0.9536 - 16s/epoch - 56ms/step
+Epoch 16/100
+290/290 - 16s - loss: 0.2356 - acc: 0.9037 - auc: 0.9648 - val_loss: 0.2827 - val_acc: 0.8823 - val_auc: 0.9542 - 16s/epoch - 56ms/step
+Epoch 17/100
+290/290 - 16s - loss: 0.2323 - acc: 0.9073 - auc: 0.9656 - val_loss: 0.2777 - val_acc: 0.8774 - val_auc: 0.9550 - 16s/epoch - 56ms/step
+Epoch 18/100
+290/290 - 16s - loss: 0.2322 - acc: 0.9051 - auc: 0.9664 - val_loss: 0.2885 - val_acc: 0.8667 - val_auc: 0.9515 - 16s/epoch - 56ms/step
+Epoch 19/100
+290/290 - 16s - loss: 0.2276 - acc: 0.9088 - auc: 0.9680 - val_loss: 0.2742 - val_acc: 0.8755 - val_auc: 0.9544 - 16s/epoch - 57ms/step
+Epoch 20/100
+290/290 - 16s - loss: 0.2259 - acc: 0.9096 - auc: 0.9674 - val_loss: 0.2849 - val_acc: 0.8755 - val_auc: 0.9512 - 16s/epoch - 54ms/step
+Epoch 21/100
+290/290 - 15s - loss: 0.2265 - acc: 0.9096 - auc: 0.9683 - val_loss: 0.2862 - val_acc: 0.8784 - val_auc: 0.9519 - 15s/epoch - 53ms/step
+Epoch 22/100
+290/290 - 16s - loss: 0.2185 - acc: 0.9139 - auc: 0.9697 - val_loss: 0.2832 - val_acc: 0.8862 - val_auc: 0.9542 - 16s/epoch - 55ms/step
+Epoch 23/100
+290/290 - 16s - loss: 0.2187 - acc: 0.9118 - auc: 0.9703 - val_loss: 0.2745 - val_acc: 0.8794 - val_auc: 0.9566 - 16s/epoch - 55ms/step
+Epoch 24/100
+290/290 - 15s - loss: 0.2139 - acc: 0.9133 - auc: 0.9712 - val_loss: 0.2920 - val_acc: 0.8784 - val_auc: 0.9531 - 15s/epoch - 53ms/step
+Epoch 25/100
+290/290 - 16s - loss: 0.2081 - acc: 0.9162 - auc: 0.9730 - val_loss: 0.3101 - val_acc: 0.8745 - val_auc: 0.9475 - 16s/epoch - 55ms/step
+Epoch 26/100
+290/290 - 16s - loss: 0.2051 - acc: 0.9162 - auc: 0.9742 - val_loss: 0.2978 - val_acc: 0.8823 - val_auc: 0.9542 - 16s/epoch - 55ms/step
+Epoch 27/100
+290/290 - 16s - loss: 0.1998 - acc: 0.9212 - auc: 0.9750 - val_loss: 0.2986 - val_acc: 0.8755 - val_auc: 0.9495 - 16s/epoch - 55ms/step
+Epoch 28/100
+290/290 - 16s - loss: 0.1974 - acc: 0.9213 - auc: 0.9761 - val_loss: 0.3035 - val_acc: 0.8687 - val_auc: 0.9498 - 16s/epoch - 55ms/step
+Epoch 29/100
+290/290 - 16s - loss: 0.1947 - acc: 0.9210 - auc: 0.9763 - val_loss: 0.3069 - val_acc: 0.8784 - val_auc: 0.9523 - 16s/epoch - 54ms/step
+Epoch 30/100
+290/290 - 16s - loss: 0.1886 - acc: 0.9228 - auc: 0.9783 - val_loss: 0.2991 - val_acc: 0.8765 - val_auc: 0.9544 - 16s/epoch - 54ms/step
+Epoch 31/100
+290/290 - 16s - loss: 0.1857 - acc: 0.9234 - auc: 0.9787 - val_loss: 0.3390 - val_acc: 0.8726 - val_auc: 0.9471 - 16s/epoch - 54ms/step
+Epoch 32/100
+290/290 - 15s - loss: 0.1770 - acc: 0.9268 - auc: 0.9812 - val_loss: 0.3125 - val_acc: 0.8774 - val_auc: 0.9506 - 15s/epoch - 52ms/step
+Epoch 33/100
+290/290 - 16s - loss: 0.1749 - acc: 0.9301 - auc: 0.9809 - val_loss: 0.3038 - val_acc: 0.8813 - val_auc: 0.9512 - 16s/epoch - 54ms/step
+Early stopping epoch: 32
+******Evaluating TEST set*********
+33/33 - 1s - 795ms/epoch - 24ms/step
+              precision    recall  f1-score   support
+
+           0       0.87      0.81      0.84       399
+           1       0.89      0.92      0.90       629
+
+    accuracy                           0.88      1028
+   macro avg       0.88      0.87      0.87      1028
+weighted avg       0.88      0.88      0.88      1028
+
+******Evaluating RANDOM Model*********
+              precision    recall  f1-score   support
+
+           0       0.38      0.48      0.42       399
+           1       0.60      0.51      0.55       629
+
+    accuracy                           0.50      1028
+   macro avg       0.49      0.49      0.49      1028
+weighted avg       0.52      0.50      0.50      1028
+
+______________________________________________________
+fold 8
+Model: "model_8"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_9 (InputLayer)        [(None, 150, 6, 3)]       0         
+                                                                 
+ conv2d_8 (Conv2D)           (None, 146, 1, 64)        5824      
+                                                                 
+ lambda_8 (Lambda)           (None, 146, 64)           0         
+                                                                 
+ lstm (LSTM)                 [(None, 146, 64),         33024     
+                              (None, 64),                        
+                              (None, 64)]                        
+                                                                 
+ self_attention_8 (SelfAtten  ((None, 1024),           2560      
+ tion)                        (None, 16, 146))                   
+                                                                 
+ dense_8 (Dense)             (None, 2)                 2050      
+                                                                 
+=================================================================
+Total params: 43,458
+Trainable params: 43,458
+Non-trainable params: 0
+_________________________________________________________________
+Epoch 1/100
+290/290 - 19s - loss: 0.3154 - acc: 0.8670 - auc: 0.9377 - val_loss: 0.2818 - val_acc: 0.8930 - val_auc: 0.9468 - 19s/epoch - 65ms/step
+Epoch 2/100
+290/290 - 16s - loss: 0.2770 - acc: 0.8865 - auc: 0.9510 - val_loss: 0.2675 - val_acc: 0.8930 - val_auc: 0.9528 - 16s/epoch - 56ms/step
+Epoch 3/100
+290/290 - 16s - loss: 0.2678 - acc: 0.8925 - auc: 0.9540 - val_loss: 0.2622 - val_acc: 0.8998 - val_auc: 0.9538 - 16s/epoch - 56ms/step
+Epoch 4/100
+290/290 - 16s - loss: 0.2636 - acc: 0.8963 - auc: 0.9554 - val_loss: 0.3284 - val_acc: 0.8638 - val_auc: 0.9394 - 16s/epoch - 55ms/step
+Epoch 5/100
+290/290 - 16s - loss: 0.2675 - acc: 0.8945 - auc: 0.9542 - val_loss: 0.2599 - val_acc: 0.8988 - val_auc: 0.9556 - 16s/epoch - 54ms/step
+Epoch 6/100
+290/290 - 16s - loss: 0.2623 - acc: 0.8969 - auc: 0.9565 - val_loss: 0.2605 - val_acc: 0.8901 - val_auc: 0.9556 - 16s/epoch - 55ms/step
+Epoch 7/100
+290/290 - 16s - loss: 0.2572 - acc: 0.8949 - auc: 0.9582 - val_loss: 0.2695 - val_acc: 0.8862 - val_auc: 0.9561 - 16s/epoch - 56ms/step
+Epoch 8/100
+290/290 - 16s - loss: 0.2563 - acc: 0.8974 - auc: 0.9583 - val_loss: 0.2719 - val_acc: 0.8920 - val_auc: 0.9547 - 16s/epoch - 56ms/step
+Epoch 9/100
+290/290 - 16s - loss: 0.2543 - acc: 0.8967 - auc: 0.9597 - val_loss: 0.2570 - val_acc: 0.8891 - val_auc: 0.9580 - 16s/epoch - 56ms/step
+Epoch 10/100
+290/290 - 16s - loss: 0.2504 - acc: 0.8988 - auc: 0.9606 - val_loss: 0.2738 - val_acc: 0.8823 - val_auc: 0.9525 - 16s/epoch - 56ms/step
+Epoch 11/100
+290/290 - 16s - loss: 0.2502 - acc: 0.8987 - auc: 0.9608 - val_loss: 0.2533 - val_acc: 0.8979 - val_auc: 0.9588 - 16s/epoch - 56ms/step
+Epoch 12/100
+290/290 - 16s - loss: 0.2466 - acc: 0.9038 - auc: 0.9618 - val_loss: 0.2607 - val_acc: 0.8872 - val_auc: 0.9567 - 16s/epoch - 56ms/step
+Epoch 13/100
+290/290 - 16s - loss: 0.2430 - acc: 0.9020 - auc: 0.9630 - val_loss: 0.2578 - val_acc: 0.8930 - val_auc: 0.9583 - 16s/epoch - 56ms/step
+Epoch 14/100
+290/290 - 16s - loss: 0.2428 - acc: 0.9025 - auc: 0.9633 - val_loss: 0.2745 - val_acc: 0.8794 - val_auc: 0.9543 - 16s/epoch - 56ms/step
+Epoch 15/100
+290/290 - 16s - loss: 0.2393 - acc: 0.9028 - auc: 0.9644 - val_loss: 0.2643 - val_acc: 0.8833 - val_auc: 0.9578 - 16s/epoch - 56ms/step
+Epoch 16/100
+290/290 - 16s - loss: 0.2396 - acc: 0.9021 - auc: 0.9644 - val_loss: 0.2713 - val_acc: 0.8823 - val_auc: 0.9563 - 16s/epoch - 54ms/step
+Epoch 17/100
+290/290 - 16s - loss: 0.2368 - acc: 0.9018 - auc: 0.9653 - val_loss: 0.2540 - val_acc: 0.8949 - val_auc: 0.9589 - 16s/epoch - 56ms/step
+Epoch 18/100
+290/290 - 16s - loss: 0.2321 - acc: 0.9066 - auc: 0.9668 - val_loss: 0.2606 - val_acc: 0.8911 - val_auc: 0.9570 - 16s/epoch - 55ms/step
+Epoch 19/100
+290/290 - 16s - loss: 0.2304 - acc: 0.9075 - auc: 0.9669 - val_loss: 0.2601 - val_acc: 0.8979 - val_auc: 0.9569 - 16s/epoch - 56ms/step
+Epoch 20/100
+290/290 - 16s - loss: 0.2287 - acc: 0.9077 - auc: 0.9680 - val_loss: 0.2618 - val_acc: 0.8911 - val_auc: 0.9580 - 16s/epoch - 55ms/step
+Epoch 21/100
+290/290 - 16s - loss: 0.2284 - acc: 0.9059 - auc: 0.9682 - val_loss: 0.2640 - val_acc: 0.8949 - val_auc: 0.9559 - 16s/epoch - 55ms/step
+Epoch 22/100
+290/290 - 16s - loss: 0.2216 - acc: 0.9099 - auc: 0.9699 - val_loss: 0.2682 - val_acc: 0.8872 - val_auc: 0.9557 - 16s/epoch - 55ms/step
+Epoch 23/100
+290/290 - 16s - loss: 0.2180 - acc: 0.9111 - auc: 0.9714 - val_loss: 0.2683 - val_acc: 0.8940 - val_auc: 0.9549 - 16s/epoch - 55ms/step
+Epoch 24/100
+290/290 - 16s - loss: 0.2146 - acc: 0.9140 - auc: 0.9716 - val_loss: 0.2623 - val_acc: 0.8959 - val_auc: 0.9578 - 16s/epoch - 55ms/step
+Epoch 25/100
+290/290 - 16s - loss: 0.2099 - acc: 0.9173 - auc: 0.9726 - val_loss: 0.2620 - val_acc: 0.8959 - val_auc: 0.9569 - 16s/epoch - 55ms/step
+Epoch 26/100
+290/290 - 16s - loss: 0.2110 - acc: 0.9160 - auc: 0.9727 - val_loss: 0.2712 - val_acc: 0.8920 - val_auc: 0.9572 - 16s/epoch - 55ms/step
+Epoch 27/100
+290/290 - 16s - loss: 0.2036 - acc: 0.9154 - auc: 0.9750 - val_loss: 0.2749 - val_acc: 0.8891 - val_auc: 0.9525 - 16s/epoch - 55ms/step
+Early stopping epoch: 26
+******Evaluating TEST set*********
+33/33 - 1s - 754ms/epoch - 23ms/step
+              precision    recall  f1-score   support
+
+           0       0.90      0.82      0.86       399
+           1       0.89      0.94      0.92       629
+
+    accuracy                           0.89      1028
+   macro avg       0.90      0.88      0.89      1028
+weighted avg       0.90      0.89      0.89      1028
+
+******Evaluating RANDOM Model*********
+              precision    recall  f1-score   support
+
+           0       0.37      0.49      0.42       399
+           1       0.59      0.47      0.52       629
+
+    accuracy                           0.48      1028
+   macro avg       0.48      0.48      0.47      1028
+weighted avg       0.50      0.48      0.48      1028
+
+______________________________________________________
+fold 9
+Model: "model_9"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_10 (InputLayer)       [(None, 150, 6, 3)]       0         
+                                                                 
+ conv2d_9 (Conv2D)           (None, 146, 1, 64)        5824      
+                                                                 
+ lambda_9 (Lambda)           (None, 146, 64)           0         
+                                                                 
+ lstm (LSTM)                 [(None, 146, 64),         33024     
+                              (None, 64),                        
+                              (None, 64)]                        
+                                                                 
+ self_attention_9 (SelfAtten  ((None, 1024),           2560      
+ tion)                        (None, 16, 146))                   
+                                                                 
+ dense_9 (Dense)             (None, 2)                 2050      
+                                                                 
+=================================================================
+Total params: 43,458
+Trainable params: 43,458
+Non-trainable params: 0
+_________________________________________________________________
+Epoch 1/100
+290/290 - 18s - loss: 0.3172 - acc: 0.8658 - auc: 0.9366 - val_loss: 0.2842 - val_acc: 0.8726 - val_auc: 0.9505 - 18s/epoch - 63ms/step
+Epoch 2/100
+290/290 - 16s - loss: 0.2853 - acc: 0.8845 - auc: 0.9477 - val_loss: 0.2574 - val_acc: 0.8949 - val_auc: 0.9590 - 16s/epoch - 55ms/step
+Epoch 3/100
+290/290 - 16s - loss: 0.2795 - acc: 0.8890 - auc: 0.9491 - val_loss: 0.2482 - val_acc: 0.9037 - val_auc: 0.9623 - 16s/epoch - 57ms/step
+Epoch 4/100
+290/290 - 16s - loss: 0.2720 - acc: 0.8888 - auc: 0.9528 - val_loss: 0.2620 - val_acc: 0.8852 - val_auc: 0.9579 - 16s/epoch - 56ms/step
+Epoch 5/100
+290/290 - 16s - loss: 0.2667 - acc: 0.8935 - auc: 0.9538 - val_loss: 0.2497 - val_acc: 0.9066 - val_auc: 0.9658 - 16s/epoch - 55ms/step
+Epoch 6/100
+290/290 - 16s - loss: 0.2668 - acc: 0.8946 - auc: 0.9541 - val_loss: 0.2414 - val_acc: 0.9037 - val_auc: 0.9645 - 16s/epoch - 55ms/step
+Epoch 7/100
+290/290 - 16s - loss: 0.2636 - acc: 0.8940 - auc: 0.9557 - val_loss: 0.2358 - val_acc: 0.9047 - val_auc: 0.9673 - 16s/epoch - 54ms/step
+Epoch 8/100
+290/290 - 16s - loss: 0.2591 - acc: 0.8942 - auc: 0.9572 - val_loss: 0.2381 - val_acc: 0.9056 - val_auc: 0.9662 - 16s/epoch - 56ms/step
+Epoch 9/100
+290/290 - 16s - loss: 0.2582 - acc: 0.8963 - auc: 0.9578 - val_loss: 0.2334 - val_acc: 0.9086 - val_auc: 0.9667 - 16s/epoch - 56ms/step
+Epoch 10/100
+290/290 - 16s - loss: 0.2560 - acc: 0.8976 - auc: 0.9583 - val_loss: 0.2526 - val_acc: 0.8920 - val_auc: 0.9620 - 16s/epoch - 56ms/step
+Epoch 11/100
+290/290 - 16s - loss: 0.2539 - acc: 0.8979 - auc: 0.9595 - val_loss: 0.2446 - val_acc: 0.8949 - val_auc: 0.9657 - 16s/epoch - 56ms/step
+Epoch 12/100
+290/290 - 16s - loss: 0.2506 - acc: 0.8990 - auc: 0.9603 - val_loss: 0.2333 - val_acc: 0.9183 - val_auc: 0.9696 - 16s/epoch - 56ms/step
+Epoch 13/100
+290/290 - 16s - loss: 0.2488 - acc: 0.8992 - auc: 0.9610 - val_loss: 0.2201 - val_acc: 0.9154 - val_auc: 0.9711 - 16s/epoch - 56ms/step
+Epoch 14/100
+290/290 - 16s - loss: 0.2481 - acc: 0.8994 - auc: 0.9618 - val_loss: 0.2206 - val_acc: 0.9193 - val_auc: 0.9720 - 16s/epoch - 55ms/step
+Epoch 15/100
+290/290 - 16s - loss: 0.2468 - acc: 0.8974 - auc: 0.9620 - val_loss: 0.2313 - val_acc: 0.9095 - val_auc: 0.9675 - 16s/epoch - 55ms/step
+Epoch 16/100
+290/290 - 16s - loss: 0.2449 - acc: 0.9013 - auc: 0.9621 - val_loss: 0.2226 - val_acc: 0.9086 - val_auc: 0.9702 - 16s/epoch - 56ms/step
+Epoch 17/100
+290/290 - 16s - loss: 0.2419 - acc: 0.9024 - auc: 0.9635 - val_loss: 0.2237 - val_acc: 0.9076 - val_auc: 0.9697 - 16s/epoch - 56ms/step
+Epoch 18/100
+290/290 - 16s - loss: 0.2400 - acc: 0.9014 - auc: 0.9642 - val_loss: 0.2314 - val_acc: 0.9076 - val_auc: 0.9690 - 16s/epoch - 56ms/step
+Epoch 19/100
+290/290 - 16s - loss: 0.2392 - acc: 0.9019 - auc: 0.9643 - val_loss: 0.2287 - val_acc: 0.9134 - val_auc: 0.9717 - 16s/epoch - 56ms/step
+Epoch 20/100
+290/290 - 16s - loss: 0.2371 - acc: 0.9038 - auc: 0.9654 - val_loss: 0.2295 - val_acc: 0.9134 - val_auc: 0.9683 - 16s/epoch - 56ms/step
+Epoch 21/100
+290/290 - 16s - loss: 0.2340 - acc: 0.9056 - auc: 0.9664 - val_loss: 0.2204 - val_acc: 0.9095 - val_auc: 0.9716 - 16s/epoch - 56ms/step
+Epoch 22/100
+290/290 - 16s - loss: 0.2315 - acc: 0.9081 - auc: 0.9668 - val_loss: 0.2390 - val_acc: 0.9037 - val_auc: 0.9660 - 16s/epoch - 56ms/step
+Epoch 23/100
+290/290 - 16s - loss: 0.2290 - acc: 0.9079 - auc: 0.9679 - val_loss: 0.2349 - val_acc: 0.8988 - val_auc: 0.9678 - 16s/epoch - 56ms/step
+Epoch 24/100
+290/290 - 16s - loss: 0.2253 - acc: 0.9108 - auc: 0.9690 - val_loss: 0.2522 - val_acc: 0.8930 - val_auc: 0.9631 - 16s/epoch - 56ms/step
+Early stopping epoch: 23
+******Evaluating TEST set*********
+33/33 - 1s - 811ms/epoch - 25ms/step
+              precision    recall  f1-score   support
+
+           0       0.92      0.87      0.89       400
+           1       0.92      0.95      0.93       628
+
+    accuracy                           0.92      1028
+   macro avg       0.92      0.91      0.91      1028
+weighted avg       0.92      0.92      0.92      1028
+
+******Evaluating RANDOM Model*********
+              precision    recall  f1-score   support
+
+           0       0.40      0.48      0.44       400
+           1       0.62      0.54      0.57       628
+
+    accuracy                           0.51      1028
+   macro avg       0.51      0.51      0.51      1028
+weighted avg       0.53      0.51      0.52      1028
+
+______________________________________________________
+Model: "model_9"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_10 (InputLayer)       [(None, 150, 6, 3)]       0         
+                                                                 
+ conv2d_9 (Conv2D)           (None, 146, 1, 64)        5824      
+                                                                 
+ lambda_9 (Lambda)           (None, 146, 64)           0         
+                                                                 
+ lstm (LSTM)                 [(None, 146, 64),         33024     
+                              (None, 64),                        
+                              (None, 64)]                        
+                                                                 
+ self_attention_9 (SelfAtten  ((None, 1024),           2560      
+ tion)                        (None, 16, 146))                   
+                                                                 
+ dense_9 (Dense)             (None, 2)                 2050      
+                                                                 
+=================================================================
+Total params: 43,458
+Trainable params: 43,458
+Non-trainable params: 0
+_________________________________________________________________
+None
+Mean Accuracy[0.8990] IC [0.8925, 0.9055]
+Mean Recall[0.8884] IC [0.8808, 0.8959]
+Mean F1[0.8925] IC [0.8854, 0.8996]
+Median Accuracy[0.8960]
+Median Recall[0.8840]
+Median F1[0.8890]

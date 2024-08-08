@@ -1,0 +1,18 @@
+{
+    "kernel_size": [5, 6],
+    "epoch": 100,
+    "batch_size": 32,
+    "lstm_units": 64,
+    "cnn_filters": 64,
+    "dropout_rate": 0.3,
+    "patience": 10,
+    "F": 32,
+    "D": 16,
+    "num_labels": 2,
+    "learning_rate": 0.001,
+    "data_dir": "../0_data",
+    "input_file": "data_processed.npz",
+    "models_dir": "/models/versions",
+    "figs_dir": "models/figs",
+    "model_name": "OpDetect"
+}

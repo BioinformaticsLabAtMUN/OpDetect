@@ -7,4 +7,4 @@
 module load python
 source env/bin/activate
 
-python model.py hyp.json
+python model.py hyp.json OpDetect

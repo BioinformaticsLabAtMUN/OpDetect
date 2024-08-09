@@ -1,3 +1,7 @@
+
+The following have been reloaded with a version change:
+  1) python/3.11.5 => python/3.10.13
+
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:175: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
   labels.apply(lambda row: make_label_pair(operon_pair_list, row[0].split(',')), axis=1)
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:182: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
@@ -86,20 +90,7 @@ resample done
 scale done
 same_length done
 combine done
-Traceback (most recent call last):
-  File "/lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/process.py", line 230, in <module>
-    gene_pairs.to_csv(data_dir + '/' + txid + '/gene_pairs.csv', index=False)
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/core/generic.py", line 3902, in to_csv
-    return DataFrameRenderer(formatter).to_csv(
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/formats/format.py", line 1152, in to_csv
-    csv_formatter.save()
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/formats/csvs.py", line 247, in save
-    with get_handle(
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/common.py", line 739, in get_handle
-    check_parent_directory(str(handle))
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/common.py", line 604, in check_parent_directory
-    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
-OSError: Cannot save file into a non-existent directory: '../0_data/TEST/train_but_one/txid224308'
+data.shape (9523, 4)
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:175: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
   labels.apply(lambda row: make_label_pair(operon_pair_list, row[0].split(',')), axis=1)
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:182: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
@@ -188,20 +179,7 @@ resample done
 scale done
 same_length done
 combine done
-Traceback (most recent call last):
-  File "/lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/process.py", line 230, in <module>
-    gene_pairs.to_csv(data_dir + '/' + txid + '/gene_pairs.csv', index=False)
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/core/generic.py", line 3902, in to_csv
-    return DataFrameRenderer(formatter).to_csv(
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/formats/format.py", line 1152, in to_csv
-    csv_formatter.save()
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/formats/csvs.py", line 247, in save
-    with get_handle(
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/common.py", line 739, in get_handle
-    check_parent_directory(str(handle))
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/common.py", line 604, in check_parent_directory
-    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
-OSError: Cannot save file into a non-existent directory: '../0_data/TEST/train_but_one/txid196627'
+data.shape (8116, 4)
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:175: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
   labels.apply(lambda row: make_label_pair(operon_pair_list, row[0].split(',')), axis=1)
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:182: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
@@ -290,20 +268,7 @@ resample done
 scale done
 same_length done
 combine done
-Traceback (most recent call last):
-  File "/lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/process.py", line 230, in <module>
-    gene_pairs.to_csv(data_dir + '/' + txid + '/gene_pairs.csv', index=False)
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/core/generic.py", line 3902, in to_csv
-    return DataFrameRenderer(formatter).to_csv(
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/formats/format.py", line 1152, in to_csv
-    csv_formatter.save()
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/formats/csvs.py", line 247, in save
-    with get_handle(
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/common.py", line 739, in get_handle
-    check_parent_directory(str(handle))
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/common.py", line 604, in check_parent_directory
-    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
-OSError: Cannot save file into a non-existent directory: '../0_data/TEST/train_but_one/txid511145'
+data.shape (6551, 4)
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:175: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
   labels.apply(lambda row: make_label_pair(operon_pair_list, row[0].split(',')), axis=1)
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:182: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
@@ -392,20 +357,7 @@ resample done
 scale done
 same_length done
 combine done
-Traceback (most recent call last):
-  File "/lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/process.py", line 230, in <module>
-    gene_pairs.to_csv(data_dir + '/' + txid + '/gene_pairs.csv', index=False)
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/core/generic.py", line 3902, in to_csv
-    return DataFrameRenderer(formatter).to_csv(
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/formats/format.py", line 1152, in to_csv
-    csv_formatter.save()
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/formats/csvs.py", line 247, in save
-    with get_handle(
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/common.py", line 739, in get_handle
-    check_parent_directory(str(handle))
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/common.py", line 604, in check_parent_directory
-    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
-OSError: Cannot save file into a non-existent directory: '../0_data/TEST/train_but_one/txid85962'
+data.shape (9517, 4)
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:175: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
   labels.apply(lambda row: make_label_pair(operon_pair_list, row[0].split(',')), axis=1)
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:182: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
@@ -494,20 +446,7 @@ resample done
 scale done
 same_length done
 combine done
-Traceback (most recent call last):
-  File "/lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/process.py", line 230, in <module>
-    gene_pairs.to_csv(data_dir + '/' + txid + '/gene_pairs.csv', index=False)
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/core/generic.py", line 3902, in to_csv
-    return DataFrameRenderer(formatter).to_csv(
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/formats/format.py", line 1152, in to_csv
-    csv_formatter.save()
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/formats/csvs.py", line 247, in save
-    with get_handle(
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/common.py", line 739, in get_handle
-    check_parent_directory(str(handle))
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/common.py", line 604, in check_parent_directory
-    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
-OSError: Cannot save file into a non-existent directory: '../0_data/TEST/train_but_one/txid297246'
+data.shape (9368, 4)
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:175: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
   labels.apply(lambda row: make_label_pair(operon_pair_list, row[0].split(',')), axis=1)
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:182: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
@@ -596,20 +535,7 @@ resample done
 scale done
 same_length done
 combine done
-Traceback (most recent call last):
-  File "/lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/process.py", line 230, in <module>
-    gene_pairs.to_csv(data_dir + '/' + txid + '/gene_pairs.csv', index=False)
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/core/generic.py", line 3902, in to_csv
-    return DataFrameRenderer(formatter).to_csv(
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/formats/format.py", line 1152, in to_csv
-    csv_formatter.save()
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/formats/csvs.py", line 247, in save
-    with get_handle(
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/common.py", line 739, in get_handle
-    check_parent_directory(str(handle))
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/common.py", line 604, in check_parent_directory
-    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
-OSError: Cannot save file into a non-existent directory: '../0_data/TEST/train_but_one/txid169963'
+data.shape (9172, 4)
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:175: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
   labels.apply(lambda row: make_label_pair(operon_pair_list, row[0].split(',')), axis=1)
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:182: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
@@ -698,20 +624,7 @@ resample done
 scale done
 same_length done
 combine done
-Traceback (most recent call last):
-  File "/lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/process.py", line 230, in <module>
-    gene_pairs.to_csv(data_dir + '/' + txid + '/gene_pairs.csv', index=False)
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/core/generic.py", line 3902, in to_csv
-    return DataFrameRenderer(formatter).to_csv(
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/formats/format.py", line 1152, in to_csv
-    csv_formatter.save()
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/formats/csvs.py", line 247, in save
-    with get_handle(
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/common.py", line 739, in get_handle
-    check_parent_directory(str(handle))
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/common.py", line 604, in check_parent_directory
-    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
-OSError: Cannot save file into a non-existent directory: '../0_data/TEST/train_but_one/txid272634'
+data.shape (10003, 4)
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:175: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
   labels.apply(lambda row: make_label_pair(operon_pair_list, row[0].split(',')), axis=1)
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:182: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
@@ -730,20 +643,6 @@ resample done
 scale done
 same_length done
 combine done
-Traceback (most recent call last):
-  File "/lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/process.py", line 230, in <module>
-    gene_pairs.to_csv(data_dir + '/' + txid + '/gene_pairs.csv', index=False)
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/core/generic.py", line 3902, in to_csv
-    return DataFrameRenderer(formatter).to_csv(
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/formats/format.py", line 1152, in to_csv
-    csv_formatter.save()
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/formats/csvs.py", line 247, in save
-    with get_handle(
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/common.py", line 739, in get_handle
-    check_parent_directory(str(handle))
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/common.py", line 604, in check_parent_directory
-    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
-OSError: Cannot save file into a non-existent directory: '../0_data/TEST/train/txid224308'
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:175: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
   labels.apply(lambda row: make_label_pair(operon_pair_list, row[0].split(',')), axis=1)
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:182: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
@@ -762,20 +661,6 @@ resample done
 scale done
 same_length done
 combine done
-Traceback (most recent call last):
-  File "/lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/process.py", line 230, in <module>
-    gene_pairs.to_csv(data_dir + '/' + txid + '/gene_pairs.csv', index=False)
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/core/generic.py", line 3902, in to_csv
-    return DataFrameRenderer(formatter).to_csv(
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/formats/format.py", line 1152, in to_csv
-    csv_formatter.save()
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/formats/csvs.py", line 247, in save
-    with get_handle(
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/common.py", line 739, in get_handle
-    check_parent_directory(str(handle))
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/common.py", line 604, in check_parent_directory
-    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
-OSError: Cannot save file into a non-existent directory: '../0_data/TEST/train/txid196627'
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:175: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
   labels.apply(lambda row: make_label_pair(operon_pair_list, row[0].split(',')), axis=1)
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:182: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
@@ -794,20 +679,6 @@ resample done
 scale done
 same_length done
 combine done
-Traceback (most recent call last):
-  File "/lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/process.py", line 230, in <module>
-    gene_pairs.to_csv(data_dir + '/' + txid + '/gene_pairs.csv', index=False)
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/core/generic.py", line 3902, in to_csv
-    return DataFrameRenderer(formatter).to_csv(
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/formats/format.py", line 1152, in to_csv
-    csv_formatter.save()
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/formats/csvs.py", line 247, in save
-    with get_handle(
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/common.py", line 739, in get_handle
-    check_parent_directory(str(handle))
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/common.py", line 604, in check_parent_directory
-    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
-OSError: Cannot save file into a non-existent directory: '../0_data/TEST/train/txid511145'
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:175: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
   labels.apply(lambda row: make_label_pair(operon_pair_list, row[0].split(',')), axis=1)
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:182: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
@@ -826,20 +697,6 @@ resample done
 scale done
 same_length done
 combine done
-Traceback (most recent call last):
-  File "/lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/process.py", line 230, in <module>
-    gene_pairs.to_csv(data_dir + '/' + txid + '/gene_pairs.csv', index=False)
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/core/generic.py", line 3902, in to_csv
-    return DataFrameRenderer(formatter).to_csv(
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/formats/format.py", line 1152, in to_csv
-    csv_formatter.save()
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/formats/csvs.py", line 247, in save
-    with get_handle(
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/common.py", line 739, in get_handle
-    check_parent_directory(str(handle))
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/common.py", line 604, in check_parent_directory
-    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
-OSError: Cannot save file into a non-existent directory: '../0_data/TEST/train/txid85962'
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:175: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
   labels.apply(lambda row: make_label_pair(operon_pair_list, row[0].split(',')), axis=1)
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:182: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
@@ -858,20 +715,6 @@ resample done
 scale done
 same_length done
 combine done
-Traceback (most recent call last):
-  File "/lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/process.py", line 230, in <module>
-    gene_pairs.to_csv(data_dir + '/' + txid + '/gene_pairs.csv', index=False)
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/core/generic.py", line 3902, in to_csv
-    return DataFrameRenderer(formatter).to_csv(
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/formats/format.py", line 1152, in to_csv
-    csv_formatter.save()
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/formats/csvs.py", line 247, in save
-    with get_handle(
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/common.py", line 739, in get_handle
-    check_parent_directory(str(handle))
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/common.py", line 604, in check_parent_directory
-    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
-OSError: Cannot save file into a non-existent directory: '../0_data/TEST/train/txid297246'
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:175: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
   labels.apply(lambda row: make_label_pair(operon_pair_list, row[0].split(',')), axis=1)
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:182: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
@@ -890,20 +733,6 @@ resample done
 scale done
 same_length done
 combine done
-Traceback (most recent call last):
-  File "/lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/process.py", line 230, in <module>
-    gene_pairs.to_csv(data_dir + '/' + txid + '/gene_pairs.csv', index=False)
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/core/generic.py", line 3902, in to_csv
-    return DataFrameRenderer(formatter).to_csv(
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/formats/format.py", line 1152, in to_csv
-    csv_formatter.save()
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/formats/csvs.py", line 247, in save
-    with get_handle(
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/common.py", line 739, in get_handle
-    check_parent_directory(str(handle))
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/common.py", line 604, in check_parent_directory
-    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
-OSError: Cannot save file into a non-existent directory: '../0_data/TEST/train/txid169963'
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:175: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
   labels.apply(lambda row: make_label_pair(operon_pair_list, row[0].split(',')), axis=1)
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:182: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
@@ -922,20 +751,6 @@ resample done
 scale done
 same_length done
 combine done
-Traceback (most recent call last):
-  File "/lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/process.py", line 230, in <module>
-    gene_pairs.to_csv(data_dir + '/' + txid + '/gene_pairs.csv', index=False)
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/core/generic.py", line 3902, in to_csv
-    return DataFrameRenderer(formatter).to_csv(
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/formats/format.py", line 1152, in to_csv
-    csv_formatter.save()
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/formats/csvs.py", line 247, in save
-    with get_handle(
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/common.py", line 739, in get_handle
-    check_parent_directory(str(handle))
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/common.py", line 604, in check_parent_directory
-    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
-OSError: Cannot save file into a non-existent directory: '../0_data/TEST/train/txid272634'
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:175: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
   labels.apply(lambda row: make_label_pair(operon_pair_list, row[0].split(',')), axis=1)
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:182: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
@@ -954,20 +769,6 @@ resample done
 scale done
 same_length done
 combine done
-Traceback (most recent call last):
-  File "/lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/process.py", line 230, in <module>
-    gene_pairs.to_csv(data_dir + '/' + txid + '/gene_pairs.csv', index=False)
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/core/generic.py", line 3902, in to_csv
-    return DataFrameRenderer(formatter).to_csv(
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/formats/format.py", line 1152, in to_csv
-    csv_formatter.save()
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/formats/csvs.py", line 247, in save
-    with get_handle(
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/common.py", line 739, in get_handle
-    check_parent_directory(str(handle))
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/common.py", line 604, in check_parent_directory
-    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
-OSError: Cannot save file into a non-existent directory: '../0_data/TEST/test/txid298386'
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:175: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
   labels.apply(lambda row: make_label_pair(operon_pair_list, row[0].split(',')), axis=1)
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:182: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
@@ -985,20 +786,6 @@ resample done
 scale done
 same_length done
 combine done
-Traceback (most recent call last):
-  File "/lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/process.py", line 230, in <module>
-    gene_pairs.to_csv(data_dir + '/' + txid + '/gene_pairs.csv', index=False)
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/core/generic.py", line 3902, in to_csv
-    return DataFrameRenderer(formatter).to_csv(
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/formats/format.py", line 1152, in to_csv
-    csv_formatter.save()
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/formats/csvs.py", line 247, in save
-    with get_handle(
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/common.py", line 739, in get_handle
-    check_parent_directory(str(handle))
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/common.py", line 604, in check_parent_directory
-    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
-OSError: Cannot save file into a non-existent directory: '../0_data/TEST/test/txid176299'
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:175: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
   labels.apply(lambda row: make_label_pair(operon_pair_list, row[0].split(',')), axis=1)
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:182: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
@@ -1016,20 +803,6 @@ resample done
 scale done
 same_length done
 combine done
-Traceback (most recent call last):
-  File "/lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/process.py", line 230, in <module>
-    gene_pairs.to_csv(data_dir + '/' + txid + '/gene_pairs.csv', index=False)
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/core/generic.py", line 3902, in to_csv
-    return DataFrameRenderer(formatter).to_csv(
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/formats/format.py", line 1152, in to_csv
-    csv_formatter.save()
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/formats/csvs.py", line 247, in save
-    with get_handle(
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/common.py", line 739, in get_handle
-    check_parent_directory(str(handle))
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/common.py", line 604, in check_parent_directory
-    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
-OSError: Cannot save file into a non-existent directory: '../0_data/TEST/test/txid224326'
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:175: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
   labels.apply(lambda row: make_label_pair(operon_pair_list, row[0].split(',')), axis=1)
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:182: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
@@ -1048,20 +821,6 @@ resample done
 scale done
 same_length done
 combine done
-Traceback (most recent call last):
-  File "/lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/process.py", line 230, in <module>
-    gene_pairs.to_csv(data_dir + '/' + txid + '/gene_pairs.csv', index=False)
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/core/generic.py", line 3902, in to_csv
-    return DataFrameRenderer(formatter).to_csv(
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/formats/format.py", line 1152, in to_csv
-    csv_formatter.save()
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/formats/csvs.py", line 247, in save
-    with get_handle(
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/common.py", line 739, in get_handle
-    check_parent_directory(str(handle))
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/common.py", line 604, in check_parent_directory
-    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
-OSError: Cannot save file into a non-existent directory: '../0_data/TEST/test/txid224911'
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:175: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
   labels.apply(lambda row: make_label_pair(operon_pair_list, row[0].split(',')), axis=1)
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:182: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
@@ -1080,20 +839,6 @@ resample done
 scale done
 same_length done
 combine done
-Traceback (most recent call last):
-  File "/lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/process.py", line 230, in <module>
-    gene_pairs.to_csv(data_dir + '/' + txid + '/gene_pairs.csv', index=False)
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/core/generic.py", line 3902, in to_csv
-    return DataFrameRenderer(formatter).to_csv(
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/formats/format.py", line 1152, in to_csv
-    csv_formatter.save()
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/formats/csvs.py", line 247, in save
-    with get_handle(
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/common.py", line 739, in get_handle
-    check_parent_directory(str(handle))
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/common.py", line 604, in check_parent_directory
-    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
-OSError: Cannot save file into a non-existent directory: '../0_data/TEST/test/txid208964'
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:175: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
   labels.apply(lambda row: make_label_pair(operon_pair_list, row[0].split(',')), axis=1)
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:182: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
@@ -1111,20 +856,6 @@ resample done
 scale done
 same_length done
 combine done
-Traceback (most recent call last):
-  File "/lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/process.py", line 230, in <module>
-    gene_pairs.to_csv(data_dir + '/' + txid + '/gene_pairs.csv', index=False)
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/core/generic.py", line 3902, in to_csv
-    return DataFrameRenderer(formatter).to_csv(
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/formats/format.py", line 1152, in to_csv
-    csv_formatter.save()
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/formats/csvs.py", line 247, in save
-    with get_handle(
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/common.py", line 739, in get_handle
-    check_parent_directory(str(handle))
-  File "/lustre06/project/6003138/rezvank/OpDetect/4_data_process/envr/lib/python3.10/site-packages/pandas/io/common.py", line 604, in check_parent_directory
-    raise OSError(rf"Cannot save file into a non-existent directory: '{parent}'")
-OSError: Cannot save file into a non-existent directory: '../0_data/TEST/test/txid214092'
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:175: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
   labels.apply(lambda row: make_label_pair(operon_pair_list, row[0].split(',')), axis=1)
 /lustre06/project/6003138/rezvank/OpDetect/6_test/../4_data_process/integrate.py:182: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
@@ -1139,4 +870,3 @@ label
 Name: count, dtype: int64
 --------------------------------------- 
 
-slurmstepd: error: *** JOB 32714487 ON nl10101 CANCELLED AT 2024-08-09T19:40:14 DUE TO TIME LIMIT ***

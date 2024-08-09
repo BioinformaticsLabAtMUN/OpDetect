@@ -13,6 +13,5 @@
     "data_dir": "../0_data",
     "input_file": "data_processed.npz",
     "models_dir": "/models/versions",
-    "figs_dir": "models/figs",
-    "model_name": "OpDetect"
+    "figs_dir": "models/figs"
 }

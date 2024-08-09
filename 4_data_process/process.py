@@ -156,7 +156,6 @@ if __name__ == '__main__':
 
     input_path = data_dir + '/' + input_file
     output_path = data_dir + '/' + output_file
-    test_path = data_dir + '/test_' + output_file
 
     fig_dir = data_dir + '/' + 'figures'
     if not os.path.exists(fig_dir):
@@ -164,7 +163,7 @@ if __name__ == '__main__':
 
     VIS = False
     TEST = False
-    if len(sys.argv) == 5:
+    if len(sys.argv) > 4:
         if sys.argv[4] == "TEST":
             TEST = True
         elif sys.argv[4] == "VIS":
@@ -221,16 +220,15 @@ if __name__ == '__main__':
         print('data.shape', data.shape)
 
     else:
-        # save the data in np.savez_compressed
-        np.savez_compressed(output_path, data=data)
+        label_path = sys.argv[5]
 
         # save gene_pairs in a csv file
         txid = sys.argv[3].split('_')[-1].split('.')[0]
         gene_pairs = data[['name_1', 'name_2', 'label']]
-        gene_pairs.to_csv(data_dir + '/' + txid + '/gene_pairs.csv', index=False)
+        gene_pairs.to_csv(label_path, index=False)
 
         # remove the data with label 2 for testing
         data = data[data.label != 2].reset_index(drop=True)
 
         # save the data in np.savez_compressed
-        np.savez_compressed(test_path, data=data)
+        np.savez_compressed(output_path, data=data)

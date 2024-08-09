@@ -19,7 +19,7 @@ from sklearn.metrics import accuracy_score, recall_score, f1_score, classificati
 
 SEED = 42
 
-def model(input_shape, num_labels, lstm_units, cnn_filters, F, D):
+def model(input_shape, num_labels, lstm_units, cnn_filters, F, D, kernel_size, dropout_rate):
 
     inputs = Input(shape=input_shape)
     cnn = Conv2D(cnn_filters, kernel_size = kernel_size, padding='valid', data_format="channels_last")(inputs)
@@ -43,10 +43,9 @@ def model(input_shape, num_labels, lstm_units, cnn_filters, F, D):
 
     return model
 
-def get_input(args):
+def get_input(hyperparameters_file):
 
     # read the hyperparameters from a jason file
-    hyperparameters_file = Path(args[1])
     with open(hyperparameters_file) as f:
         data = json.load(f)
 
@@ -63,7 +62,7 @@ def get_input(args):
         num_labels = data['num_labels']
         learning_rate = data['learning_rate']
 
-        global input_file, models_dir, figs_dir, model_name
+        global input_file, models_dir, figs_dir
         data_dir =  data['data_dir']
         input_file = data_dir+ '/' +data['input_file']
         models_dir =  data_dir+ '/' +data['models_dir']
@@ -72,7 +71,6 @@ def get_input(args):
         figs_dir =  data_dir+ '/' +data['figs_dir']
         if not os.path.exists(figs_dir):
             os.makedirs(figs_dir)
-        model_name = data['model_name']
 
 def plot(history, metric, plot_path, figsize=[8,6], fontsize=16):
     plt.figure(figsize=figsize)
@@ -91,7 +89,8 @@ if __name__ == '__main__':
     tf.random.set_seed(SEED)
     np.random.seed(SEED)
 
-    get_input(sys.argv)
+    get_input(sys.argv[1])
+    model_name = sys.argv[2]
 
 
     tmp = np.load(input_file, allow_pickle=True)
@@ -118,7 +117,7 @@ if __name__ == '__main__':
         X_test, y_test = X[test_idx], y[test_idx]
 
         fold_model = model(input_shape= X.shape[1:], num_labels = num_labels, lstm_units = lstm_units, \
-            cnn_filters = cnn_filters, F = F, D= D)
+            cnn_filters = cnn_filters, F = F, D= D, kernel_size = kernel_size, dropout_rate = dropout_rate)
 
         metrics = [tf.keras.metrics.AUC(curve='PR', name='AUPRC'), 'acc',  tf.keras.metrics.AUC(curve='ROC', name='AUROC')]
         metrics_names = ['AUPRC', 'acc' , 'AUROC']

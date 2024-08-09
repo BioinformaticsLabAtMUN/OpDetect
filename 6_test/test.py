@@ -1,49 +1,40 @@
-# load the model and test it on the test data
-# model file is in ../5_train/model.py, and weights are at models_dir+ '/' +str(model_name+'_best_model_' + '_fold_' + str(i) + '.keras')
-# test data is in ../3_preprocess/test_data.npy
-# test labels are in ../3_preprocess/test_labels.npy
-# output is the accuracy of the model on the test data
-# output is saved in ../6_test/accuracy.npy
-
-import numpy as np
-import pandas as pd
 import sys
-import os
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
-from tensorflow.keras.models import load_model
+sys.path.insert(1, "../5_train/")
+from model import *
+import pandas as pd
 from sklearn.metrics import classification_report
 from tensorflow.keras.utils import to_categorical
+import numpy as np
+import json
 
 
-# models_dir = '../5_train/models'
-# model_name = 'model'
-# test_data_path = '../3_preprocess/test_data.npy'
-# test_labels_path = '../3_preprocess/test_labels.npy'
-# output_path = '../6_test/accuracy.npy'
+def get_input(hyperparameters_file):
 
-# test_data = np.load(test_data_path)
-# test_labels = np.load(test_labels_path)
+    # read the hyperparameters from a jason file
+    with open(hyperparameters_file) as f:
+        data = json.load(f)
 
-# accuracy = []
-# for i in range(5):
-#     model = load_model(models_dir+ '/' +str(model_name+'_best_model_' + '_fold_' + str(i) + '.keras'))
-#     y_pred = model.predict(test_data)
-#     y_pred = np.argmax(y_pred, axis=1)
-#     accuracy.append(accuracy_score(test_labels, y_pred))
-
-# accuracy = np.array(accuracy)
-# np.save(output_path, accuracy)
-# print('accuracy:', accuracy)
+        global kernel_size, epoch, batch_size, lstm_units, cnn_filters, dropout_rate, patience, F, D, num_labels, learning_rate
+        kernel_size = data['kernel_size']
+        epoch = data['epoch']
+        batch_size = data['batch_size']
+        lstm_units = data['lstm_units']
+        cnn_filters = data['cnn_filters']
+        dropout_rate = data['dropout_rate']
+        patience = data['patience']
+        F = data['F']
+        D = data['D']
+        num_labels = data['num_labels']
+        learning_rate = data['learning_rate']
 
 
 if __name__ == '__main__':
+    get_input("../5_train/hyp.json")
     data_dir = sys.argv[1]
     model_dir = data_dir+'/'+sys.argv[2]
     model_name = sys.argv[3]
     test_data_path = data_dir+'/'+sys.argv[4]
     test_labels_path = data_dir+'/'+sys.argv[5]
-    print('data_dir:', data_dir)
-
     # load the labels
     test_labels = pd.read_csv(test_labels_path)
     test_labels = test_labels[['name_1', 'name_2', 'label']]
@@ -58,9 +49,11 @@ if __name__ == '__main__':
     y = test_data[:,3]
     y = to_categorical(y)
 
-    for fold in range(10):
+    test_model = model(input_shape= X.shape[1:], num_labels = num_labels, lstm_units = lstm_units, \
+        cnn_filters = cnn_filters, F = F, D= D, kernel_size = kernel_size, dropout_rate = dropout_rate)
 
-        test_model = load_model(model_dir+ '/' +str(model_name+'_best_model_' + '_fold_' + str(fold) + '.keras'))
+    for fold in range(10):
+        test_model.load_weights(model_dir+ '/' +str(model_name+'_best_model_' + '_fold_' + str(fold) + '.keras'))
         y_pred = test_model.predict(X, verbose=0)
         y_pred = np.argmax(y_pred, axis=1)
 

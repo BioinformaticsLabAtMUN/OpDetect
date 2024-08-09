@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --account=def-lpenacas
-#SBATCH --time=1:00:00
+#SBATCH --time=2:00:00
 #SBATCH --mem=64G
 #SBATCH --cpus-per-task=4
 

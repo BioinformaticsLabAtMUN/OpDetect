@@ -304,3 +304,682 @@ Epoch 21/100
 Epoch 22/100
 292/292 - 12s - 40ms/step - AUPRC: 0.9654 - AUROC: 0.9655 - acc: 0.9023 - loss: 0.2371 - val_AUPRC: 0.9668 - val_AUROC: 0.9669 - val_acc: 0.9123 - val_loss: 0.2311
 Epoch 23/100
+292/292 - 12s - 41ms/step - AUPRC: 0.9651 - AUROC: 0.9653 - acc: 0.9046 - loss: 0.2371 - val_AUPRC: 0.9662 - val_AUROC: 0.9665 - val_acc: 0.9114 - val_loss: 0.2309
+Epoch 24/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9655 - AUROC: 0.9657 - acc: 0.9040 - loss: 0.2360 - val_AUPRC: 0.9686 - val_AUROC: 0.9685 - val_acc: 0.9114 - val_loss: 0.2244
+Epoch 25/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9661 - AUROC: 0.9663 - acc: 0.9065 - loss: 0.2336 - val_AUPRC: 0.9670 - val_AUROC: 0.9673 - val_acc: 0.9075 - val_loss: 0.2280
+Epoch 26/100
+292/292 - 12s - 41ms/step - AUPRC: 0.9661 - AUROC: 0.9664 - acc: 0.9077 - loss: 0.2334 - val_AUPRC: 0.9686 - val_AUROC: 0.9687 - val_acc: 0.9075 - val_loss: 0.2250
+Epoch 27/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9663 - AUROC: 0.9666 - acc: 0.9062 - loss: 0.2323 - val_AUPRC: 0.9686 - val_AUROC: 0.9685 - val_acc: 0.9094 - val_loss: 0.2256
+Epoch 28/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9663 - AUROC: 0.9667 - acc: 0.9071 - loss: 0.2319 - val_AUPRC: 0.9658 - val_AUROC: 0.9674 - val_acc: 0.9066 - val_loss: 0.2274
+Epoch 29/100
+292/292 - 12s - 41ms/step - AUPRC: 0.9671 - AUROC: 0.9674 - acc: 0.9076 - loss: 0.2297 - val_AUPRC: 0.9671 - val_AUROC: 0.9673 - val_acc: 0.9123 - val_loss: 0.2275
+Epoch 30/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9677 - AUROC: 0.9677 - acc: 0.9077 - loss: 0.2291 - val_AUPRC: 0.9669 - val_AUROC: 0.9670 - val_acc: 0.9085 - val_loss: 0.2296
+Epoch 31/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9682 - AUROC: 0.9683 - acc: 0.9097 - loss: 0.2264 - val_AUPRC: 0.9675 - val_AUROC: 0.9679 - val_acc: 0.9075 - val_loss: 0.2269
+Epoch 32/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9683 - AUROC: 0.9685 - acc: 0.9098 - loss: 0.2256 - val_AUPRC: 0.9669 - val_AUROC: 0.9673 - val_acc: 0.9066 - val_loss: 0.2299
+Epoch 33/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9687 - AUROC: 0.9689 - acc: 0.9094 - loss: 0.2247 - val_AUPRC: 0.9663 - val_AUROC: 0.9678 - val_acc: 0.9085 - val_loss: 0.2264
+Epoch 34/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9681 - AUROC: 0.9684 - acc: 0.9094 - loss: 0.2259 - val_AUPRC: 0.9675 - val_AUROC: 0.9675 - val_acc: 0.9133 - val_loss: 0.2288
+Epoch 35/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9685 - AUROC: 0.9688 - acc: 0.9120 - loss: 0.2240 - val_AUPRC: 0.9677 - val_AUROC: 0.9677 - val_acc: 0.9094 - val_loss: 0.2292
+Epoch 36/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9696 - AUROC: 0.9698 - acc: 0.9105 - loss: 0.2212 - val_AUPRC: 0.9668 - val_AUROC: 0.9675 - val_acc: 0.9133 - val_loss: 0.2274
+******Evaluating TEST set*********
+33/33 - 1s - 20ms/step
+              precision    recall  f1-score   support
+
+           0       0.92      0.84      0.88       403
+           1       0.90      0.95      0.93       635
+
+    accuracy                           0.91      1038
+   macro avg       0.91      0.89      0.90      1038
+weighted avg       0.91      0.91      0.91      1038
+
+******Evaluating RANDOM Model*********
+              precision    recall  f1-score   support
+
+           0       0.38      0.48      0.42       403
+           1       0.60      0.49      0.54       635
+
+    accuracy                           0.49      1038
+   macro avg       0.49      0.49      0.48      1038
+weighted avg       0.51      0.49      0.49      1038
+
+______________________________________________________
+fold 3
+Model: "functional_7"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input_layer_3 (InputLayer)      │ (None, 150, 6, 3)      │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d_3 (Conv2D)               │ (None, 146, 1, 64)     │         5,824 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda_6 (Lambda)               │ (None, 146, 64)        │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lstm (LSTM)                     │ [(None, 146, 64),      │        33,024 │
+│                                 │ (None, 64), (None,     │               │
+│                                 │ 64)]                   │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ self_attention_3                │ [(None, 1024), (None,  │         2,560 │
+│ (SelfAttention)                 │ 16, 146)]              │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda_7 (Lambda)               │ (None, 1024)           │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense_3 (Dense)                 │ (None, 2)              │         2,050 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 43,458 (169.76 KB)
+ Trainable params: 43,458 (169.76 KB)
+ Non-trainable params: 0 (0.00 B)
+Epoch 1/100
+292/292 - 14s - 48ms/step - AUPRC: 0.9253 - AUROC: 0.9299 - acc: 0.8619 - loss: 0.3376 - val_AUPRC: 0.9514 - val_AUROC: 0.9539 - val_acc: 0.8940 - val_loss: 0.2701
+Epoch 2/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9437 - AUROC: 0.9456 - acc: 0.8773 - loss: 0.2968 - val_AUPRC: 0.9558 - val_AUROC: 0.9576 - val_acc: 0.8998 - val_loss: 0.2612
+Epoch 3/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9473 - AUROC: 0.9483 - acc: 0.8811 - loss: 0.2896 - val_AUPRC: 0.9571 - val_AUROC: 0.9591 - val_acc: 0.9046 - val_loss: 0.2561
+Epoch 4/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9494 - AUROC: 0.9505 - acc: 0.8836 - loss: 0.2830 - val_AUPRC: 0.9565 - val_AUROC: 0.9589 - val_acc: 0.9027 - val_loss: 0.2564
+Epoch 5/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9504 - AUROC: 0.9515 - acc: 0.8863 - loss: 0.2800 - val_AUPRC: 0.9618 - val_AUROC: 0.9627 - val_acc: 0.9027 - val_loss: 0.2473
+Epoch 6/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9519 - AUROC: 0.9527 - acc: 0.8873 - loss: 0.2764 - val_AUPRC: 0.9620 - val_AUROC: 0.9631 - val_acc: 0.9114 - val_loss: 0.2420
+Epoch 7/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9533 - AUROC: 0.9539 - acc: 0.8892 - loss: 0.2737 - val_AUPRC: 0.9609 - val_AUROC: 0.9630 - val_acc: 0.9085 - val_loss: 0.2424
+Epoch 8/100
+292/292 - 12s - 41ms/step - AUPRC: 0.9542 - AUROC: 0.9547 - acc: 0.8904 - loss: 0.2709 - val_AUPRC: 0.9618 - val_AUROC: 0.9634 - val_acc: 0.9085 - val_loss: 0.2415
+Epoch 9/100
+292/292 - 12s - 41ms/step - AUPRC: 0.9560 - AUROC: 0.9564 - acc: 0.8918 - loss: 0.2662 - val_AUPRC: 0.9628 - val_AUROC: 0.9646 - val_acc: 0.9104 - val_loss: 0.2370
+Epoch 10/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9561 - AUROC: 0.9567 - acc: 0.8914 - loss: 0.2655 - val_AUPRC: 0.9644 - val_AUROC: 0.9653 - val_acc: 0.9085 - val_loss: 0.2355
+Epoch 11/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9574 - AUROC: 0.9578 - acc: 0.8933 - loss: 0.2620 - val_AUPRC: 0.9591 - val_AUROC: 0.9602 - val_acc: 0.8988 - val_loss: 0.2534
+Epoch 12/100
+292/292 - 12s - 41ms/step - AUPRC: 0.9566 - AUROC: 0.9570 - acc: 0.8911 - loss: 0.2646 - val_AUPRC: 0.9652 - val_AUROC: 0.9668 - val_acc: 0.9114 - val_loss: 0.2286
+Epoch 13/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9585 - AUROC: 0.9589 - acc: 0.8933 - loss: 0.2590 - val_AUPRC: 0.9641 - val_AUROC: 0.9653 - val_acc: 0.9104 - val_loss: 0.2347
+Epoch 14/100
+292/292 - 12s - 41ms/step - AUPRC: 0.9589 - AUROC: 0.9594 - acc: 0.8936 - loss: 0.2568 - val_AUPRC: 0.9671 - val_AUROC: 0.9679 - val_acc: 0.9123 - val_loss: 0.2269
+Epoch 15/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9604 - AUROC: 0.9607 - acc: 0.8956 - loss: 0.2527 - val_AUPRC: 0.9657 - val_AUROC: 0.9666 - val_acc: 0.9114 - val_loss: 0.2318
+Epoch 16/100
+292/292 - 12s - 39ms/step - AUPRC: 0.9608 - AUROC: 0.9611 - acc: 0.8963 - loss: 0.2518 - val_AUPRC: 0.9666 - val_AUROC: 0.9674 - val_acc: 0.9152 - val_loss: 0.2273
+Epoch 17/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9612 - AUROC: 0.9617 - acc: 0.8985 - loss: 0.2493 - val_AUPRC: 0.9665 - val_AUROC: 0.9669 - val_acc: 0.9143 - val_loss: 0.2309
+Epoch 18/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9617 - AUROC: 0.9620 - acc: 0.8991 - loss: 0.2483 - val_AUPRC: 0.9678 - val_AUROC: 0.9681 - val_acc: 0.9104 - val_loss: 0.2270
+Epoch 19/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9623 - AUROC: 0.9626 - acc: 0.9002 - loss: 0.2466 - val_AUPRC: 0.9670 - val_AUROC: 0.9676 - val_acc: 0.9104 - val_loss: 0.2297
+Epoch 20/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9621 - AUROC: 0.9622 - acc: 0.8986 - loss: 0.2484 - val_AUPRC: 0.9666 - val_AUROC: 0.9672 - val_acc: 0.9133 - val_loss: 0.2292
+Epoch 21/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9626 - AUROC: 0.9629 - acc: 0.8991 - loss: 0.2448 - val_AUPRC: 0.9654 - val_AUROC: 0.9670 - val_acc: 0.9094 - val_loss: 0.2320
+Epoch 22/100
+292/292 - 11s - 39ms/step - AUPRC: 0.9637 - AUROC: 0.9639 - acc: 0.9011 - loss: 0.2421 - val_AUPRC: 0.9664 - val_AUROC: 0.9679 - val_acc: 0.9123 - val_loss: 0.2288
+Epoch 23/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9639 - AUROC: 0.9641 - acc: 0.9011 - loss: 0.2416 - val_AUPRC: 0.9666 - val_AUROC: 0.9682 - val_acc: 0.9152 - val_loss: 0.2290
+Epoch 24/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9640 - AUROC: 0.9643 - acc: 0.9023 - loss: 0.2403 - val_AUPRC: 0.9677 - val_AUROC: 0.9680 - val_acc: 0.9123 - val_loss: 0.2294
+Epoch 25/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9642 - AUROC: 0.9643 - acc: 0.9024 - loss: 0.2408 - val_AUPRC: 0.9680 - val_AUROC: 0.9684 - val_acc: 0.9085 - val_loss: 0.2285
+Epoch 26/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9650 - AUROC: 0.9651 - acc: 0.9041 - loss: 0.2379 - val_AUPRC: 0.9678 - val_AUROC: 0.9692 - val_acc: 0.9114 - val_loss: 0.2242
+Epoch 27/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9651 - AUROC: 0.9653 - acc: 0.9048 - loss: 0.2370 - val_AUPRC: 0.9678 - val_AUROC: 0.9681 - val_acc: 0.9085 - val_loss: 0.2297
+Epoch 28/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9657 - AUROC: 0.9658 - acc: 0.9055 - loss: 0.2356 - val_AUPRC: 0.9681 - val_AUROC: 0.9686 - val_acc: 0.9143 - val_loss: 0.2248
+Epoch 29/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9659 - AUROC: 0.9660 - acc: 0.9053 - loss: 0.2345 - val_AUPRC: 0.9698 - val_AUROC: 0.9701 - val_acc: 0.9133 - val_loss: 0.2220
+Epoch 30/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9660 - AUROC: 0.9660 - acc: 0.9034 - loss: 0.2347 - val_AUPRC: 0.9667 - val_AUROC: 0.9683 - val_acc: 0.9123 - val_loss: 0.2265
+Epoch 31/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9659 - AUROC: 0.9661 - acc: 0.9073 - loss: 0.2342 - val_AUPRC: 0.9679 - val_AUROC: 0.9690 - val_acc: 0.9143 - val_loss: 0.2248
+Epoch 32/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9668 - AUROC: 0.9670 - acc: 0.9067 - loss: 0.2316 - val_AUPRC: 0.9673 - val_AUROC: 0.9684 - val_acc: 0.9143 - val_loss: 0.2262
+Epoch 33/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9671 - AUROC: 0.9670 - acc: 0.9083 - loss: 0.2311 - val_AUPRC: 0.9677 - val_AUROC: 0.9688 - val_acc: 0.9075 - val_loss: 0.2268
+Epoch 34/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9674 - AUROC: 0.9674 - acc: 0.9091 - loss: 0.2299 - val_AUPRC: 0.9681 - val_AUROC: 0.9692 - val_acc: 0.9085 - val_loss: 0.2254
+Epoch 35/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9678 - AUROC: 0.9678 - acc: 0.9089 - loss: 0.2283 - val_AUPRC: 0.9670 - val_AUROC: 0.9683 - val_acc: 0.9162 - val_loss: 0.2275
+Epoch 36/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9667 - AUROC: 0.9667 - acc: 0.9079 - loss: 0.2318 - val_AUPRC: 0.9695 - val_AUROC: 0.9694 - val_acc: 0.9114 - val_loss: 0.2248
+Epoch 37/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9682 - AUROC: 0.9680 - acc: 0.9083 - loss: 0.2282 - val_AUPRC: 0.9678 - val_AUROC: 0.9681 - val_acc: 0.9085 - val_loss: 0.2289
+Epoch 38/100
+292/292 - 12s - 41ms/step - AUPRC: 0.9692 - AUROC: 0.9691 - acc: 0.9082 - loss: 0.2234 - val_AUPRC: 0.9676 - val_AUROC: 0.9686 - val_acc: 0.9085 - val_loss: 0.2261
+Epoch 39/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9685 - AUROC: 0.9685 - acc: 0.9112 - loss: 0.2256 - val_AUPRC: 0.9674 - val_AUROC: 0.9683 - val_acc: 0.9123 - val_loss: 0.2279
+******Evaluating TEST set*********
+33/33 - 1s - 20ms/step
+              precision    recall  f1-score   support
+
+           0       0.94      0.83      0.88       403
+           1       0.90      0.96      0.93       635
+
+    accuracy                           0.91      1038
+   macro avg       0.92      0.90      0.91      1038
+weighted avg       0.91      0.91      0.91      1038
+
+******Evaluating RANDOM Model*********
+              precision    recall  f1-score   support
+
+           0       0.38      0.46      0.42       403
+           1       0.60      0.52      0.56       635
+
+    accuracy                           0.50      1038
+   macro avg       0.49      0.49      0.49      1038
+weighted avg       0.52      0.50      0.50      1038
+
+______________________________________________________
+fold 4
+Model: "functional_9"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input_layer_4 (InputLayer)      │ (None, 150, 6, 3)      │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d_4 (Conv2D)               │ (None, 146, 1, 64)     │         5,824 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda_8 (Lambda)               │ (None, 146, 64)        │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lstm (LSTM)                     │ [(None, 146, 64),      │        33,024 │
+│                                 │ (None, 64), (None,     │               │
+│                                 │ 64)]                   │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ self_attention_4                │ [(None, 1024), (None,  │         2,560 │
+│ (SelfAttention)                 │ 16, 146)]              │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda_9 (Lambda)               │ (None, 1024)           │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense_4 (Dense)                 │ (None, 2)              │         2,050 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 43,458 (169.76 KB)
+ Trainable params: 43,458 (169.76 KB)
+ Non-trainable params: 0 (0.00 B)
+Epoch 1/100
+292/292 - 14s - 49ms/step - AUPRC: 0.9298 - AUROC: 0.9323 - acc: 0.8657 - loss: 0.3326 - val_AUPRC: 0.9510 - val_AUROC: 0.9516 - val_acc: 0.8757 - val_loss: 0.2832
+Epoch 2/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9473 - AUROC: 0.9481 - acc: 0.8785 - loss: 0.2918 - val_AUPRC: 0.9546 - val_AUROC: 0.9552 - val_acc: 0.8844 - val_loss: 0.2698
+Epoch 3/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9469 - AUROC: 0.9481 - acc: 0.8817 - loss: 0.2899 - val_AUPRC: 0.9555 - val_AUROC: 0.9563 - val_acc: 0.8892 - val_loss: 0.2648
+Epoch 4/100
+292/292 - 12s - 41ms/step - AUPRC: 0.9504 - AUROC: 0.9511 - acc: 0.8857 - loss: 0.2819 - val_AUPRC: 0.9568 - val_AUROC: 0.9573 - val_acc: 0.8902 - val_loss: 0.2625
+Epoch 5/100
+292/292 - 12s - 41ms/step - AUPRC: 0.9517 - AUROC: 0.9525 - acc: 0.8883 - loss: 0.2775 - val_AUPRC: 0.9589 - val_AUROC: 0.9592 - val_acc: 0.8921 - val_loss: 0.2587
+Epoch 6/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9537 - AUROC: 0.9541 - acc: 0.8893 - loss: 0.2739 - val_AUPRC: 0.9598 - val_AUROC: 0.9601 - val_acc: 0.8950 - val_loss: 0.2558
+Epoch 7/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9546 - AUROC: 0.9553 - acc: 0.8928 - loss: 0.2693 - val_AUPRC: 0.9609 - val_AUROC: 0.9615 - val_acc: 0.8998 - val_loss: 0.2517
+Epoch 8/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9557 - AUROC: 0.9561 - acc: 0.8921 - loss: 0.2670 - val_AUPRC: 0.9594 - val_AUROC: 0.9601 - val_acc: 0.8940 - val_loss: 0.2541
+Epoch 9/100
+292/292 - 12s - 41ms/step - AUPRC: 0.9565 - AUROC: 0.9570 - acc: 0.8935 - loss: 0.2642 - val_AUPRC: 0.9645 - val_AUROC: 0.9646 - val_acc: 0.9017 - val_loss: 0.2413
+Epoch 10/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9575 - AUROC: 0.9580 - acc: 0.8950 - loss: 0.2609 - val_AUPRC: 0.9642 - val_AUROC: 0.9647 - val_acc: 0.9037 - val_loss: 0.2388
+Epoch 11/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9587 - AUROC: 0.9592 - acc: 0.8964 - loss: 0.2577 - val_AUPRC: 0.9659 - val_AUROC: 0.9660 - val_acc: 0.9123 - val_loss: 0.2346
+Epoch 12/100
+292/292 - 12s - 41ms/step - AUPRC: 0.9592 - AUROC: 0.9596 - acc: 0.8978 - loss: 0.2560 - val_AUPRC: 0.9652 - val_AUROC: 0.9657 - val_acc: 0.9085 - val_loss: 0.2368
+Epoch 13/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9583 - AUROC: 0.9588 - acc: 0.8960 - loss: 0.2584 - val_AUPRC: 0.9649 - val_AUROC: 0.9656 - val_acc: 0.9094 - val_loss: 0.2358
+Epoch 14/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9601 - AUROC: 0.9605 - acc: 0.8978 - loss: 0.2533 - val_AUPRC: 0.9636 - val_AUROC: 0.9644 - val_acc: 0.9056 - val_loss: 0.2403
+Epoch 15/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9599 - AUROC: 0.9604 - acc: 0.8972 - loss: 0.2537 - val_AUPRC: 0.9652 - val_AUROC: 0.9657 - val_acc: 0.9104 - val_loss: 0.2350
+Epoch 16/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9616 - AUROC: 0.9619 - acc: 0.8984 - loss: 0.2487 - val_AUPRC: 0.9649 - val_AUROC: 0.9654 - val_acc: 0.9104 - val_loss: 0.2354
+Epoch 17/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9613 - AUROC: 0.9617 - acc: 0.8984 - loss: 0.2494 - val_AUPRC: 0.9664 - val_AUROC: 0.9666 - val_acc: 0.9133 - val_loss: 0.2327
+Epoch 18/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9619 - AUROC: 0.9622 - acc: 0.8988 - loss: 0.2473 - val_AUPRC: 0.9655 - val_AUROC: 0.9657 - val_acc: 0.9123 - val_loss: 0.2344
+Epoch 19/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9620 - AUROC: 0.9623 - acc: 0.9006 - loss: 0.2471 - val_AUPRC: 0.9651 - val_AUROC: 0.9658 - val_acc: 0.9114 - val_loss: 0.2347
+Epoch 20/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9628 - AUROC: 0.9631 - acc: 0.9003 - loss: 0.2451 - val_AUPRC: 0.9648 - val_AUROC: 0.9654 - val_acc: 0.9085 - val_loss: 0.2351
+Epoch 21/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9637 - AUROC: 0.9639 - acc: 0.9028 - loss: 0.2419 - val_AUPRC: 0.9642 - val_AUROC: 0.9653 - val_acc: 0.9066 - val_loss: 0.2360
+Epoch 22/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9639 - AUROC: 0.9640 - acc: 0.9004 - loss: 0.2417 - val_AUPRC: 0.9638 - val_AUROC: 0.9647 - val_acc: 0.9104 - val_loss: 0.2369
+Epoch 23/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9643 - AUROC: 0.9645 - acc: 0.9007 - loss: 0.2405 - val_AUPRC: 0.9655 - val_AUROC: 0.9659 - val_acc: 0.9114 - val_loss: 0.2332
+Epoch 24/100
+292/292 - 12s - 41ms/step - AUPRC: 0.9646 - AUROC: 0.9646 - acc: 0.9023 - loss: 0.2394 - val_AUPRC: 0.9643 - val_AUROC: 0.9653 - val_acc: 0.9133 - val_loss: 0.2345
+Epoch 25/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9651 - AUROC: 0.9651 - acc: 0.9030 - loss: 0.2380 - val_AUPRC: 0.9639 - val_AUROC: 0.9657 - val_acc: 0.9143 - val_loss: 0.2340
+Epoch 26/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9652 - AUROC: 0.9653 - acc: 0.9019 - loss: 0.2374 - val_AUPRC: 0.9649 - val_AUROC: 0.9655 - val_acc: 0.9123 - val_loss: 0.2364
+Epoch 27/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9658 - AUROC: 0.9658 - acc: 0.9025 - loss: 0.2358 - val_AUPRC: 0.9653 - val_AUROC: 0.9657 - val_acc: 0.9133 - val_loss: 0.2346
+******Evaluating TEST set*********
+33/33 - 1s - 20ms/step
+              precision    recall  f1-score   support
+
+           0       0.92      0.85      0.88       403
+           1       0.91      0.95      0.93       635
+
+    accuracy                           0.91      1038
+   macro avg       0.91      0.90      0.91      1038
+weighted avg       0.91      0.91      0.91      1038
+
+******Evaluating RANDOM Model*********
+              precision    recall  f1-score   support
+
+           0       0.39      0.52      0.44       403
+           1       0.61      0.48      0.54       635
+
+    accuracy                           0.50      1038
+   macro avg       0.50      0.50      0.49      1038
+weighted avg       0.53      0.50      0.50      1038
+
+______________________________________________________
+fold 5
+Model: "functional_11"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input_layer_5 (InputLayer)      │ (None, 150, 6, 3)      │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d_5 (Conv2D)               │ (None, 146, 1, 64)     │         5,824 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda_10 (Lambda)              │ (None, 146, 64)        │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lstm (LSTM)                     │ [(None, 146, 64),      │        33,024 │
+│                                 │ (None, 64), (None,     │               │
+│                                 │ 64)]                   │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ self_attention_5                │ [(None, 1024), (None,  │         2,560 │
+│ (SelfAttention)                 │ 16, 146)]              │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda_11 (Lambda)              │ (None, 1024)           │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense_5 (Dense)                 │ (None, 2)              │         2,050 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 43,458 (169.76 KB)
+ Trainable params: 43,458 (169.76 KB)
+ Non-trainable params: 0 (0.00 B)
+Epoch 1/100
+292/292 - 14s - 48ms/step - AUPRC: 0.9272 - AUROC: 0.9312 - acc: 0.8664 - loss: 0.3340 - val_AUPRC: 0.9507 - val_AUROC: 0.9489 - val_acc: 0.8563 - val_loss: 0.3012
+Epoch 2/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9457 - AUROC: 0.9479 - acc: 0.8835 - loss: 0.2900 - val_AUPRC: 0.9533 - val_AUROC: 0.9524 - val_acc: 0.8708 - val_loss: 0.2869
+Epoch 3/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9483 - AUROC: 0.9500 - acc: 0.8849 - loss: 0.2831 - val_AUPRC: 0.9551 - val_AUROC: 0.9538 - val_acc: 0.8689 - val_loss: 0.2816
+Epoch 4/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9504 - AUROC: 0.9516 - acc: 0.8880 - loss: 0.2788 - val_AUPRC: 0.9584 - val_AUROC: 0.9569 - val_acc: 0.8737 - val_loss: 0.2721
+Epoch 5/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9523 - AUROC: 0.9535 - acc: 0.8900 - loss: 0.2730 - val_AUPRC: 0.9549 - val_AUROC: 0.9557 - val_acc: 0.8775 - val_loss: 0.2715
+Epoch 6/100
+292/292 - 12s - 41ms/step - AUPRC: 0.9541 - AUROC: 0.9553 - acc: 0.8928 - loss: 0.2683 - val_AUPRC: 0.9560 - val_AUROC: 0.9555 - val_acc: 0.8795 - val_loss: 0.2734
+Epoch 7/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9553 - AUROC: 0.9562 - acc: 0.8927 - loss: 0.2660 - val_AUPRC: 0.9618 - val_AUROC: 0.9602 - val_acc: 0.8804 - val_loss: 0.2615
+Epoch 8/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9570 - AUROC: 0.9577 - acc: 0.8955 - loss: 0.2614 - val_AUPRC: 0.9615 - val_AUROC: 0.9604 - val_acc: 0.8833 - val_loss: 0.2591
+Epoch 9/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9577 - AUROC: 0.9584 - acc: 0.8967 - loss: 0.2591 - val_AUPRC: 0.9638 - val_AUROC: 0.9623 - val_acc: 0.8824 - val_loss: 0.2543
+Epoch 10/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9585 - AUROC: 0.9591 - acc: 0.8986 - loss: 0.2573 - val_AUPRC: 0.9639 - val_AUROC: 0.9626 - val_acc: 0.8833 - val_loss: 0.2537
+Epoch 11/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9595 - AUROC: 0.9599 - acc: 0.8993 - loss: 0.2550 - val_AUPRC: 0.9652 - val_AUROC: 0.9640 - val_acc: 0.8872 - val_loss: 0.2477
+Epoch 12/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9606 - AUROC: 0.9609 - acc: 0.8983 - loss: 0.2519 - val_AUPRC: 0.9659 - val_AUROC: 0.9646 - val_acc: 0.8891 - val_loss: 0.2455
+Epoch 13/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9601 - AUROC: 0.9607 - acc: 0.9004 - loss: 0.2521 - val_AUPRC: 0.9660 - val_AUROC: 0.9646 - val_acc: 0.8920 - val_loss: 0.2457
+Epoch 14/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9612 - AUROC: 0.9614 - acc: 0.9014 - loss: 0.2501 - val_AUPRC: 0.9667 - val_AUROC: 0.9657 - val_acc: 0.8930 - val_loss: 0.2409
+Epoch 15/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9614 - AUROC: 0.9618 - acc: 0.9002 - loss: 0.2486 - val_AUPRC: 0.9674 - val_AUROC: 0.9663 - val_acc: 0.8891 - val_loss: 0.2392
+Epoch 16/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9620 - AUROC: 0.9623 - acc: 0.9018 - loss: 0.2467 - val_AUPRC: 0.9677 - val_AUROC: 0.9667 - val_acc: 0.8939 - val_loss: 0.2371
+Epoch 17/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9623 - AUROC: 0.9627 - acc: 0.9022 - loss: 0.2457 - val_AUPRC: 0.9673 - val_AUROC: 0.9660 - val_acc: 0.8910 - val_loss: 0.2401
+Epoch 18/100
+292/292 - 12s - 41ms/step - AUPRC: 0.9628 - AUROC: 0.9631 - acc: 0.9023 - loss: 0.2438 - val_AUPRC: 0.9677 - val_AUROC: 0.9666 - val_acc: 0.8930 - val_loss: 0.2372
+Epoch 19/100
+292/292 - 12s - 41ms/step - AUPRC: 0.9639 - AUROC: 0.9640 - acc: 0.9030 - loss: 0.2419 - val_AUPRC: 0.9682 - val_AUROC: 0.9670 - val_acc: 0.8930 - val_loss: 0.2357
+Epoch 20/100
+292/292 - 12s - 41ms/step - AUPRC: 0.9630 - AUROC: 0.9635 - acc: 0.9032 - loss: 0.2426 - val_AUPRC: 0.9686 - val_AUROC: 0.9674 - val_acc: 0.8978 - val_loss: 0.2349
+Epoch 21/100
+292/292 - 12s - 41ms/step - AUPRC: 0.9641 - AUROC: 0.9644 - acc: 0.9039 - loss: 0.2398 - val_AUPRC: 0.9681 - val_AUROC: 0.9670 - val_acc: 0.8920 - val_loss: 0.2356
+Epoch 22/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9644 - AUROC: 0.9648 - acc: 0.9045 - loss: 0.2381 - val_AUPRC: 0.9684 - val_AUROC: 0.9674 - val_acc: 0.8968 - val_loss: 0.2338
+Epoch 23/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9644 - AUROC: 0.9648 - acc: 0.9059 - loss: 0.2377 - val_AUPRC: 0.9670 - val_AUROC: 0.9659 - val_acc: 0.8920 - val_loss: 0.2387
+Epoch 24/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9646 - AUROC: 0.9650 - acc: 0.9047 - loss: 0.2371 - val_AUPRC: 0.9680 - val_AUROC: 0.9669 - val_acc: 0.8978 - val_loss: 0.2359
+Epoch 25/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9654 - AUROC: 0.9656 - acc: 0.9069 - loss: 0.2357 - val_AUPRC: 0.9685 - val_AUROC: 0.9675 - val_acc: 0.8968 - val_loss: 0.2331
+Epoch 26/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9649 - AUROC: 0.9653 - acc: 0.9067 - loss: 0.2364 - val_AUPRC: 0.9683 - val_AUROC: 0.9676 - val_acc: 0.8959 - val_loss: 0.2318
+Epoch 27/100
+292/292 - 12s - 41ms/step - AUPRC: 0.9665 - AUROC: 0.9665 - acc: 0.9097 - loss: 0.2323 - val_AUPRC: 0.9685 - val_AUROC: 0.9676 - val_acc: 0.8968 - val_loss: 0.2317
+Epoch 28/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9658 - AUROC: 0.9660 - acc: 0.9063 - loss: 0.2338 - val_AUPRC: 0.9697 - val_AUROC: 0.9686 - val_acc: 0.9007 - val_loss: 0.2295
+Epoch 29/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9659 - AUROC: 0.9662 - acc: 0.9094 - loss: 0.2333 - val_AUPRC: 0.9690 - val_AUROC: 0.9678 - val_acc: 0.9007 - val_loss: 0.2332
+Epoch 30/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9670 - AUROC: 0.9672 - acc: 0.9085 - loss: 0.2304 - val_AUPRC: 0.9690 - val_AUROC: 0.9679 - val_acc: 0.8959 - val_loss: 0.2331
+Epoch 31/100
+292/292 - 12s - 41ms/step - AUPRC: 0.9670 - AUROC: 0.9673 - acc: 0.9085 - loss: 0.2296 - val_AUPRC: 0.9642 - val_AUROC: 0.9632 - val_acc: 0.9007 - val_loss: 0.2480
+Epoch 32/100
+292/292 - 12s - 41ms/step - AUPRC: 0.9666 - AUROC: 0.9669 - acc: 0.9080 - loss: 0.2312 - val_AUPRC: 0.9682 - val_AUROC: 0.9670 - val_acc: 0.8978 - val_loss: 0.2357
+Epoch 33/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9678 - AUROC: 0.9680 - acc: 0.9102 - loss: 0.2272 - val_AUPRC: 0.9683 - val_AUROC: 0.9676 - val_acc: 0.8997 - val_loss: 0.2317
+Epoch 34/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9675 - AUROC: 0.9678 - acc: 0.9102 - loss: 0.2276 - val_AUPRC: 0.9665 - val_AUROC: 0.9657 - val_acc: 0.8968 - val_loss: 0.2389
+Epoch 35/100
+292/292 - 12s - 41ms/step - AUPRC: 0.9677 - AUROC: 0.9679 - acc: 0.9097 - loss: 0.2267 - val_AUPRC: 0.9686 - val_AUROC: 0.9676 - val_acc: 0.8968 - val_loss: 0.2326
+Epoch 36/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9686 - AUROC: 0.9687 - acc: 0.9120 - loss: 0.2245 - val_AUPRC: 0.9689 - val_AUROC: 0.9682 - val_acc: 0.8997 - val_loss: 0.2304
+Epoch 37/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9684 - AUROC: 0.9686 - acc: 0.9119 - loss: 0.2248 - val_AUPRC: 0.9657 - val_AUROC: 0.9654 - val_acc: 0.9007 - val_loss: 0.2381
+Epoch 38/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9690 - AUROC: 0.9693 - acc: 0.9115 - loss: 0.2219 - val_AUPRC: 0.9683 - val_AUROC: 0.9672 - val_acc: 0.8959 - val_loss: 0.2344
+******Evaluating TEST set*********
+33/33 - 1s - 20ms/step
+              precision    recall  f1-score   support
+
+           0       0.91      0.83      0.87       403
+           1       0.90      0.94      0.92       634
+
+    accuracy                           0.90      1037
+   macro avg       0.90      0.89      0.89      1037
+weighted avg       0.90      0.90      0.90      1037
+
+******Evaluating RANDOM Model*********
+              precision    recall  f1-score   support
+
+           0       0.39      0.51      0.44       403
+           1       0.61      0.48      0.54       634
+
+    accuracy                           0.49      1037
+   macro avg       0.50      0.50      0.49      1037
+weighted avg       0.52      0.49      0.50      1037
+
+______________________________________________________
+fold 6
+Model: "functional_13"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input_layer_6 (InputLayer)      │ (None, 150, 6, 3)      │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d_6 (Conv2D)               │ (None, 146, 1, 64)     │         5,824 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda_12 (Lambda)              │ (None, 146, 64)        │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lstm (LSTM)                     │ [(None, 146, 64),      │        33,024 │
+│                                 │ (None, 64), (None,     │               │
+│                                 │ 64)]                   │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ self_attention_6                │ [(None, 1024), (None,  │         2,560 │
+│ (SelfAttention)                 │ 16, 146)]              │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda_13 (Lambda)              │ (None, 1024)           │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense_6 (Dense)                 │ (None, 2)              │         2,050 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 43,458 (169.76 KB)
+ Trainable params: 43,458 (169.76 KB)
+ Non-trainable params: 0 (0.00 B)
+Epoch 1/100
+292/292 - 14s - 49ms/step - AUPRC: 0.9262 - AUROC: 0.9311 - acc: 0.8657 - loss: 0.3353 - val_AUPRC: 0.9419 - val_AUROC: 0.9427 - val_acc: 0.8785 - val_loss: 0.3088
+Epoch 2/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9462 - AUROC: 0.9482 - acc: 0.8790 - loss: 0.2907 - val_AUPRC: 0.9440 - val_AUROC: 0.9448 - val_acc: 0.8824 - val_loss: 0.3026
+Epoch 3/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9487 - AUROC: 0.9503 - acc: 0.8842 - loss: 0.2833 - val_AUPRC: 0.9449 - val_AUROC: 0.9462 - val_acc: 0.8872 - val_loss: 0.2963
+Epoch 4/100
+292/292 - 20s - 70ms/step - AUPRC: 0.9500 - AUROC: 0.9517 - acc: 0.8867 - loss: 0.2786 - val_AUPRC: 0.9425 - val_AUROC: 0.9448 - val_acc: 0.8833 - val_loss: 0.2952
+Epoch 5/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9499 - AUROC: 0.9517 - acc: 0.8857 - loss: 0.2782 - val_AUPRC: 0.9469 - val_AUROC: 0.9480 - val_acc: 0.8843 - val_loss: 0.2905
+Epoch 6/100
+292/292 - 11s - 39ms/step - AUPRC: 0.9524 - AUROC: 0.9536 - acc: 0.8877 - loss: 0.2732 - val_AUPRC: 0.9480 - val_AUROC: 0.9484 - val_acc: 0.8862 - val_loss: 0.2915
+Epoch 7/100
+292/292 - 12s - 41ms/step - AUPRC: 0.9545 - AUROC: 0.9553 - acc: 0.8887 - loss: 0.2688 - val_AUPRC: 0.9500 - val_AUROC: 0.9506 - val_acc: 0.8949 - val_loss: 0.2845
+Epoch 8/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9552 - AUROC: 0.9561 - acc: 0.8912 - loss: 0.2662 - val_AUPRC: 0.9491 - val_AUROC: 0.9495 - val_acc: 0.8852 - val_loss: 0.2874
+Epoch 9/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9557 - AUROC: 0.9566 - acc: 0.8922 - loss: 0.2646 - val_AUPRC: 0.9522 - val_AUROC: 0.9526 - val_acc: 0.8910 - val_loss: 0.2778
+Epoch 10/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9582 - AUROC: 0.9588 - acc: 0.8945 - loss: 0.2589 - val_AUPRC: 0.9539 - val_AUROC: 0.9538 - val_acc: 0.8901 - val_loss: 0.2752
+Epoch 11/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9580 - AUROC: 0.9587 - acc: 0.8961 - loss: 0.2585 - val_AUPRC: 0.9549 - val_AUROC: 0.9549 - val_acc: 0.8891 - val_loss: 0.2718
+Epoch 12/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9593 - AUROC: 0.9598 - acc: 0.8959 - loss: 0.2554 - val_AUPRC: 0.9552 - val_AUROC: 0.9551 - val_acc: 0.8872 - val_loss: 0.2710
+Epoch 13/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9598 - AUROC: 0.9604 - acc: 0.8967 - loss: 0.2532 - val_AUPRC: 0.9545 - val_AUROC: 0.9550 - val_acc: 0.8872 - val_loss: 0.2703
+Epoch 14/100
+292/292 - 12s - 41ms/step - AUPRC: 0.9597 - AUROC: 0.9603 - acc: 0.8992 - loss: 0.2531 - val_AUPRC: 0.9553 - val_AUROC: 0.9554 - val_acc: 0.8814 - val_loss: 0.2701
+Epoch 15/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9605 - AUROC: 0.9610 - acc: 0.8975 - loss: 0.2512 - val_AUPRC: 0.9539 - val_AUROC: 0.9545 - val_acc: 0.8872 - val_loss: 0.2721
+Epoch 16/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9608 - AUROC: 0.9614 - acc: 0.8987 - loss: 0.2500 - val_AUPRC: 0.9568 - val_AUROC: 0.9572 - val_acc: 0.8891 - val_loss: 0.2640
+Epoch 17/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9611 - AUROC: 0.9620 - acc: 0.8994 - loss: 0.2476 - val_AUPRC: 0.9568 - val_AUROC: 0.9570 - val_acc: 0.8852 - val_loss: 0.2653
+Epoch 18/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9629 - AUROC: 0.9630 - acc: 0.9025 - loss: 0.2454 - val_AUPRC: 0.9574 - val_AUROC: 0.9577 - val_acc: 0.8901 - val_loss: 0.2631
+Epoch 19/100
+292/292 - 12s - 41ms/step - AUPRC: 0.9628 - AUROC: 0.9633 - acc: 0.9013 - loss: 0.2441 - val_AUPRC: 0.9574 - val_AUROC: 0.9579 - val_acc: 0.8901 - val_loss: 0.2619
+Epoch 20/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9629 - AUROC: 0.9635 - acc: 0.9020 - loss: 0.2432 - val_AUPRC: 0.9567 - val_AUROC: 0.9572 - val_acc: 0.8872 - val_loss: 0.2635
+Epoch 21/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9639 - AUROC: 0.9642 - acc: 0.9017 - loss: 0.2413 - val_AUPRC: 0.9576 - val_AUROC: 0.9579 - val_acc: 0.8891 - val_loss: 0.2630
+Epoch 22/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9638 - AUROC: 0.9642 - acc: 0.9005 - loss: 0.2410 - val_AUPRC: 0.9573 - val_AUROC: 0.9575 - val_acc: 0.8872 - val_loss: 0.2640
+Epoch 23/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9650 - AUROC: 0.9652 - acc: 0.9037 - loss: 0.2376 - val_AUPRC: 0.9568 - val_AUROC: 0.9571 - val_acc: 0.8930 - val_loss: 0.2638
+Epoch 24/100
+292/292 - 12s - 41ms/step - AUPRC: 0.9650 - AUROC: 0.9652 - acc: 0.9037 - loss: 0.2376 - val_AUPRC: 0.9584 - val_AUROC: 0.9590 - val_acc: 0.8901 - val_loss: 0.2576
+Epoch 25/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9649 - AUROC: 0.9652 - acc: 0.9046 - loss: 0.2372 - val_AUPRC: 0.9583 - val_AUROC: 0.9586 - val_acc: 0.8852 - val_loss: 0.2604
+Epoch 26/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9654 - AUROC: 0.9655 - acc: 0.9028 - loss: 0.2365 - val_AUPRC: 0.9588 - val_AUROC: 0.9590 - val_acc: 0.8862 - val_loss: 0.2579
+Epoch 27/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9663 - AUROC: 0.9663 - acc: 0.9036 - loss: 0.2339 - val_AUPRC: 0.9570 - val_AUROC: 0.9577 - val_acc: 0.8843 - val_loss: 0.2630
+Epoch 28/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9655 - AUROC: 0.9658 - acc: 0.9039 - loss: 0.2349 - val_AUPRC: 0.9581 - val_AUROC: 0.9585 - val_acc: 0.8843 - val_loss: 0.2594
+Epoch 29/100
+292/292 - 11s - 39ms/step - AUPRC: 0.9663 - AUROC: 0.9665 - acc: 0.9053 - loss: 0.2327 - val_AUPRC: 0.9574 - val_AUROC: 0.9583 - val_acc: 0.8852 - val_loss: 0.2592
+Epoch 30/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9674 - AUROC: 0.9673 - acc: 0.9066 - loss: 0.2312 - val_AUPRC: 0.9597 - val_AUROC: 0.9603 - val_acc: 0.8872 - val_loss: 0.2536
+Epoch 31/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9669 - AUROC: 0.9672 - acc: 0.9072 - loss: 0.2308 - val_AUPRC: 0.9592 - val_AUROC: 0.9598 - val_acc: 0.8891 - val_loss: 0.2542
+Epoch 32/100
+292/292 - 11s - 39ms/step - AUPRC: 0.9680 - AUROC: 0.9680 - acc: 0.9079 - loss: 0.2279 - val_AUPRC: 0.9579 - val_AUROC: 0.9584 - val_acc: 0.8872 - val_loss: 0.2604
+Epoch 33/100
+292/292 - 11s - 39ms/step - AUPRC: 0.9675 - AUROC: 0.9676 - acc: 0.9102 - loss: 0.2290 - val_AUPRC: 0.9571 - val_AUROC: 0.9577 - val_acc: 0.8891 - val_loss: 0.2628
+Epoch 34/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9682 - AUROC: 0.9682 - acc: 0.9075 - loss: 0.2272 - val_AUPRC: 0.9563 - val_AUROC: 0.9575 - val_acc: 0.8862 - val_loss: 0.2625
+Epoch 35/100
+292/292 - 11s - 38ms/step - AUPRC: 0.9689 - AUROC: 0.9689 - acc: 0.9078 - loss: 0.2251 - val_AUPRC: 0.9573 - val_AUROC: 0.9584 - val_acc: 0.8872 - val_loss: 0.2601
+Epoch 36/100
+292/292 - 11s - 39ms/step - AUPRC: 0.9694 - AUROC: 0.9693 - acc: 0.9099 - loss: 0.2233 - val_AUPRC: 0.9583 - val_AUROC: 0.9587 - val_acc: 0.8881 - val_loss: 0.2603
+Epoch 37/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9688 - AUROC: 0.9689 - acc: 0.9102 - loss: 0.2245 - val_AUPRC: 0.9593 - val_AUROC: 0.9601 - val_acc: 0.8910 - val_loss: 0.2532
+Epoch 38/100
+292/292 - 11s - 39ms/step - AUPRC: 0.9696 - AUROC: 0.9695 - acc: 0.9105 - loss: 0.2221 - val_AUPRC: 0.9581 - val_AUROC: 0.9591 - val_acc: 0.8939 - val_loss: 0.2587
+Epoch 39/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9689 - AUROC: 0.9690 - acc: 0.9110 - loss: 0.2238 - val_AUPRC: 0.9573 - val_AUROC: 0.9585 - val_acc: 0.8939 - val_loss: 0.2587
+Epoch 40/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9708 - AUROC: 0.9708 - acc: 0.9153 - loss: 0.2181 - val_AUPRC: 0.9575 - val_AUROC: 0.9585 - val_acc: 0.8872 - val_loss: 0.2593
+******Evaluating TEST set*********
+33/33 - 1s - 20ms/step
+              precision    recall  f1-score   support
+
+           0       0.87      0.84      0.85       403
+           1       0.90      0.92      0.91       634
+
+    accuracy                           0.89      1037
+   macro avg       0.88      0.88      0.88      1037
+weighted avg       0.89      0.89      0.89      1037
+
+******Evaluating RANDOM Model*********
+              precision    recall  f1-score   support
+
+           0       0.39      0.51      0.44       403
+           1       0.62      0.50      0.56       634
+
+    accuracy                           0.51      1037
+   macro avg       0.51      0.51      0.50      1037
+weighted avg       0.53      0.51      0.51      1037
+
+______________________________________________________
+fold 7
+Model: "functional_15"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input_layer_7 (InputLayer)      │ (None, 150, 6, 3)      │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d_7 (Conv2D)               │ (None, 146, 1, 64)     │         5,824 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda_14 (Lambda)              │ (None, 146, 64)        │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lstm (LSTM)                     │ [(None, 146, 64),      │        33,024 │
+│                                 │ (None, 64), (None,     │               │
+│                                 │ 64)]                   │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ self_attention_7                │ [(None, 1024), (None,  │         2,560 │
+│ (SelfAttention)                 │ 16, 146)]              │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda_15 (Lambda)              │ (None, 1024)           │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense_7 (Dense)                 │ (None, 2)              │         2,050 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 43,458 (169.76 KB)
+ Trainable params: 43,458 (169.76 KB)
+ Non-trainable params: 0 (0.00 B)
+Epoch 1/100
+292/292 - 14s - 47ms/step - AUPRC: 0.9265 - AUROC: 0.9297 - acc: 0.8611 - loss: 0.3396 - val_AUPRC: 0.9508 - val_AUROC: 0.9523 - val_acc: 0.8901 - val_loss: 0.2767
+Epoch 2/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9457 - AUROC: 0.9471 - acc: 0.8786 - loss: 0.2935 - val_AUPRC: 0.9525 - val_AUROC: 0.9540 - val_acc: 0.8901 - val_loss: 0.2699
+Epoch 3/100
+292/292 - 11s - 39ms/step - AUPRC: 0.9468 - AUROC: 0.9485 - acc: 0.8807 - loss: 0.2876 - val_AUPRC: 0.9540 - val_AUROC: 0.9556 - val_acc: 0.8930 - val_loss: 0.2651
+Epoch 4/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9484 - AUROC: 0.9502 - acc: 0.8856 - loss: 0.2825 - val_AUPRC: 0.9545 - val_AUROC: 0.9560 - val_acc: 0.8930 - val_loss: 0.2630
+Epoch 5/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9508 - AUROC: 0.9521 - acc: 0.8868 - loss: 0.2778 - val_AUPRC: 0.9560 - val_AUROC: 0.9573 - val_acc: 0.8930 - val_loss: 0.2606
+Epoch 6/100
+292/292 - 12s - 41ms/step - AUPRC: 0.9528 - AUROC: 0.9539 - acc: 0.8907 - loss: 0.2726 - val_AUPRC: 0.9571 - val_AUROC: 0.9588 - val_acc: 0.9007 - val_loss: 0.2579
+Epoch 7/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9542 - AUROC: 0.9549 - acc: 0.8928 - loss: 0.2698 - val_AUPRC: 0.9580 - val_AUROC: 0.9594 - val_acc: 0.9045 - val_loss: 0.2554
+Epoch 8/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9552 - AUROC: 0.9560 - acc: 0.8948 - loss: 0.2666 - val_AUPRC: 0.9585 - val_AUROC: 0.9597 - val_acc: 0.9016 - val_loss: 0.2546
+Epoch 9/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9564 - AUROC: 0.9573 - acc: 0.8951 - loss: 0.2622 - val_AUPRC: 0.9585 - val_AUROC: 0.9596 - val_acc: 0.9007 - val_loss: 0.2532
+Epoch 10/100
+292/292 - 12s - 41ms/step - AUPRC: 0.9572 - AUROC: 0.9580 - acc: 0.8969 - loss: 0.2595 - val_AUPRC: 0.9602 - val_AUROC: 0.9609 - val_acc: 0.9026 - val_loss: 0.2509
+Epoch 11/100
+292/292 - 12s - 41ms/step - AUPRC: 0.9588 - AUROC: 0.9593 - acc: 0.8991 - loss: 0.2564 - val_AUPRC: 0.9613 - val_AUROC: 0.9621 - val_acc: 0.9065 - val_loss: 0.2476
+Epoch 12/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9595 - AUROC: 0.9599 - acc: 0.9007 - loss: 0.2545 - val_AUPRC: 0.9601 - val_AUROC: 0.9611 - val_acc: 0.9036 - val_loss: 0.2483
+Epoch 13/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9607 - AUROC: 0.9610 - acc: 0.8981 - loss: 0.2517 - val_AUPRC: 0.9614 - val_AUROC: 0.9621 - val_acc: 0.9065 - val_loss: 0.2453
+Epoch 14/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9611 - AUROC: 0.9615 - acc: 0.9005 - loss: 0.2496 - val_AUPRC: 0.9608 - val_AUROC: 0.9617 - val_acc: 0.9065 - val_loss: 0.2453
+Epoch 15/100
+292/292 - 12s - 41ms/step - AUPRC: 0.9621 - AUROC: 0.9623 - acc: 0.8998 - loss: 0.2470 - val_AUPRC: 0.9614 - val_AUROC: 0.9620 - val_acc: 0.9026 - val_loss: 0.2459
+Epoch 16/100
+292/292 - 12s - 41ms/step - AUPRC: 0.9630 - AUROC: 0.9630 - acc: 0.9030 - loss: 0.2458 - val_AUPRC: 0.9599 - val_AUROC: 0.9611 - val_acc: 0.9026 - val_loss: 0.2481
+Epoch 17/100
+292/292 - 12s - 41ms/step - AUPRC: 0.9626 - AUROC: 0.9629 - acc: 0.9017 - loss: 0.2451 - val_AUPRC: 0.9619 - val_AUROC: 0.9625 - val_acc: 0.9055 - val_loss: 0.2447
+Epoch 18/100
+292/292 - 12s - 41ms/step - AUPRC: 0.9634 - AUROC: 0.9636 - acc: 0.9043 - loss: 0.2426 - val_AUPRC: 0.9612 - val_AUROC: 0.9622 - val_acc: 0.9074 - val_loss: 0.2448
+Epoch 19/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9645 - AUROC: 0.9645 - acc: 0.9057 - loss: 0.2400 - val_AUPRC: 0.9608 - val_AUROC: 0.9619 - val_acc: 0.9055 - val_loss: 0.2451
+Epoch 20/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9643 - AUROC: 0.9646 - acc: 0.9040 - loss: 0.2393 - val_AUPRC: 0.9621 - val_AUROC: 0.9626 - val_acc: 0.9055 - val_loss: 0.2435
+Epoch 21/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9648 - AUROC: 0.9648 - acc: 0.9053 - loss: 0.2385 - val_AUPRC: 0.9602 - val_AUROC: 0.9613 - val_acc: 0.9055 - val_loss: 0.2474
+Epoch 22/100
+292/292 - 12s - 41ms/step - AUPRC: 0.9650 - AUROC: 0.9650 - acc: 0.9066 - loss: 0.2379 - val_AUPRC: 0.9612 - val_AUROC: 0.9617 - val_acc: 0.9094 - val_loss: 0.2468
+Epoch 23/100
+292/292 - 12s - 41ms/step - AUPRC: 0.9655 - AUROC: 0.9656 - acc: 0.9054 - loss: 0.2361 - val_AUPRC: 0.9605 - val_AUROC: 0.9614 - val_acc: 0.9055 - val_loss: 0.2475
+Epoch 24/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9661 - AUROC: 0.9660 - acc: 0.9075 - loss: 0.2343 - val_AUPRC: 0.9609 - val_AUROC: 0.9618 - val_acc: 0.9055 - val_loss: 0.2464
+Epoch 25/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9668 - AUROC: 0.9669 - acc: 0.9072 - loss: 0.2316 - val_AUPRC: 0.9617 - val_AUROC: 0.9625 - val_acc: 0.9055 - val_loss: 0.2441
+Epoch 26/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9670 - AUROC: 0.9670 - acc: 0.9085 - loss: 0.2315 - val_AUPRC: 0.9610 - val_AUROC: 0.9617 - val_acc: 0.9094 - val_loss: 0.2456
+Epoch 27/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9675 - AUROC: 0.9675 - acc: 0.9066 - loss: 0.2296 - val_AUPRC: 0.9605 - val_AUROC: 0.9612 - val_acc: 0.9065 - val_loss: 0.2484
+Epoch 28/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9675 - AUROC: 0.9676 - acc: 0.9081 - loss: 0.2288 - val_AUPRC: 0.9608 - val_AUROC: 0.9617 - val_acc: 0.9074 - val_loss: 0.2467
+Epoch 29/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9685 - AUROC: 0.9685 - acc: 0.9121 - loss: 0.2252 - val_AUPRC: 0.9604 - val_AUROC: 0.9612 - val_acc: 0.9074 - val_loss: 0.2499
+Epoch 30/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9687 - AUROC: 0.9685 - acc: 0.9103 - loss: 0.2259 - val_AUPRC: 0.9596 - val_AUROC: 0.9605 - val_acc: 0.9045 - val_loss: 0.2514
+******Evaluating TEST set*********
+33/33 - 1s - 21ms/step
+              precision    recall  f1-score   support
+
+           0       0.90      0.85      0.87       403
+           1       0.91      0.94      0.92       634
+
+    accuracy                           0.91      1037
+   macro avg       0.91      0.89      0.90      1037
+weighted avg       0.91      0.91      0.90      1037
+
+******Evaluating RANDOM Model*********
+              precision    recall  f1-score   support
+
+           0       0.38      0.48      0.42       403
+           1       0.61      0.51      0.55       634
+
+    accuracy                           0.50      1037
+   macro avg       0.49      0.49      0.49      1037
+weighted avg       0.52      0.50      0.50      1037
+
+______________________________________________________
+fold 8
+Model: "functional_17"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input_layer_8 (InputLayer)      │ (None, 150, 6, 3)      │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d_8 (Conv2D)               │ (None, 146, 1, 64)     │         5,824 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda_16 (Lambda)              │ (None, 146, 64)        │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lstm (LSTM)                     │ [(None, 146, 64),      │        33,024 │
+│                                 │ (None, 64), (None,     │               │
+│                                 │ 64)]                   │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ self_attention_8                │ [(None, 1024), (None,  │         2,560 │
+│ (SelfAttention)                 │ 16, 146)]              │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda_17 (Lambda)              │ (None, 1024)           │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense_8 (Dense)                 │ (None, 2)              │         2,050 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 43,458 (169.76 KB)
+ Trainable params: 43,458 (169.76 KB)
+ Non-trainable params: 0 (0.00 B)
+Epoch 1/100
+292/292 - 14s - 48ms/step - AUPRC: 0.9288 - AUROC: 0.9329 - acc: 0.8691 - loss: 0.3308 - val_AUPRC: 0.9430 - val_AUROC: 0.9423 - val_acc: 0.8689 - val_loss: 0.3162
+Epoch 2/100
+292/292 - 12s - 41ms/step - AUPRC: 0.9458 - AUROC: 0.9481 - acc: 0.8826 - loss: 0.2897 - val_AUPRC: 0.9456 - val_AUROC: 0.9452 - val_acc: 0.8737 - val_loss: 0.3079
+Epoch 3/100
+292/292 - 12s - 41ms/step - AUPRC: 0.9500 - AUROC: 0.9514 - acc: 0.8873 - loss: 0.2809 - val_AUPRC: 0.9466 - val_AUROC: 0.9463 - val_acc: 0.8775 - val_loss: 0.3061
+Epoch 4/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9525 - AUROC: 0.9539 - acc: 0.8917 - loss: 0.2737 - val_AUPRC: 0.9476 - val_AUROC: 0.9472 - val_acc: 0.8814 - val_loss: 0.3036
+Epoch 5/100
+292/292 - 12s - 39ms/step - AUPRC: 0.9547 - AUROC: 0.9556 - acc: 0.8904 - loss: 0.2688 - val_AUPRC: 0.9481 - val_AUROC: 0.9477 - val_acc: 0.8795 - val_loss: 0.3015
+Epoch 6/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9563 - AUROC: 0.9570 - acc: 0.8938 - loss: 0.2643 - val_AUPRC: 0.9477 - val_AUROC: 0.9474 - val_acc: 0.8843 - val_loss: 0.3016
+Epoch 7/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9578 - AUROC: 0.9585 - acc: 0.8952 - loss: 0.2596 - val_AUPRC: 0.9475 - val_AUROC: 0.9477 - val_acc: 0.8872 - val_loss: 0.3013
+Epoch 8/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9582 - AUROC: 0.9593 - acc: 0.8960 - loss: 0.2561 - val_AUPRC: 0.9459 - val_AUROC: 0.9460 - val_acc: 0.8814 - val_loss: 0.3058
+Epoch 9/100
+292/292 - 12s - 40ms/step - AUPRC: 0.9596 - AUROC: 0.9602 - acc: 0.8984 - loss: 0.2534 - val_AUPRC: 0.9482 - val_AUROC: 0.9480 - val_acc: 0.8843 - val_loss: 0.3010
+Epoch 10/100
+292/292 - 12s - 41ms/step - AUPRC: 0.9592 - AUROC: 0.9601 - acc: 0.8994 - loss: 0.2531 - val_AUPRC: 0.9489 - val_AUROC: 0.9484 - val_acc: 0.8852 - val_loss: 0.2989
+Epoch 11/100
+slurmstepd: error: *** JOB 32682572 ON nc10921 CANCELLED AT 2024-08-08T21:11:35 DUE TO TIME LIMIT ***

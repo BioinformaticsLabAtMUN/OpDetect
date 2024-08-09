@@ -870,3 +870,7 @@ label
 Name: count, dtype: int64
 --------------------------------------- 
 
+resample done
+scale done
+same_length done
+combine done

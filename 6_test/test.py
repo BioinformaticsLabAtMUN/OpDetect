@@ -6,7 +6,7 @@ from sklearn.metrics import classification_report
 from tensorflow.keras.utils import to_categorical
 import numpy as np
 import json
-
+from sklearn.metrics import f1_score, recall_score
 
 def get_input(hyperparameters_file):
 
@@ -98,10 +98,15 @@ if __name__ == '__main__':
     print("Classification report")
     print(classification_report(y_true, y_pred))
     print(pd.crosstab(y_true, y_pred, rownames=['True'], colnames=['Predicted'], margins=True))
+
+    # print total F1 score and recall
+    print("Total F1 score and recall")
+    print(f"F1 score: {f1_score(y_true, y_pred)}")
+    print(f"Recall: {recall_score(y_true, y_pred)}")
     print("*"*50)
 
-    # save y_true, y_pred in here/outputs/NAME_txid_output.csv
-    # test_labels.to_csv(str('outputs/' + model_name + '_' + txid + '.csv'), index=False)
+    # save y_true, y_pred
+    test_labels.to_csv(str(model_name + '_' + txid + '.csv'), index=False)
 
 
 

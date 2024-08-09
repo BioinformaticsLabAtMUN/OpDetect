@@ -14,7 +14,7 @@ from tensorflow.keras import backend as K
 from tensorflow.keras.utils import to_categorical
 # from tensorflow.keras.utils.vis_utils import plot_model
 from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
-from tensorflow.keras.layers import Dense, LSTM, Conv2D, Lambda, Input, Dropout
+from tensorflow.keras.layers import Dense, LSTM, Conv2D, Lambda, Input
 from sklearn.metrics import accuracy_score, recall_score, f1_score, classification_report, roc_auc_score
 
 SEED = 42
@@ -98,10 +98,6 @@ if __name__ == '__main__':
 
     data = tmp['data']
     X = data[:,2]
-    for x in X:
-        if not len(x) == 150:
-            print("not 150", len(x))
-            
     X = np.array([X[i] for i in range(len(X))])
     y = data[:,3]
     y = to_categorical(y)

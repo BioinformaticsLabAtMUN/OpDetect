@@ -90,10 +90,6 @@ if __name__ == '__main__':
     label_file_name = sys.argv[5]
     output_path = sys.argv[6]
 
-    TEST = False
-    if len(sys.argv) == 8:
-        TEST = True
-
     trains = []
 
     # for each folder(organism) in data_dir
@@ -202,10 +198,6 @@ if __name__ == '__main__':
     
         # combine all trains
     data = pd.concat(trains, axis=0).reset_index(drop=True)
-    if not TEST:
-        print("Total Size: ", data.shape[0])
-        print("Total Labels: ")
-        print(data.label.value_counts())
 
     # save data
     data.to_pickle(output_path)

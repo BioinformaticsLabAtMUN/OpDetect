@@ -64,7 +64,7 @@ def get_input(hyperparameters_file):
 
         global input_file, models_dir, figs_dir
         data_dir =  data['data_dir']
-        input_file = data_dir+ '/' +data['input_file']
+        input_file = data_dir+ '/' +input_file
         models_dir =  data_dir+ '/' +data['models_dir']
         if not os.path.exists(models_dir):
             os.makedirs(models_dir)
@@ -89,8 +89,10 @@ if __name__ == '__main__':
     tf.random.set_seed(SEED)
     np.random.seed(SEED)
 
-    get_input(sys.argv[1])
     model_name = sys.argv[2]
+    input_file = sys.argv[3]
+    get_input(sys.argv[1])
+    
 
 
     tmp = np.load(input_file, allow_pickle=True)

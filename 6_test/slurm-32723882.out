@@ -1,0 +1,261 @@
+Traceback (most recent call last):
+  File "/lustre06/project/6003138/rezvank/OpDetect/6_test/test.py", line 44, in <module>
+    tmp = np.load(test_data_path, allow_pickle=True)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rezvank/.local/lib/python3.11/site-packages/numpy/lib/npyio.py", line 405, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '../0_data/TEST/test/data_processed_txid224308.npz'
+Traceback (most recent call last):
+  File "/lustre06/project/6003138/rezvank/OpDetect/6_test/test.py", line 44, in <module>
+    tmp = np.load(test_data_path, allow_pickle=True)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rezvank/.local/lib/python3.11/site-packages/numpy/lib/npyio.py", line 405, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '../0_data/TEST/test/data_processed_txid196627.npz'
+Traceback (most recent call last):
+  File "/lustre06/project/6003138/rezvank/OpDetect/6_test/test.py", line 44, in <module>
+    tmp = np.load(test_data_path, allow_pickle=True)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rezvank/.local/lib/python3.11/site-packages/numpy/lib/npyio.py", line 405, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '../0_data/TEST/test/data_processed_txid511145.npz'
+Traceback (most recent call last):
+  File "/lustre06/project/6003138/rezvank/OpDetect/6_test/test.py", line 44, in <module>
+    tmp = np.load(test_data_path, allow_pickle=True)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rezvank/.local/lib/python3.11/site-packages/numpy/lib/npyio.py", line 405, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '../0_data/TEST/test/data_processed_txid85962.npz'
+Traceback (most recent call last):
+  File "/lustre06/project/6003138/rezvank/OpDetect/6_test/test.py", line 44, in <module>
+    tmp = np.load(test_data_path, allow_pickle=True)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rezvank/.local/lib/python3.11/site-packages/numpy/lib/npyio.py", line 405, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '../0_data/TEST/test/data_processed_txid297246.npz'
+Traceback (most recent call last):
+  File "/lustre06/project/6003138/rezvank/OpDetect/6_test/test.py", line 44, in <module>
+    tmp = np.load(test_data_path, allow_pickle=True)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rezvank/.local/lib/python3.11/site-packages/numpy/lib/npyio.py", line 405, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '../0_data/TEST/test/data_processed_txid169963.npz'
+Traceback (most recent call last):
+  File "/lustre06/project/6003138/rezvank/OpDetect/6_test/test.py", line 44, in <module>
+    tmp = np.load(test_data_path, allow_pickle=True)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rezvank/.local/lib/python3.11/site-packages/numpy/lib/npyio.py", line 405, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '../0_data/TEST/test/data_processed_txid272634.npz'
+Model: "functional"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input_layer (InputLayer)        │ (None, 150, 6, 3)      │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d (Conv2D)                 │ (None, 146, 1, 64)     │         5,824 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda (Lambda)                 │ (None, 146, 64)        │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lstm (LSTM)                     │ [(None, 146, 64),      │        33,024 │
+│                                 │ (None, 64), (None,     │               │
+│                                 │ 64)]                   │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ self_attention (SelfAttention)  │ [(None, 1024), (None,  │         2,560 │
+│                                 │ 16, 146)]              │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda_1 (Lambda)               │ (None, 1024)           │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense (Dense)                   │ (None, 2)              │         2,050 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 43,458 (169.76 KB)
+ Trainable params: 43,458 (169.76 KB)
+ Non-trainable params: 0 (0.00 B)
+********************txid298386********************
+0 non-operons were not labeled and 0 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.58      0.46      0.51        87
+           1       0.93      0.96      0.94       676
+
+    accuracy                           0.90       763
+   macro avg       0.76      0.71      0.73       763
+weighted avg       0.89      0.90      0.90       763
+
+Predicted  0.0  1.0  All
+True                    
+0           40   47   87
+1           29  647  676
+All         69  694  763
+Total F1 score and recall
+F1 score: 0.9445255474452555
+Recall: 0.9571005917159763
+**************************************************
+Model: "functional"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input_layer (InputLayer)        │ (None, 150, 6, 3)      │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d (Conv2D)                 │ (None, 146, 1, 64)     │         5,824 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda (Lambda)                 │ (None, 146, 64)        │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lstm (LSTM)                     │ [(None, 146, 64),      │        33,024 │
+│                                 │ (None, 64), (None,     │               │
+│                                 │ 64)]                   │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ self_attention (SelfAttention)  │ [(None, 1024), (None,  │         2,560 │
+│                                 │ 16, 146)]              │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda_1 (Lambda)               │ (None, 1024)           │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense (Dense)                   │ (None, 2)              │         2,050 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 43,458 (169.76 KB)
+ Trainable params: 43,458 (169.76 KB)
+ Non-trainable params: 0 (0.00 B)
+********************txid176299********************
+0 non-operons were not labeled and 0 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           1       1.00      1.00      1.00        14
+
+    accuracy                           1.00        14
+   macro avg       1.00      1.00      1.00        14
+weighted avg       1.00      1.00      1.00        14
+
+Predicted  1.0  All
+True               
+1           14   14
+All         14   14
+Total F1 score and recall
+F1 score: 1.0
+Recall: 1.0
+**************************************************
+Model: "functional"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input_layer (InputLayer)        │ (None, 150, 6, 3)      │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d (Conv2D)                 │ (None, 146, 1, 64)     │         5,824 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda (Lambda)                 │ (None, 146, 64)        │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lstm (LSTM)                     │ [(None, 146, 64),      │        33,024 │
+│                                 │ (None, 64), (None,     │               │
+│                                 │ 64)]                   │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ self_attention (SelfAttention)  │ [(None, 1024), (None,  │         2,560 │
+│                                 │ 16, 146)]              │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda_1 (Lambda)               │ (None, 1024)           │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense (Dense)                   │ (None, 2)              │         2,050 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 43,458 (169.76 KB)
+ Trainable params: 43,458 (169.76 KB)
+ Non-trainable params: 0 (0.00 B)
+********************txid224326********************
+0 non-operons were not labeled and 0 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           1       1.00      1.00      1.00        20
+
+    accuracy                           1.00        20
+   macro avg       1.00      1.00      1.00        20
+weighted avg       1.00      1.00      1.00        20
+
+Predicted  1.0  All
+True               
+1           20   20
+All         20   20
+Total F1 score and recall
+F1 score: 1.0
+Recall: 1.0
+**************************************************
+Model: "functional"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input_layer (InputLayer)        │ (None, 150, 6, 3)      │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d (Conv2D)                 │ (None, 146, 1, 64)     │         5,824 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda (Lambda)                 │ (None, 146, 64)        │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lstm (LSTM)                     │ [(None, 146, 64),      │        33,024 │
+│                                 │ (None, 64), (None,     │               │
+│                                 │ 64)]                   │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ self_attention (SelfAttention)  │ [(None, 1024), (None,  │         2,560 │
+│                                 │ 16, 146)]              │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda_1 (Lambda)               │ (None, 1024)           │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense (Dense)                   │ (None, 2)              │         2,050 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 43,458 (169.76 KB)
+ Trainable params: 43,458 (169.76 KB)
+ Non-trainable params: 0 (0.00 B)
+********************txid224911********************
+0 non-operons were not labeled and 0 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.50      0.50      0.50         2
+           1       0.93      0.93      0.93        15
+
+    accuracy                           0.88        17
+   macro avg       0.72      0.72      0.72        17
+weighted avg       0.88      0.88      0.88        17
+
+Predicted  0.0  1.0  All
+True                    
+0            1    1    2
+1            1   14   15
+All          2   15   17
+Total F1 score and recall
+F1 score: 0.9333333333333333
+Recall: 0.9333333333333333
+**************************************************
+Model: "functional"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input_layer (InputLayer)        │ (None, 150, 6, 3)      │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d (Conv2D)                 │ (None, 146, 1, 64)     │         5,824 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda (Lambda)                 │ (None, 146, 64)        │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lstm (LSTM)                     │ [(None, 146, 64),      │        33,024 │
+│                                 │ (None, 64), (None,     │               │
+│                                 │ 64)]                   │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ self_attention (SelfAttention)  │ [(None, 1024), (None,  │         2,560 │
+│                                 │ 16, 146)]              │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda_1 (Lambda)               │ (None, 1024)           │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense (Dense)                   │ (None, 2)              │         2,050 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 43,458 (169.76 KB)
+ Trainable params: 43,458 (169.76 KB)
+ Non-trainable params: 0 (0.00 B)
+slurmstepd: error: *** JOB 32723882 ON nl31102 CANCELLED AT 2024-08-09T22:58:01 ***

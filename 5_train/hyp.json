@@ -11,7 +11,6 @@
     "num_labels": 2,
     "learning_rate": 0.001,
     "data_dir": "../0_data",
-    "input_file": "data_processed.npz",
     "models_dir": "/models/versions",
     "figs_dir": "models/figs"
 }

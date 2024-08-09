@@ -7,4 +7,4 @@
 module load python
 source env/bin/activate
 
-python model.py hyp.json OpDetect
+python model.py hyp.json OpDetect data_processed.npz

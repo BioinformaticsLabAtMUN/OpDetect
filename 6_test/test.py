@@ -48,6 +48,7 @@ if __name__ == '__main__':
     X = np.array([X[i] for i in range(len(X))])
     y = test_data[:,3]
     y = to_categorical(y)
+    y_true = np.argmax(y, axis=1)
 
     test_model = model(input_shape= X.shape[1:], num_labels = num_labels, lstm_units = lstm_units, \
         cnn_filters = cnn_filters, F = F, D= D, kernel_size = kernel_size, dropout_rate = dropout_rate)
@@ -56,8 +57,6 @@ if __name__ == '__main__':
         test_model.load_weights(model_dir+ '/' +str(model_name+'_best_model_' + '_fold_' + str(fold) + '.keras'))
         y_pred = test_model.predict(X, verbose=0)
         y_pred = np.argmax(y_pred, axis=1)
-
-        y_true = np.argmax(y, axis=1)
 
         pred = pd.DataFrame(test_data[:,0:2], columns=['name_1', 'name_2'])
         pred[f'pred_{fold}'] = y_pred

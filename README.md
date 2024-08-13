@@ -1,5 +1,3 @@
-No prediction file for om on txid6239.
-No prediction file for of on txid6239.
 Friedman test statistic: 21.251396648044715
 p-value: 0.00028232
 Ranks

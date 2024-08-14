@@ -83,11 +83,11 @@ def stats(outputs, metric):
     ranks = rankdata(outputs, axis=0)
     ranks = num_classifiers - ranks.astype(int) + 1 # highest to lowest
     mean_ranks = np.mean(ranks, axis=1)
-    print("Ranks")
+    print("\nRanks:")
     print(dataset_names)
     for model in model_names:
         print(model, ranks[model_names.index(model)])
-
+    print()
 
     #generate a critical difference diagram with Nemenyi post-hoc, default alpha=0.05
     cd = compute_CD(mean_ranks, num_datasets) #tested on 7 datasets
@@ -122,7 +122,7 @@ def stats(outputs, metric):
     # plt.savefig('mean_auroc.png', dpi=300)
     plt.savefig(f'mean_{metric}.png', dpi=300)
 
-    print()
+    print('-'*50)
 
 
 outputs_f1 = collect_outputs('f1')

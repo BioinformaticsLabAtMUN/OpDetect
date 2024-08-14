@@ -105,7 +105,7 @@ if __name__ == '__main__':
     print("*"*50)
 
     # save y_true, y_pred
-    test_labels.to_csv(str(model_name + '_' + txid + '.csv'), index=False)
+    test_labels.to_csv(str("../7_compare/outputs" + model_name + '_' + txid + '.csv'), index=False)
 
 
 

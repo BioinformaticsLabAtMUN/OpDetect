@@ -1,4 +1,8 @@
-0_data/
+0_data/figures/
+0_data/txid*
+0_data/data*
+0_data/models/figs/
+0_data/TEST/
 *__pycache__/
 *env/
 *envr/

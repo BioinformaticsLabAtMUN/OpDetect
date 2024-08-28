@@ -40,22 +40,6 @@ def resample(row):
 
     return row
 
-# def median_smoothing(row, window_size=9):
-#     for rep in range(REP_NUMBER):
-#         for gene in ['gene_1', 'intergenic', 'gene_2']:
-#             signal = row[f'{gene}_{rep}']
-#             smoothed_signal = np.zeros_like(signal)
-#             half_window = window_size // 2
-            
-#             for i in range(len(signal)):
-#                 start = max(0, i - half_window)
-#                 end = min(len(signal), i + half_window + 1)
-#                 window = signal[start:end]
-#                 smoothed_signal[i] = np.median(window)
-#             row[f'{gene}_{rep}'] = smoothed_signal
-    
-#     return row
-
 def smooth(row):
     for rep in range(REP_NUMBER):
         for gene in ['gene_1', 'intergenic', 'gene_2']:
@@ -65,12 +49,16 @@ def smooth(row):
 # scale the coverages to 0-1 (stable scale between g1-ig-g2)
 def scale(row):
     for rep in range(REP_NUMBER):
-        MAX = np.max([np.max(row[f'gene_1_{rep}']), np.max(row[f'gene_2_{rep}']), np.max(row[f'intergenic_{rep}']), 1])
+        MAX = np.max([np.max(row[f'gene_1_{rep}']), np.max(row[f'gene_2_{rep}']), np.max(row[f'intergenic_{rep}'])])
+        MIN = np.min([np.min(row[f'gene_1_{rep}']), np.min(row[f'gene_2_{rep}']), np.min(row[f'intergenic_{rep}'])])
         
-        row[f'gene_1_{rep}'] = row[f'gene_1_{rep}'] / MAX
-        row[f'intergenic_{rep}'] = row[f'intergenic_{rep}'] / MAX
-        row[f'gene_2_{rep}'] = row[f'gene_2_{rep}'] / MAX
-        
+        for gene in ['gene_1', 'intergenic', 'gene_2']:
+            if MAX - MIN != 0:
+                row[f'{gene}_{rep}'] = (row[f'{gene}_{rep}'] - MIN) / (MAX - MIN)
+            else:
+                row[f'{gene}_{rep}'] = row[f'{gene}_{rep}'] - MIN
+                # print(len(row[f'{gene}_{rep}']), row['name_1'], row['name_2'], row['label'])
+                pass
     return row
 
 # make the coverages for g1, ig, g2 same length
@@ -176,12 +164,13 @@ if __name__ == '__main__':
     data = data.apply(resample, axis=1)
     print('resample done')
 
-    # Smooth the signal
-    data = data.apply(smooth, axis=1)
-
     # scale the coverages to 0-1 (stable scale between g1-ig-g2)
     data = data.apply(scale, axis=1)
     print('scale done')
+
+    # Smooth the signal
+    data = data.apply(smooth, axis=1)
+    print('smooth done')
 
     # make the coverages for g1, ig, g2 same length (Zero padding)
     data = data.apply(same_length, axis=1)

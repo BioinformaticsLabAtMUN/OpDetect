@@ -58,7 +58,6 @@ def scale(row):
             else:
                 row[f'{gene}_{rep}'] = row[f'{gene}_{rep}'] - MIN
                 # print(len(row[f'{gene}_{rep}']), row['name_1'], row['name_2'], row['label'])
-                pass
     return row
 
 # make the coverages for g1, ig, g2 same length

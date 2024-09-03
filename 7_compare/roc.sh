@@ -5,7 +5,7 @@
 #SBATCH --cpus-per-task=4
 
 module load python
-source ../4_data_process/env/bin/activate
+source ../4_data_process/envr/bin/activate
 
 # -------------TEST----------------
 

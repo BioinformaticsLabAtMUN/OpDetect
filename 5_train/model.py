@@ -31,7 +31,7 @@ def model(input_shape, num_labels, lstm_units, cnn_filters, F, D, kernel_size, d
     encoder_out, _ = SelfAttention(size=F, num_hops=D, use_penalization=False)(rnn_out)
 
     # normalizing the output of the encoder lambda layer
-    encoder_out = Lambda(lambda x: K.l2_normalize(x, axis=1))(encoder_out)
+    # encoder_out = Lambda(lambda x: K.l2_normalize(x, axis=1))(encoder_out)
 
     dense_out = Dense(num_labels, activation='softmax')(encoder_out)
 
@@ -132,7 +132,7 @@ if __name__ == '__main__':
 
         fold_model.compile(optimizer=optimizer, loss='categorical_crossentropy', metrics=metrics)
 
-        history = fold_model.fit(X_train, y_train, epochs=epoch, batch_size=batch_size, verbose=2, callbacks=[early_stopping, checkpoint], validation_data=(X_test, y_test))
+        history = fold_model.fit(X_train, y_train, epochs=epoch, batch_size=batch_size, verbose=0, callbacks=[early_stopping, checkpoint], validation_data=(X_test, y_test))
 
         early_stopping_epoch = early_stopping.stopped_epoch
 

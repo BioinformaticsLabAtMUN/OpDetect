@@ -4,7 +4,7 @@
     "batch_size": 32,
     "lstm_units": 64,
     "cnn_filters": 64,
-    "dropout_rate": 0.3,
+    "dropout_rate": 0.4,
     "patience": 10,
     "F": 32,
     "D": 16,

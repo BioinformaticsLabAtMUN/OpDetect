@@ -27,7 +27,6 @@
   - `scipy` (v1.10.1)
   - `tensorflow` (v2.16.1)
   - `scikit-learn` (v1.2.1)
-  - `Orange3` (v3.30.0)
 
 ### Setup
 

@@ -1,5 +1,4 @@
-# OpDetect: A Deep Learning Tool for Operon Detection
-
+# OpDetect: A convolutional and recurrent neural network classifier for precise and sensitive operon detection from RNA-seq data
 ## Overview
 
 **OpDetect** is a convolutional and recurrent neural network-based tool designed to accurately and sensitively detect operons from RNA-seq data. Operons are groups of neighboring genes transcribed as a single mRNA unit, predominantly found in prokaryotic genomes. By leveraging RNA-seq data directly, OpDetect offers a species-agnostic approach that outperforms existing methods in terms of recall, F1-score, and AUROC.

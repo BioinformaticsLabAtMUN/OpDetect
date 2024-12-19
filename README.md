@@ -32,7 +32,7 @@
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-repo-name>/OpDetect.git
+   git clone https://github.com/BioinformaticsLabAtMUN/OpDetect.git
    cd OpDetect
    ```
 2. Install dependencies:
@@ -46,7 +46,11 @@
 
 ### Data Preparation
 
-1. **Prepare Data Directory**:
+1. **Prepare Read Counts and Labels**:
+
+   - Use the scripts in `2_process_reads` and `3_labels` directories to prepare the read count files and labels.
+
+2. **Prepare Data Directory**:
 
    - Create a subdirectory in `0_data` named with the `txid` of the organism (e.g., `txid12345`).
    - Place the following files in the subdirectory:
@@ -54,27 +58,104 @@
      - Gene annotation file (e.g., `gene_annotation.bed`).
      - Labels file listing genes in the same operon on the same line.
 
-2. **Process Data and Run Test**:
+3. **Process Data and Run Test**:
    From the main directory, execute the following commands:
 
    ```bash
-   python 4_data_process/integrate.py txid12345 ../0_data gene_annotation.bed base_cov labels ../0_data/data_integrated.pkl
+   python 4_data_process/integrate.py txid12345 0_data gene_annotation.bed base_cov labels 0_data/data_integrated.pkl
    ```
 
    - Replace `txid12345` with your organism-specific directory name.
    - Adjust paths to match your directory structure.
 
    ```bash
-   python 4_data_process/process.py ../0_data data_integrated.pkl data_processed.npz TEST gene_pairs.csv
+   python 4_data_process/process.py 0_data data_integrated.pkl data_processed.npz TEST 0_data/txid12345/gene_pairs.csv
    ```
 
    - Outputs `gene_pairs.csv` containing gene-pair labels.
 
-3. **Run Test**:
+4. **Run Test**:
+   Go to the directory `6_test`, then run:
 
    ```bash
-   python 6_test/test.py 0_data models/versions OpDetect data_processed_txid12345.npz txid12345/gene_pairs.csv
+   python test.py ../0_data models/versions OpDetect data_processed.npz ../0_data/txid12345/gene_pairs.csv
    ```
+
+### Example Workflow
+
+Below is an example workflow with `txid272942`:
+
+```bash
+python 4_data_process/integrate.py txid272942 0_data gene_annotation.bed base_cov labels 0_data/data_integrated.pkl
+python 4_data_process/process.py 0_data data_integrated.pkl data_processed.npz TEST 0_data/txid272942/gene_pairs.csv
+cd 6_test/
+python test.py ../0_data models/versions OpDetect data_processed.npz ../0_data/txid272942/gene_pairs.csv
+```
+
+The resulting predicted labels will be saved in `7_compare/outputs/OpDetect_txid272942.csv`.
+
+### Example Test Output
+
+```
+Done with  txid272942
+Size:  3652
+Labels: 
+label
+0    2061
+1    1426
+2     165
+Name: count, dtype: int64
+--------------------------------------- 
+
+resample done
+scale done
+smooth done
+same_length done
+combine done
+Model: "functional"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┓
+┃ Layer (type)                         ┃ Output Shape                ┃         Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━┩
+│ input_layer (InputLayer)             │ (None, 150, 6, 3)           │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ conv2d (Conv2D)                      │ (None, 146, 1, 64)          │           5,824 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ lambda (Lambda)                      │ (None, 146, 64)             │               0 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ lstm (LSTM)                          │ [(None, 146, 64), (None,    │          33,024 │
+│                                      │ 64), (None, 64)]            │                 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ self_attention (SelfAttention)       │ [(None, 1024), (None, 16,   │           2,560 │
+│                                      │ 146)]                       │                 │
+├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
+│ dense (Dense)                        │ (None, 2)                   │           2,050 │
+└──────────────────────────────────────┴─────────────────────────────┴─────────────────┘
+ Total params: 43,458 (169.76 KB)
+ Trainable params: 43,458 (169.76 KB)
+ Non-trainable params: 0 (0.00 B)
+********************txid272942********************
+0 non-operons were not labeled and 0 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.78      0.66      0.71      2061
+           1       0.60      0.73      0.66      1426
+
+    accuracy                           0.69      3487
+   macro avg       0.69      0.69      0.69      3487
+weighted avg       0.70      0.69      0.69      3487
+
+Predicted   0.0   1.0   All
+True                       
+0          1357   704  2061
+1           385  1041  1426
+All        1742  1745  3487
+Total F1 score and recall
+F1 score: 0.6565752128666035
+Recall: 0.7300140252454418
+**************************************************
+```
 
 ---
 
@@ -110,10 +191,15 @@ This tool was developed at the Department of Computer Science and Department of 
 
 ---
 
+## License
+
+[MIT License](LICENSE)
+
+---
 
 ## Contact
 
 For questions or support, contact:
 
-- Lourdes Peña-Castillo: [lourdes@mun.ca](mailto\:lourdes@mun.ca)
+- Lourdes Peña-Castillo: [lourdes@mun.ca](mailto:lourdes@mun.ca)
 

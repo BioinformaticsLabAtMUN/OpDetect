@@ -60,17 +60,25 @@ in Caenorhabditis elegans, the only eukaryotic organism known to have operons.
 
 1. **Prepare Read Counts and Labels**:
 
-   - The initial steps in processing the data involve trimming and filtering the raw sequencing data in FASTQ format. This process is performed using Fastp (version 0.23.1) \cite{Chen2018}. The trimmed and filtered FastQ files are then aligned to the reference genomes using HISAT2 (version 2.2.1) \cite{Kim2019}, and the read coverage for each genome base is extracted using SAMtools (version 1.17) \cite{Danecek2021} and BEDtools (version 2.30.0) \cite{Quinlan2010}. The specific commands for data preparation are:
+   - The initial steps in processing the data involve trimming and filtering the raw sequencing data in FASTQ format. This process is performed using Fastp (version 0.23.1). The trimmed and filtered FastQ files are then aligned to the reference genomes using HISAT2 (version 2.2.1), and the read coverage for each genome base is extracted using SAMtools (version 1.17) and BEDtools (version 2.30.0). The specific commands for data preparation (excldingn mapping) are:
 
      A) Fastp command:
+     ```
        fastp -i in.R1.fq [-I in.R2.fq] -o out.R1.fq [-O out.R2.fq] 
        --cut_front_window_size 1 --cut_front_mean_quality 3 
        -r --cut_right_window_size 4 --cut_right_mean_quality 15
-     B) Commands to convert SAM to BAM and sort BAM
+     ```
+     
+     B) Commands to convert SAM to BAM and sort BAM:
+     ```
        samtools view -b -o BAM_file.bam SAM_file.sam
-       samtools sort BAM_file.bam -o sorted_BAM_file.bam 
+       samtools sort BAM_file.bam -o sorted_BAM_file.bam
+     ```
+     
      C) Bedtools command to obtain read counts:
+     ```
        bedtools genomecov -d -ibam sorted_BAM_file.bam > read_counts.bed
+     ```
      
    - Use the scripts in `2_process_reads` and `3_labels` directories to prepare the read count files and labels.
 

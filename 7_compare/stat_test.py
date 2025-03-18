@@ -11,6 +11,7 @@ dir = "outputs"
 models = ['om', 'rh', 'of', 'os', 'OpDetect']
 model_names = ['Operon Mapper', 'Rockhopper', 'Operon Finder', 'OperonSEQer','OpDetect']
 dataset_names = ['txid224308','txid196627','txid511145','txid85962','txid297246','txid169963','txid272634','txid298386','txid6239'] #['txid176299','txid224326','txid224911','txid208964', 'txid214092',]
+txid_to_name = {'txid224308': 'B. subtilis','txid196627': 'C. glutamicum','txid511145': 'E. coli','txid85962': 'H. pylori','txid297246': 'L. pneumophila','txid169963': 'L. monocytogenes','txid272634': 'M. pneumoniae','txid298386': 'P. profundum','txid6239': 'C. elegans'}
 
 def collect_outputs(metric):
     outputs = []
@@ -71,7 +72,7 @@ def stats(outputs, metric):
     print(f'Performing statistical tests for {metric}')
     # Perform Friedman test to check for significant differences
     f_stat, f_pval = friedmanchisquare(*outputs)
-    print(f'Friedman test statistic: {f_stat}')
+    print(f'Friedman test statistic: {f_stat:.2f}')
     # 8 digits after the decimal point
     print(f'p-value: {f_pval:.8f}')
 
@@ -79,14 +80,15 @@ def stats(outputs, metric):
     num_classifiers = outputs.shape[0]
     num_datasets = outputs.shape[1]
 
-    # obtain ranks
+    # print ranks
     ranks = rankdata(outputs, axis=0)
     ranks = num_classifiers - ranks.astype(int) + 1 # highest to lowest
     mean_ranks = np.mean(ranks, axis=1)
     print("\nRanks:")
-    print(dataset_names)
-    for model in model_names:
-        print(model, ranks[model_names.index(model)])
+    for i, dataset_name in enumerate(dataset_names):
+        print(txid_to_name[dataset_name])
+        for model in model_names:
+            print(model, ranks[model_names.index(model)][i], end=', ')
     print()
 
     #generate a critical difference diagram with Nemenyi post-hoc, default alpha=0.05

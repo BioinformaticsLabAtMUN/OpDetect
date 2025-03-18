@@ -3,8 +3,8 @@ import numpy as np
 import pandas as pd
 from scipy.stats import friedmanchisquare, rankdata, norm, chi2
 import matplotlib.pyplot as plt
-from sklearn.metrics import roc_curve, roc_auc_score, precision_recall_curve, auc, f1_score
-from Orange.evaluation import compute_CD, graph_ranks
+from sklearn.metrics import roc_curve, roc_auc_score, f1_score
+from autorank import autorank, plot_stats
 
 # Directory containing the model outputs (replace with your actual directory)
 dir = "outputs"
@@ -20,10 +20,7 @@ def collect_outputs(metric):
         count = 0
         not_exist = False
         for txid in dataset_names:
-            path = f'{dir}/{model}_{txid}.csv'
-            if model == 'OpDetect':
-                path = f'{dir}/{model}_{txid}_{txid}.csv'
-
+            path = f'{dir}/{model}_{txid}_{txid}.csv'
             try:
                 pred = pd.read_csv(path)
             except:
@@ -47,7 +44,6 @@ def collect_outputs(metric):
 
             if metric == 'auroc':
                 # calc auroc
-                fpr, tpr, _ = roc_curve(y_true, y_pred)
                 auroc = roc_auc_score(y_true, y_pred)
                 group.append(auroc)
             elif metric == 'f1':
@@ -64,17 +60,25 @@ def collect_outputs(metric):
 
 
         outputs.append(group)
+
     outputs = np.array(outputs)
     return outputs   
 
 
 def stats(outputs, metric):
     print(f'Performing statistical tests for {metric}')
-    # Perform Friedman test to check for significant differences
-    f_stat, f_pval = friedmanchisquare(*outputs)
-    print(f'Friedman test statistic: {f_stat:.2f}')
+    #generate a critical difference diagram with Nemenyi post-hoc, default alpha=0.05
+    cd_outputs = outputs.T
+    cd_outputs = pd.DataFrame(cd_outputs, columns=model_names)
+    result = autorank(cd_outputs, alpha=0.05, verbose=False, order='descending', )
+    
+    #generate a critical difference diagram with Nemenyi post-hoc, default alpha=0.05
+    print(f'Critical difference in {metric}: {result.cd:.3f}')
+    plot_stats(result)
+    plt.savefig(f'critical_difference_{metric}.png', dpi=300)
     # 8 digits after the decimal point
-    print(f'p-value: {f_pval:.8f}')
+    print(f'p-value: {result.pvalue:.8f}')
+
 
     # Set the critical difference value based on the number of classifiers and datasets
     num_classifiers = outputs.shape[0]
@@ -86,16 +90,12 @@ def stats(outputs, metric):
     mean_ranks = np.mean(ranks, axis=1)
     print("\nRanks:")
     for i, dataset_name in enumerate(dataset_names):
-        print(txid_to_name[dataset_name])
+        print(txid_to_name[dataset_name], end='= ')
         for model in model_names:
-            print(model, ranks[model_names.index(model)][i], end=', ')
-    print()
+            print(model,': ', ranks[model_names.index(model)][i], end=', ')
+        print()
 
-    #generate a critical difference diagram with Nemenyi post-hoc, default alpha=0.05
-    cd = compute_CD(mean_ranks, num_datasets) #tested on 7 datasets
-    print(f'Critical difference in {metric}: {cd:.3f}')
-    graph_ranks(mean_ranks, model_names, cd=cd, width=6, reverse=True, textspace=1.5)
-    plt.savefig(f'critical_difference_{metric}.png', dpi=300)
+    
 
     # The dot represents the mean rank and bars represent standard error. Lower ranks indicate better performance, horizontal
     fig, ax = plt.subplots(figsize=(6, 3))

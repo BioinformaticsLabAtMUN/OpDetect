@@ -74,8 +74,9 @@ def stats(outputs, metric):
     
     #generate a critical difference diagram with Nemenyi post-hoc, default alpha=0.05
     print(f'Critical difference in {metric}: {result.cd:.3f}')
-    plot_stats(result)
-    plt.savefig(f'critical_difference_{metric}.png', dpi=300)
+    fig, ax = plt.subplots(figsize=(6, 3))
+    plot_stats(result, ax = ax)
+    plt.savefig(f'critical_difference_{metric}.png')
     # 8 digits after the decimal point
     print(f'p-value: {result.pvalue:.8f}')
 

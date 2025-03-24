@@ -88,7 +88,7 @@ in  *Caenorhabditis elegans*, one of few eukaryotic organisms known to have oper
    - Place the following files in the subdirectory:
      - Read count files with names like `base_cov_SAMPLEID`.
      - Gene annotation file (e.g., `gene_annotation.bed`).
-     - Labels file listing genes in the same operon on the same line.
+     - [Optional] Labels file listing genes in the same operon on the same line. 
 
 3. **Process Data and Run Test**:
    From the main directory, execute the following commands:

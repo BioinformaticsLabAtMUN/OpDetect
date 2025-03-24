@@ -126,6 +126,14 @@ python test.py ../0_data models/versions OpDetect data_processed.npz ../0_data/t
 
 The resulting predicted labels will be saved in `7_compare/outputs/OpDetect_txid272942.csv`.
 
+Note: If the label file is unavailable and you only want predictions without true labels, enter NA in place of the label file name when running integrate.py. This will assign a value of -1 to every gene pair instead of the true labels. The code will then be modified as follows:
+```bash
+python 4_data_process/integrate.py txid272942 0_data gene_annotation.bed base_cov NA 0_data/data_integrated.pkl
+python 4_data_process/process.py 0_data data_integrated.pkl data_processed.npz TEST 0_data/txid272942/gene_pairs.csv
+cd 6_test/
+python test.py ../0_data models/versions OpDetect data_processed.npz ../0_data/txid272942/gene_pairs.csv
+```
+
 ### Example Test Output
 
 ```

@@ -1,0 +1,10 @@
+Organism	OM	RH	OF	OS	OD
+E. coli	0.65	0.78	0.87	0.86	0.85
+C. glutamicum	0.64	0.53	0.81	0.73	0.86
+L. monocytogenes	0.68	0.56	0.88	0.63	0.88
+L. pneumophila	0.63	0.57	0.77	0.72	0.8
+H. pylori	0.69	0.54	0.87	0.85	0.84
+B. subtilis	0.68	0.79	0.87	0.86	0.84
+M. pneumoniae	0.69	0.62	0.64	0.74	0.79
+C. elegans	NA	0.53	NA	0.58	0.72
+P. profundum	0.58	0.55	0.69	0.71	0.74

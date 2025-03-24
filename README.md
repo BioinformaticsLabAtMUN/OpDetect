@@ -14,13 +14,13 @@ enabled us to employ a convolutional and recurrent deep neural network architect
 which demonstrated superior performance in terms of recall, f1-score and AUROC
 compared to previous approaches. Additionally, OpDetect showcases species-agnostic
 capabilities, successfully detecting operons in a wide range of bacterial species and even
-in Caenorhabditis elegans, the only eukaryotic organism known to have operons.
+in  *Caenorhabditis elegans*, one of few eukaryotic organisms known to have operons.
 
 ---
 
 ## Key Features
 
-- **Species-Agnostic**: Works across a wide range of bacterial species and can even detect operons in *Caenorhabditis elegans*, the only eukaryotic organism known to have operons.
+- **Species-Agnostic**: Works across a wide range of bacterial species and can even detect operons in *Caenorhabditis elegans*, one of few eukaryotes known to have operons.
 - **Deep Learning Model**: Utilizes a CNN-LSTM architecture to capture spatial and sequential features from RNA-seq data.
 - **Direct RNA-Seq Integration**: Does not rely on external databases, enabling application to a broader range of organisms.
 - **Superior Performance**: Outperforms state-of-the-art tools like OperonMapper, Rockhopper, OperonSEQer, and OperonFinder.
@@ -60,7 +60,7 @@ in Caenorhabditis elegans, the only eukaryotic organism known to have operons.
 
 1. **Prepare Read Counts and Labels**:
 
-   - The initial steps in processing the data involve trimming and filtering the raw sequencing data in FASTQ format. This process is performed using Fastp (version 0.23.1). The trimmed and filtered FastQ files are then aligned to the reference genomes using HISAT2 (version 2.2.1), and the read coverage for each genome base is extracted using SAMtools (version 1.17) and BEDtools (version 2.30.0). The specific commands for data preparation (excldingn mapping) are:
+   - The initial steps in processing the data involve trimming and filtering the raw sequencing data in FASTQ format. We performed this process using Fastp (version 0.23.1). The trimmed and filtered FastQ files are then aligned to the reference genomes using HISAT2 (version 2.2.1), and the read coverage for each genome base is extracted using SAMtools (version 1.17) and BEDtools (version 2.30.0). The specific commands for data preparation (excluding mapping) are:
 
      A) Fastp command:
      ```
@@ -125,6 +125,14 @@ python test.py ../0_data models/versions OpDetect data_processed.npz ../0_data/t
 ```
 
 The resulting predicted labels will be saved in `7_compare/outputs/OpDetect_txid272942.csv`.
+
+Note: If the label file is unavailable and you only want predictions without true labels, enter NA in place of the label file name when running integrate.py. This will assign a value of -1 to every gene pair instead of the true labels. The code will then be modified as follows:
+```bash
+python 4_data_process/integrate.py txid272942 0_data gene_annotation.bed base_cov NA 0_data/data_integrated.pkl
+python 4_data_process/process.py 0_data data_integrated.pkl data_processed.npz TEST 0_data/txid272942/gene_pairs.csv
+cd 6_test/
+python test.py ../0_data models/versions OpDetect data_processed.npz ../0_data/txid272942/gene_pairs.csv
+```
 
 ### Example Test Output
 

@@ -88,6 +88,9 @@ if __name__ == '__main__':
     annotation_file_name = sys.argv[3]
     coverage_file_name = sys.argv[4]
     label_file_name = sys.argv[5]
+    has_label = True
+    if label_file_name == 'NA':
+        has_label = False
     output_path = sys.argv[6]
 
     trains = []
@@ -160,40 +163,44 @@ if __name__ == '__main__':
             features.dropna(inplace=True)
 
             # add label
-            labels = pd.read_csv(label_path, sep='\t')
-            # merge features and labels
-            def make_label_pair(operon_pair_list, genes):
-                if len(genes) > 1:
-                    for gene_1 in genes:
-                        for gene_2 in genes:
-                            if not gene_1 == gene_2:
-                                operon_pair_list.append([gene_1, gene_2])
-                                operon_pair_list.append([gene_2, gene_1])
+            if has_label:
+                labels = pd.read_csv(label_path, sep='\t')
+                # merge features and labels
+                def make_label_pair(operon_pair_list, genes):
+                    if len(genes) > 1:
+                        for gene_1 in genes:
+                            for gene_2 in genes:
+                                if not gene_1 == gene_2:
+                                    operon_pair_list.append([gene_1, gene_2])
+                                    operon_pair_list.append([gene_2, gene_1])
 
 
-            operon_pair_list=[]
-            labels.apply(lambda row: make_label_pair(operon_pair_list, row[0].split(',')), axis=1)
+                operon_pair_list=[]
+                labels.apply(lambda row: make_label_pair(operon_pair_list, row[0].split(',')), axis=1)
 
-            features['label'] = features.apply(lambda row: 1 if [row.name_1.split(',')[0], row.name_2.split(',')[0]] in operon_pair_list else 0, axis=1)
-            features.reset_index(drop=True, inplace=True)
+                features['label'] = features.apply(lambda row: 1 if [row.name_1.split(',')[0], row.name_2.split(',')[0]] in operon_pair_list else 0, axis=1)
+                features.reset_index(drop=True, inplace=True)
 
-            # separate all the gene names in labels file and put them in a list
-            gene_names = []
-            labels.apply(lambda row: gene_names.extend(row[0].split(',')), axis=1)
-            gene_names = list(set(gene_names))
-            # print("labeled genes: ", gene_names)
+                # separate all the gene names in labels file and put them in a list
+                gene_names = []
+                labels.apply(lambda row: gene_names.extend(row[0].split(',')), axis=1)
+                gene_names = list(set(gene_names))
+                # print("labeled genes: ", gene_names)
 
-            # if a pair is labeled 0 and either of the genes are not in the gene_names list, label 2
-            features['label'] = features.apply(lambda row: 2 if row.label == 0 and (row.name_1.split(',')[0] not in gene_names or row.name_2.split(',')[0] not in gene_names) else row.label, axis=1)
-
+                # if a pair is labeled 0 and either of the genes are not in the gene_names list, label 2
+                features['label'] = features.apply(lambda row: 2 if row.label == 0 and (row.name_1.split(',')[0] not in gene_names or row.name_2.split(',')[0] not in gene_names) else row.label, axis=1)
+            else:
+                # if no labels available, label -1
+                features['label'] = -1
 
             trains.append(features)
 
             print("Done with ", folder)
             print("Size: ", features.shape[0])
-            print("Labels: ")
-            print(features.label.value_counts())
-            print("---------------------------------------", '\n')
+            if has_label:
+                print("Labels: ")
+                print(features.label.value_counts())
+                print("---------------------------------------", '\n')
 
     
         # combine all trains

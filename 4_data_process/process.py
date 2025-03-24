@@ -215,8 +215,11 @@ if __name__ == '__main__':
         gene_pairs = data[['name_1', 'name_2', 'label']]
         gene_pairs.to_csv(label_path, index=False)
 
-        # remove the data with label 2 for testing
-        data = data[data.label != 2].reset_index(drop=True)
-
+        try:
+            # remove the data with label 2 for testing
+            data = data[data.label != 2].reset_index(drop=True)
+        except:
+            pass
+        
         # save the data in np.savez_compressed
         np.savez_compressed(output_path, data=data)

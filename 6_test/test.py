@@ -47,8 +47,10 @@ if __name__ == '__main__':
     X = test_data[:,2]
     X = np.array([X[i] for i in range(len(X))])
     y = test_data[:,3]
-    y = to_categorical(y)
-    y_true = np.argmax(y, axis=1)
+
+    has_label = True
+    if y.all() == -1:
+        has_label = False
 
     test_model = model(input_shape= X.shape[1:], num_labels = num_labels, lstm_units = lstm_units, \
         cnn_filters = cnn_filters, F = F, D= D, kernel_size = kernel_size, dropout_rate = dropout_rate)
@@ -93,16 +95,17 @@ if __name__ == '__main__':
     y_true = test_labels.true
     y_pred = test_labels.pred
 
-    # print classification report
-    print("Classification report")
-    print(classification_report(y_true, y_pred))
-    print(pd.crosstab(y_true, y_pred, rownames=['True'], colnames=['Predicted'], margins=True))
+    if has_label:
+        # print classification report
+        print("Classification report")
+        print(classification_report(y_true, y_pred))
+        print(pd.crosstab(y_true, y_pred, rownames=['True'], colnames=['Predicted'], margins=True))
 
-    # print total F1 score and recall
-    print("Total F1 score and recall")
-    print(f"F1 score: {f1_score(y_true, y_pred)}")
-    print(f"Recall: {recall_score(y_true, y_pred)}")
-    print("*"*50)
+        # print total F1 score and recall
+        print("Total F1 score and recall")
+        print(f"F1 score: {f1_score(y_true, y_pred)}")
+        print(f"Recall: {recall_score(y_true, y_pred)}")
+        print("*"*50)
 
     # save y_true, y_pred
     test_labels.to_csv(str("../7_compare/outputs/" + model_name + '_' + txid + '.csv'), index=False)

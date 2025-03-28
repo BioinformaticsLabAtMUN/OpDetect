@@ -221,7 +221,7 @@ OpDetect consistently outperforms existing methods on validation organisms, achi
 
 If you use OpDetect in your research, please cite:
 
-Rezvan Karaji and Lourdes Peña-Castillo, "OpDetect: A Convolutional and Recurrent Neural Network Classifier for Precise and Sensitive Operon Detection from RNA-seq Data," .
+Rezvan Karaji and Lourdes Peña-Castillo, "OpDetect: A Convolutional and Recurrent Neural Network Classifier for Precise and Sensitive Operon Detection from RNA-seq Data," [BioRXiv](https://doi.org/10.1101/2025.03.24.645056).
 
 ---
 

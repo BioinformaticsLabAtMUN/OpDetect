@@ -2,7 +2,7 @@ import sys
 sys.path.insert(1, "../5_train/")
 from model import *
 import pandas as pd
-from sklearn.metrics import classification_report
+from sklearn.metrics import classification_report, roc_auc_score
 from tensorflow.keras.utils import to_categorical
 import numpy as np
 import json
@@ -49,7 +49,7 @@ if __name__ == '__main__':
     y = test_data[:,3]
 
     has_label = True
-    if y.all() == -1:
+    if y.any() == -1:
         has_label = False
 
     test_model = model(input_shape= X.shape[1:], num_labels = num_labels, lstm_units = lstm_units, \
@@ -58,12 +58,13 @@ if __name__ == '__main__':
     for fold in range(10):
         test_model.load_weights(model_dir+ '/' +str(model_name+'_best_model_' + '_fold_' + str(fold) + '.keras'))
         y_pred = test_model.predict(X, verbose=0)
-        y_pred = np.argmax(y_pred, axis=1)
+        # y_pred = np.argmax(y_pred, axis=1)
+        y_pred_prob_class1 = y_pred[:, 1]  # Probability of class 1
 
         pred = pd.DataFrame(test_data[:,0:2], columns=['name_1', 'name_2'])
-        pred[f'pred_{fold}'] = y_pred
+        pred[f'pred_{fold}'] = y_pred_prob_class1
 
-        def get_pred(name_1, name_2):
+        def get_prob(name_1, name_2):
             # if pred[name_1, name_2] or pred[name_2, name_1] is present return its f'pred_{i}' else return Nan
             if pred[(pred['name_1'] == name_1) & (pred['name_2'] == name_2)].shape[0] > 0:
                 return pred[(pred['name_1'] == name_1) & (pred['name_2'] == name_2)][f'pred_{fold}'].values[0]
@@ -72,41 +73,45 @@ if __name__ == '__main__':
             else:
                 return None
 
-        test_labels[f'pred_{fold}'] = test_labels.apply(lambda row: get_pred(row['name_1'], row['name_2']), axis=1)
+        test_labels[f'prob_{fold}'] = test_labels.apply(lambda row: get_prob(row['name_1'], row['name_2']), axis=1)
     
-    def median_pred(row):
-        # RETURN MEDIAN UNLESS THERE IS A NAN THEN RETURN None
+    def mean_prob(row):
         if row.isna().sum() > 0:
             return None
         else:
-            return int(np.median(row[3:]))
+            return np.mean(row[3:])
 
     # get the median of the predictions of reps as pred
-    test_labels['pred'] = test_labels.apply(lambda row: median_pred(row), axis=1)
+    test_labels['prob'] = test_labels.apply(lambda row: mean_prob(row), axis=1)
+    test_labels['pred'] = test_labels['prob'].apply(lambda x: 1 if x is not None and x >= 0.5 else 0 if x is not None else None)
 
     # print number of predicted labels None and their actual label (e.g. "11 os were not labeled and 16 1s were not labeled"), and remove them from the dataframe
     txid = str(test_labels_path).split('/')[-2]
     print("*"*20 + str(txid) + "*"*20)
     print(f"{test_labels[test_labels['true'] == 0]['pred'].isna().sum()} non-operons were not labeled and {test_labels[test_labels['true'] == 1]['pred'].isna().sum()} operons were not labeled ", end='\n\n')
 
-
-    test_labels = test_labels[test_labels['pred'].notna()]
-
-    y_true = test_labels.true
-    y_pred = test_labels.pred
-
     if has_label:
+        test_labels = test_labels[test_labels['pred'].notna()]
+        test_labels = test_labels[test_labels.true != 2].reset_index(drop=True)
+        y_true = test_labels.true
+        y_pred = test_labels.pred
+        y_prob = test_labels.prob
+
         # print classification report
         print("Classification report")
         print(classification_report(y_true, y_pred))
         print(pd.crosstab(y_true, y_pred, rownames=['True'], colnames=['Predicted'], margins=True))
 
-        # print total F1 score and recall
-        print("Total F1 score and recall")
-        print(f"F1 score: {f1_score(y_true, y_pred)}")
-        print(f"Recall: {recall_score(y_true, y_pred)}")
-        print("*"*50)
+        # print total F1 score and recall and auroc
+        print("Total F1 score, recall and AUROC")
+        f1 = f1_score(y_true, y_pred)
+        recall = recall_score(y_true, y_pred)
+        auroc = roc_auc_score(y_true, y_prob)
 
+        print(f"F1 score: {f1:.2f}")
+        print(f"Recall: {recall:.2f}")
+        print(f"AUROC: {auroc:.2f}")
+        print("*"*50)
     # save y_true, y_pred
     test_labels.to_csv(str("../7_compare/outputs/" + model_name + '_' + txid + '.csv'), index=False)
 

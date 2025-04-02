@@ -25,27 +25,33 @@ if __name__ == '__main__':
     for i, model in enumerate(models):
         path = f'{dir}/{model}_{txid}.csv'
 
-        # if path does not exist, skip
-        try:
+        # RH no prob
+        if model == 'rh':
             pred = pd.read_csv(path)
-
-            # drop true 2s
             pred = pred[pred.true != 2]
-            pred = pred[pred.pred != 2]
 
             y_true = pred.true
-            y_pred = pred.pred
-            fpr, tpr, _ = roc_curve(y_true, y_pred)
-            auroc = roc_auc_score(y_true, y_pred)
+            y_prob = pred.pred  #####
+            fpr, tpr, _ = roc_curve(y_true, y_prob)
+            auroc = roc_auc_score(y_true, y_prob)
             plt.plot(fpr, tpr, label=f'{model_names[i]} (AUROC = {auroc:0.2f})')
 
-            # # plot precision-recall curve
-            # precision, recall, _ = precision_recall_curve(y_true, y_pred)
-            # auprc = auc(recall, precision)
-            # plt.plot(fpr, tpr, label=f'{model_names[i]} (AUPRC = {auprc:0.2f})')
+        else:
+            # if path does not exist, skip
+            try:
+                pred = pd.read_csv(path)
 
-        except:
-            print(f'No prediction file for {model} on {txid}.')
+                # drop true 2s
+                pred = pred[pred.true != 2]
+
+                y_true = pred.true
+                y_prob = pred.prob
+                fpr, tpr, _ = roc_curve(y_true, y_prob)
+                auroc = roc_auc_score(y_true, y_prob)
+                plt.plot(fpr, tpr, label=f'{model_names[i]} (AUROC = {auroc:0.2f})')
+
+            except:
+                print(f'No prediction file for {model} on {txid}.')
 
 
     # plot random guess line
@@ -58,9 +64,6 @@ if __name__ == '__main__':
     plt.xlabel('False Positive Rate')
     plt.ylabel('True Positive Rate')
     plt.title(f'ROC curve for {txid}')
-    # plt.xlabel('Recall')
-    # plt.ylabel('Precision')
-    # plt.title(f'Precision-Recall curve for {txid}')
     plt.legend(loc="lower right", fontsize=10)
 
     plt.savefig(f'roc/roc_{txid}.png')

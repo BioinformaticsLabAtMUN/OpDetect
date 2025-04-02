@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --account=def-lpenacas
-#SBATCH --time=12:00:00
+#SBATCH --time=00:50:00
 #SBATCH --mem=64G
 
 module load python
@@ -8,6 +8,7 @@ source ../5_train/env/bin/activate
 # python test.py dir model_weights_path model_name test_data test_labels 
 
 # # ------------------Train organisms, individually------------------ To test the performance of the model trained on all but one organism, and the original model.
+# echo "OpDetect NE Train data"
 # python test.py ../0_data models/versions OpDetect TEST/train/data_processed_txid224308.npz txid224308/gene_pairs.csv
 
 # python test.py ../0_data models/versions OpDetect TEST/train/data_processed_txid196627.npz txid196627/gene_pairs.csv
@@ -24,6 +25,7 @@ source ../5_train/env/bin/activate
 
 
 # # -------------------Test organisms, individually-------------------
+# echo "OpDetect Test data"
 # python test.py ../0_data models/versions OpDetect TEST/test/data_processed_txid298386.npz txid298386/gene_pairs.csv
 
 # python test.py ../0_data models/versions OpDetect TEST/test/data_processed_txid176299.npz txid176299/gene_pairs.csv
@@ -39,24 +41,33 @@ source ../5_train/env/bin/activate
 # python test.py ../0_data models/versions OpDetect TEST/test/data_processed_txid6239.npz txid6239/gene_pairs.csv
 
 
-# -------------Train organisms, all but one---------------- To train unbiased models, and then test on the left-out organism
-python ../5_train/model.py ../5_train/hyp.json OpDetect_txid224308 TEST/train_but_one/data_processed_txid224308.npz
+# # -------------Train organisms, all but one---------------- To train unbiased models, and then test on the left-out organism
+echo "OpDetect no leak Train data"
+
+# echo "Train without txid224308"
+# python ../5_train/model.py ../5_train/hyp.json OpDetect_txid224308 TEST/train_but_one/data_processed_txid224308.npz
 python test.py ../0_data models/versions OpDetect_txid224308 TEST/train/data_processed_txid224308.npz txid224308/gene_pairs.csv
 
-python ../5_train/model.py ../5_train/hyp.json OpDetect_txid196627 TEST/train_but_one/data_processed_txid196627.npz
+# echo "Train without txid196627"
+# python ../5_train/model.py ../5_train/hyp.json OpDetect_txid196627 TEST/train_but_one/data_processed_txid196627.npz
 python test.py ../0_data models/versions OpDetect_txid196627 TEST/train/data_processed_txid196627.npz txid196627/gene_pairs.csv
 
-python ../5_train/model.py ../5_train/hyp.json OpDetect_txid511145 TEST/train_but_one/data_processed_txid511145.npz
+# echo "Train without txid511145"
+# python ../5_train/model.py ../5_train/hyp.json OpDetect_txid511145 TEST/train_but_one/data_processed_txid511145.npz
 python test.py ../0_data models/versions OpDetect_txid511145 TEST/train/data_processed_txid511145.npz txid511145/gene_pairs.csv
 
-python ../5_train/model.py ../5_train/hyp.json OpDetect_txid85962 TEST/train_but_one/data_processed_txid85962.npz
+# echo "Train without txid85962"
+# python ../5_train/model.py ../5_train/hyp.json OpDetect_txid85962 TEST/train_but_one/data_processed_txid85962.npz
 python test.py ../0_data models/versions OpDetect_txid85962 TEST/train/data_processed_txid85962.npz txid85962/gene_pairs.csv
 
-python ../5_train/model.py ../5_train/hyp.json OpDetect_txid297246 TEST/train_but_one/data_processed_txid297246.npz
+# echo "Train without txid297246"
+# python ../5_train/model.py ../5_train/hyp.json OpDetect_txid297246 TEST/train_but_one/data_processed_txid297246.npz
 python test.py ../0_data models/versions OpDetect_txid297246 TEST/train/data_processed_txid297246.npz txid297246/gene_pairs.csv
 
-python ../5_train/model.py ../5_train/hyp.json OpDetect_txid169963 TEST/train_but_one/data_processed_txid169963.npz
+# echo "Train without txid169963"
+# python ../5_train/model.py ../5_train/hyp.json OpDetect_txid169963 TEST/train_but_one/data_processed_txid169963.npz
 python test.py ../0_data models/versions OpDetect_txid169963 TEST/train/data_processed_txid169963.npz txid169963/gene_pairs.csv
 
-python ../5_train/model.py ../5_train/hyp.json OpDetect_txid272634 TEST/train_but_one/data_processed_txid272634.npz
+# echo "Train without txid272634"
+# python ../5_train/model.py ../5_train/hyp.json OpDetect_txid272634 TEST/train_but_one/data_processed_txid272634.npz
 python test.py ../0_data models/versions OpDetect_txid272634 TEST/train/data_processed_txid272634.npz txid272634/gene_pairs.csv

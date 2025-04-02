@@ -1,0 +1,636 @@
+Model: "functional"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input_layer (InputLayer)        │ (None, 150, 6, 3)      │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d (Conv2D)                 │ (None, 146, 1, 64)     │         5,824 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda (Lambda)                 │ (None, 146, 64)        │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lstm (LSTM)                     │ [(None, 146, 64),      │        33,024 │
+│                                 │ (None, 64), (None,     │               │
+│                                 │ 64)]                   │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ self_attention (SelfAttention)  │ [(None, 1024), (None,  │         2,560 │
+│                                 │ 16, 146)]              │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense (Dense)                   │ (None, 2)              │         2,050 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 43,458 (169.76 KB)
+ Trainable params: 43,458 (169.76 KB)
+ Non-trainable params: 0 (0.00 B)
+********************txid224308********************
+0 non-operons were not labeled and 0 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.88      0.76      0.82       208
+           1       0.93      0.97      0.95       644
+
+    accuracy                           0.92       852
+   macro avg       0.90      0.87      0.88       852
+weighted avg       0.92      0.92      0.91       852
+
+Predicted    0    1  All
+True                    
+0          159   49  208
+1           22  622  644
+All        181  671  852
+Total F1 score, recall and AUROC
+F1 score: 0.95
+Recall: 0.97
+AUROC: 0.97
+**************************************************
+Model: "functional"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input_layer (InputLayer)        │ (None, 150, 6, 3)      │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d (Conv2D)                 │ (None, 146, 1, 64)     │         5,824 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda (Lambda)                 │ (None, 146, 64)        │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lstm (LSTM)                     │ [(None, 146, 64),      │        33,024 │
+│                                 │ (None, 64), (None,     │               │
+│                                 │ 64)]                   │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ self_attention (SelfAttention)  │ [(None, 1024), (None,  │         2,560 │
+│                                 │ 16, 146)]              │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense (Dense)                   │ (None, 2)              │         2,050 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 43,458 (169.76 KB)
+ Trainable params: 43,458 (169.76 KB)
+ Non-trainable params: 0 (0.00 B)
+********************txid196627********************
+0 non-operons were not labeled and 0 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.96      0.83      0.89      1182
+           1       0.83      0.96      0.89      1077
+
+    accuracy                           0.89      2259
+   macro avg       0.90      0.89      0.89      2259
+weighted avg       0.90      0.89      0.89      2259
+
+Predicted     0     1   All
+True                       
+0           976   206  1182
+1            42  1035  1077
+All        1018  1241  2259
+Total F1 score, recall and AUROC
+F1 score: 0.89
+Recall: 0.96
+AUROC: 0.95
+**************************************************
+Model: "functional"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input_layer (InputLayer)        │ (None, 150, 6, 3)      │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d (Conv2D)                 │ (None, 146, 1, 64)     │         5,824 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda (Lambda)                 │ (None, 146, 64)        │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lstm (LSTM)                     │ [(None, 146, 64),      │        33,024 │
+│                                 │ (None, 64), (None,     │               │
+│                                 │ 64)]                   │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ self_attention (SelfAttention)  │ [(None, 1024), (None,  │         2,560 │
+│                                 │ 16, 146)]              │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense (Dense)                   │ (None, 2)              │         2,050 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 43,458 (169.76 KB)
+ Trainable params: 43,458 (169.76 KB)
+ Non-trainable params: 0 (0.00 B)
+********************txid511145********************
+0 non-operons were not labeled and 0 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.93      0.91      0.92      2098
+           1       0.90      0.91      0.90      1726
+
+    accuracy                           0.91      3824
+   macro avg       0.91      0.91      0.91      3824
+weighted avg       0.91      0.91      0.91      3824
+
+Predicted     0     1   All
+True                       
+0          1916   182  2098
+1           153  1573  1726
+All        2069  1755  3824
+Total F1 score, recall and AUROC
+F1 score: 0.90
+Recall: 0.91
+AUROC: 0.97
+**************************************************
+Model: "functional"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input_layer (InputLayer)        │ (None, 150, 6, 3)      │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d (Conv2D)                 │ (None, 146, 1, 64)     │         5,824 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda (Lambda)                 │ (None, 146, 64)        │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lstm (LSTM)                     │ [(None, 146, 64),      │        33,024 │
+│                                 │ (None, 64), (None,     │               │
+│                                 │ 64)]                   │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ self_attention (SelfAttention)  │ [(None, 1024), (None,  │         2,560 │
+│                                 │ 16, 146)]              │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense (Dense)                   │ (None, 2)              │         2,050 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 43,458 (169.76 KB)
+ Trainable params: 43,458 (169.76 KB)
+ Non-trainable params: 0 (0.00 B)
+********************txid85962********************
+0 non-operons were not labeled and 0 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.94      0.68      0.79       114
+           1       0.95      0.99      0.97       744
+
+    accuracy                           0.95       858
+   macro avg       0.95      0.83      0.88       858
+weighted avg       0.95      0.95      0.95       858
+
+Predicted   0    1  All
+True                   
+0          77   37  114
+1           5  739  744
+All        82  776  858
+Total F1 score, recall and AUROC
+F1 score: 0.97
+Recall: 0.99
+AUROC: 0.98
+**************************************************
+Model: "functional"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input_layer (InputLayer)        │ (None, 150, 6, 3)      │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d (Conv2D)                 │ (None, 146, 1, 64)     │         5,824 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda (Lambda)                 │ (None, 146, 64)        │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lstm (LSTM)                     │ [(None, 146, 64),      │        33,024 │
+│                                 │ (None, 64), (None,     │               │
+│                                 │ 64)]                   │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ self_attention (SelfAttention)  │ [(None, 1024), (None,  │         2,560 │
+│                                 │ 16, 146)]              │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense (Dense)                   │ (None, 2)              │         2,050 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 43,458 (169.76 KB)
+ Trainable params: 43,458 (169.76 KB)
+ Non-trainable params: 0 (0.00 B)
+********************txid297246********************
+0 non-operons were not labeled and 0 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.79      0.56      0.66       130
+           1       0.94      0.98      0.96       877
+
+    accuracy                           0.92      1007
+   macro avg       0.87      0.77      0.81      1007
+weighted avg       0.92      0.92      0.92      1007
+
+Predicted   0    1   All
+True                    
+0          73   57   130
+1          19  858   877
+All        92  915  1007
+Total F1 score, recall and AUROC
+F1 score: 0.96
+Recall: 0.98
+AUROC: 0.87
+**************************************************
+Model: "functional"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input_layer (InputLayer)        │ (None, 150, 6, 3)      │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d (Conv2D)                 │ (None, 146, 1, 64)     │         5,824 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda (Lambda)                 │ (None, 146, 64)        │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lstm (LSTM)                     │ [(None, 146, 64),      │        33,024 │
+│                                 │ (None, 64), (None,     │               │
+│                                 │ 64)]                   │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ self_attention (SelfAttention)  │ [(None, 1024), (None,  │         2,560 │
+│                                 │ 16, 146)]              │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense (Dense)                   │ (None, 2)              │         2,050 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 43,458 (169.76 KB)
+ Trainable params: 43,458 (169.76 KB)
+ Non-trainable params: 0 (0.00 B)
+********************txid169963********************
+0 non-operons were not labeled and 0 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.88      0.84      0.86       172
+           1       0.97      0.98      0.98      1031
+
+    accuracy                           0.96      1203
+   macro avg       0.93      0.91      0.92      1203
+weighted avg       0.96      0.96      0.96      1203
+
+Predicted    0     1   All
+True                      
+0          144    28   172
+1           19  1012  1031
+All        163  1040  1203
+Total F1 score, recall and AUROC
+F1 score: 0.98
+Recall: 0.98
+AUROC: 0.98
+**************************************************
+Model: "functional"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input_layer (InputLayer)        │ (None, 150, 6, 3)      │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d (Conv2D)                 │ (None, 146, 1, 64)     │         5,824 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda (Lambda)                 │ (None, 146, 64)        │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lstm (LSTM)                     │ [(None, 146, 64),      │        33,024 │
+│                                 │ (None, 64), (None,     │               │
+│                                 │ 64)]                   │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ self_attention (SelfAttention)  │ [(None, 1024), (None,  │         2,560 │
+│                                 │ 16, 146)]              │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense (Dense)                   │ (None, 2)              │         2,050 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 43,458 (169.76 KB)
+ Trainable params: 43,458 (169.76 KB)
+ Non-trainable params: 0 (0.00 B)
+********************txid272634********************
+0 non-operons were not labeled and 0 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.93      0.63      0.75       126
+           1       0.84      0.98      0.90       246
+
+    accuracy                           0.86       372
+   macro avg       0.88      0.80      0.82       372
+weighted avg       0.87      0.86      0.85       372
+
+Predicted   0    1  All
+True                   
+0          79   47  126
+1           6  240  246
+All        85  287  372
+Total F1 score, recall and AUROC
+F1 score: 0.90
+Recall: 0.98
+AUROC: 0.92
+**************************************************
+Model: "functional"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input_layer (InputLayer)        │ (None, 150, 6, 3)      │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d (Conv2D)                 │ (None, 146, 1, 64)     │         5,824 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda (Lambda)                 │ (None, 146, 64)        │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lstm (LSTM)                     │ [(None, 146, 64),      │        33,024 │
+│                                 │ (None, 64), (None,     │               │
+│                                 │ 64)]                   │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ self_attention (SelfAttention)  │ [(None, 1024), (None,  │         2,560 │
+│                                 │ 16, 146)]              │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense (Dense)                   │ (None, 2)              │         2,050 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 43,458 (169.76 KB)
+ Trainable params: 43,458 (169.76 KB)
+ Non-trainable params: 0 (0.00 B)
+********************txid298386********************
+0 non-operons were not labeled and 0 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.64      0.54      0.58        87
+           1       0.94      0.96      0.95       676
+
+    accuracy                           0.91       763
+   macro avg       0.79      0.75      0.77       763
+weighted avg       0.91      0.91      0.91       763
+
+Predicted   0    1  All
+True                   
+0          47   40   87
+1          27  649  676
+All        74  689  763
+Total F1 score, recall and AUROC
+F1 score: 0.95
+Recall: 0.96
+AUROC: 0.83
+**************************************************
+Model: "functional"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input_layer (InputLayer)        │ (None, 150, 6, 3)      │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d (Conv2D)                 │ (None, 146, 1, 64)     │         5,824 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda (Lambda)                 │ (None, 146, 64)        │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lstm (LSTM)                     │ [(None, 146, 64),      │        33,024 │
+│                                 │ (None, 64), (None,     │               │
+│                                 │ 64)]                   │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ self_attention (SelfAttention)  │ [(None, 1024), (None,  │         2,560 │
+│                                 │ 16, 146)]              │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense (Dense)                   │ (None, 2)              │         2,050 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 43,458 (169.76 KB)
+ Trainable params: 43,458 (169.76 KB)
+ Non-trainable params: 0 (0.00 B)
+/home/rezvank/.local/lib/python3.11/site-packages/sklearn/metrics/_ranking.py:379: UndefinedMetricWarning: Only one class is present in y_true. ROC AUC score is not defined in that case.
+  warnings.warn(
+********************txid176299********************
+0 non-operons were not labeled and 0 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           1       1.00      1.00      1.00        14
+
+    accuracy                           1.00        14
+   macro avg       1.00      1.00      1.00        14
+weighted avg       1.00      1.00      1.00        14
+
+Predicted   1  All
+True              
+1          14   14
+All        14   14
+Total F1 score, recall and AUROC
+F1 score: 1.00
+Recall: 1.00
+AUROC: nan
+**************************************************
+Model: "functional"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input_layer (InputLayer)        │ (None, 150, 6, 3)      │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d (Conv2D)                 │ (None, 146, 1, 64)     │         5,824 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda (Lambda)                 │ (None, 146, 64)        │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lstm (LSTM)                     │ [(None, 146, 64),      │        33,024 │
+│                                 │ (None, 64), (None,     │               │
+│                                 │ 64)]                   │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ self_attention (SelfAttention)  │ [(None, 1024), (None,  │         2,560 │
+│                                 │ 16, 146)]              │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense (Dense)                   │ (None, 2)              │         2,050 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 43,458 (169.76 KB)
+ Trainable params: 43,458 (169.76 KB)
+ Non-trainable params: 0 (0.00 B)
+/home/rezvank/.local/lib/python3.11/site-packages/sklearn/metrics/_ranking.py:379: UndefinedMetricWarning: Only one class is present in y_true. ROC AUC score is not defined in that case.
+  warnings.warn(
+********************txid224326********************
+0 non-operons were not labeled and 0 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           1       1.00      1.00      1.00        20
+
+    accuracy                           1.00        20
+   macro avg       1.00      1.00      1.00        20
+weighted avg       1.00      1.00      1.00        20
+
+Predicted   1  All
+True              
+1          20   20
+All        20   20
+Total F1 score, recall and AUROC
+F1 score: 1.00
+Recall: 1.00
+AUROC: nan
+**************************************************
+Model: "functional"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input_layer (InputLayer)        │ (None, 150, 6, 3)      │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d (Conv2D)                 │ (None, 146, 1, 64)     │         5,824 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda (Lambda)                 │ (None, 146, 64)        │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lstm (LSTM)                     │ [(None, 146, 64),      │        33,024 │
+│                                 │ (None, 64), (None,     │               │
+│                                 │ 64)]                   │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ self_attention (SelfAttention)  │ [(None, 1024), (None,  │         2,560 │
+│                                 │ 16, 146)]              │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense (Dense)                   │ (None, 2)              │         2,050 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 43,458 (169.76 KB)
+ Trainable params: 43,458 (169.76 KB)
+ Non-trainable params: 0 (0.00 B)
+********************txid224911********************
+0 non-operons were not labeled and 0 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           0       1.00      0.50      0.67         2
+           1       0.94      1.00      0.97        15
+
+    accuracy                           0.94        17
+   macro avg       0.97      0.75      0.82        17
+weighted avg       0.94      0.94      0.93        17
+
+Predicted  0   1  All
+True                 
+0          1   1    2
+1          0  15   15
+All        1  16   17
+Total F1 score, recall and AUROC
+F1 score: 0.97
+Recall: 1.00
+AUROC: 0.87
+**************************************************
+Model: "functional"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input_layer (InputLayer)        │ (None, 150, 6, 3)      │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d (Conv2D)                 │ (None, 146, 1, 64)     │         5,824 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda (Lambda)                 │ (None, 146, 64)        │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lstm (LSTM)                     │ [(None, 146, 64),      │        33,024 │
+│                                 │ (None, 64), (None,     │               │
+│                                 │ 64)]                   │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ self_attention (SelfAttention)  │ [(None, 1024), (None,  │         2,560 │
+│                                 │ 16, 146)]              │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense (Dense)                   │ (None, 2)              │         2,050 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 43,458 (169.76 KB)
+ Trainable params: 43,458 (169.76 KB)
+ Non-trainable params: 0 (0.00 B)
+/home/rezvank/.local/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/home/rezvank/.local/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/home/rezvank/.local/lib/python3.11/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+********************txid208964********************
+0 non-operons were not labeled and 0 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00         3
+           1       0.96      1.00      0.98        67
+
+    accuracy                           0.96        70
+   macro avg       0.48      0.50      0.49        70
+weighted avg       0.92      0.96      0.94        70
+
+Predicted   1  All
+True              
+0           3    3
+1          67   67
+All        70   70
+Total F1 score, recall and AUROC
+F1 score: 0.98
+Recall: 1.00
+AUROC: 0.89
+**************************************************
+Model: "functional"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input_layer (InputLayer)        │ (None, 150, 6, 3)      │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d (Conv2D)                 │ (None, 146, 1, 64)     │         5,824 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda (Lambda)                 │ (None, 146, 64)        │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lstm (LSTM)                     │ [(None, 146, 64),      │        33,024 │
+│                                 │ (None, 64), (None,     │               │
+│                                 │ 64)]                   │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ self_attention (SelfAttention)  │ [(None, 1024), (None,  │         2,560 │
+│                                 │ 16, 146)]              │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense (Dense)                   │ (None, 2)              │         2,050 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 43,458 (169.76 KB)
+ Trainable params: 43,458 (169.76 KB)
+ Non-trainable params: 0 (0.00 B)
+/home/rezvank/.local/lib/python3.11/site-packages/sklearn/metrics/_ranking.py:379: UndefinedMetricWarning: Only one class is present in y_true. ROC AUC score is not defined in that case.
+  warnings.warn(
+********************txid214092********************
+0 non-operons were not labeled and 0 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           1       1.00      1.00      1.00         6
+
+    accuracy                           1.00         6
+   macro avg       1.00      1.00      1.00         6
+weighted avg       1.00      1.00      1.00         6
+
+Predicted  1  All
+True             
+1          6    6
+All        6    6
+Total F1 score, recall and AUROC
+F1 score: 1.00
+Recall: 1.00
+AUROC: nan
+**************************************************
+Model: "functional"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃ Layer (type)                    ┃ Output Shape           ┃       Param # ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│ input_layer (InputLayer)        │ (None, 150, 6, 3)      │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ conv2d (Conv2D)                 │ (None, 146, 1, 64)     │         5,824 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lambda (Lambda)                 │ (None, 146, 64)        │             0 │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ lstm (LSTM)                     │ [(None, 146, 64),      │        33,024 │
+│                                 │ (None, 64), (None,     │               │
+│                                 │ 64)]                   │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ self_attention (SelfAttention)  │ [(None, 1024), (None,  │         2,560 │
+│                                 │ 16, 146)]              │               │
+├─────────────────────────────────┼────────────────────────┼───────────────┤
+│ dense (Dense)                   │ (None, 2)              │         2,050 │
+└─────────────────────────────────┴────────────────────────┴───────────────┘
+ Total params: 43,458 (169.76 KB)
+ Trainable params: 43,458 (169.76 KB)
+ Non-trainable params: 0 (0.00 B)
+********************txid6239********************
+0 non-operons were not labeled and 0 operons were not labeled 
+
+Classification report
+              precision    recall  f1-score   support
+
+           0       0.10      0.77      0.17        56
+           1       0.98      0.66      0.79      1184
+
+    accuracy                           0.66      1240
+   macro avg       0.54      0.71      0.48      1240
+weighted avg       0.94      0.66      0.76      1240
+
+Predicted    0    1   All
+True                     
+0           43   13    56
+1          404  780  1184
+All        447  793  1240
+Total F1 score, recall and AUROC
+F1 score: 0.79
+Recall: 0.66
+AUROC: 0.80
+**************************************************

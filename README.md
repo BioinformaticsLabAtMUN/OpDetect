@@ -179,21 +179,22 @@ Model: "functional"
 Classification report
               precision    recall  f1-score   support
 
-           0       0.78      0.66      0.71      2061
-           1       0.60      0.73      0.66      1426
+           0       0.77      0.63      0.70      2061
+           1       0.58      0.73      0.65      1426
 
-    accuracy                           0.69      3487
-   macro avg       0.69      0.69      0.69      3487
-weighted avg       0.70      0.69      0.69      3487
+    accuracy                           0.67      3487
+   macro avg       0.68      0.68      0.67      3487
+weighted avg       0.69      0.67      0.68      3487
 
-Predicted   0.0   1.0   All
+Predicted     0     1   All
 True                       
-0          1357   704  2061
-1           385  1041  1426
-All        1742  1745  3487
-Total F1 score and recall
-F1 score: 0.6565752128666035
-Recall: 0.7300140252454418
+0          1305   756  2061
+1           381  1045  1426
+All        1686  1801  3487
+Total F1 score, recall and AUROC
+F1 score: 0.65
+Recall: 0.73
+AUROC: 0.79
 **************************************************
 ```
 

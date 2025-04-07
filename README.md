@@ -212,8 +212,8 @@ AUROC: 0.79
 
 OpDetect consistently outperforms existing methods on validation organisms, achieving in 10-fold cross-validation:
 
-- Recall: 88.94%
-- F1-score: 89.50%
+- Recall: 89.17%
+- F1-score: 89.71%
 - AUROC: 0.89
 
 ---

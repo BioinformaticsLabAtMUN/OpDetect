@@ -234,7 +234,7 @@ This tool was developed at the Department of Computer Science and Department of 
 
 ## License
 
-[MIT License](LICENSE)
+[GNU GENERAL PUBLIC LICENSE](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
 ---
 
